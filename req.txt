@@ -1,2 +1,15 @@
 <!--.*-->
 https://transform.tools/html-to-jsx
+
+
+urls: 
+https://tiny-queijadas-48258c.netlify.app/
+https://tiny-queijadas-48258c.netlify.app/about
+https://tiny-queijadas-48258c.netlify.app/agency/:id
+https://tiny-queijadas-48258c.netlify.app/dashboard
+https://tiny-queijadas-48258c.netlify.app/dashboard/add
+https://tiny-queijadas-48258c.netlify.app/dashboard/myprofile
+https://tiny-queijadas-48258c.netlify.app/dashboard/editinvoice
+https://tiny-queijadas-48258c.netlify.app/dashboard/addinvoice
+https://tiny-queijadas-48258c.netlify.app/propaty
+https://tiny-queijadas-48258c.netlify.app/login
