@@ -13,6 +13,8 @@ import MyPropaty from './pages/dashboard/MyPropaty'
 import InvoicePreview from './pages/dashboard/InvoicePreview'
 import Reviews from './pages/dashboard/Reviews'
 import NotFound from './pages/NotFound'
+import Layout from './components/dashboard/Layout'
+import Test from './pages/Test'
 
 function App() {
   return (
@@ -21,17 +23,22 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/faqs" element={<Faq />} />
 
-        <Route path="/dashboard" element={<Dashboard />} />
-        <Route path="/dashboard/addinvoice" element={<AddNewInvoice />} />
-        <Route path="/dashboard/addpropaty" element={<AddNewPropaty />} />
-        <Route path="/dashboard/editinvoice" element={<EditInvoice />} />
-        <Route path="/dashboard/invoices" element={<Invoices />} />
-        <Route path="/dashboard/myfevorites" element={<MyFavorites />} />
-        <Route path="/dashboard/mypackages" element={<MyPackages />} />
-        <Route path="/dashboard/myprofile" element={<MyProfile />} />
-        <Route path="/dashboard/mypropaty" element={<MyPropaty />} />
-        <Route path="/dashboard/invoicepreviw" element={<InvoicePreview />} />
-        <Route path="/dashboard/reviwes" element={<Reviews />} />
+        <Route path="/" element={<Layout />}>
+          <Route path="/dashboard" element={<Dashboard />} />
+          <Route path="/dashboard/addinvoice" element={<AddNewInvoice />} />
+          <Route path="/dashboard/addpropaty" element={<AddNewPropaty />} />
+          <Route path="/dashboard/editinvoice" element={<EditInvoice />} />
+          <Route path="/dashboard/invoices" element={<Invoices />} />
+          <Route path="/dashboard/myfevorites" element={<MyFavorites />} />
+          <Route path="/dashboard/mypackages" element={<MyPackages />} />
+          <Route path="/dashboard/myprofile" element={<MyProfile />} />
+          <Route path="/dashboard/mypropaty" element={<MyPropaty />} />
+          <Route path="/dashboard/invoicepreviw" element={<InvoicePreview />} />
+          <Route path="/dashboard/reviwes" element={<Reviews />} />
+        </Route>
+
+        <Route path="/test" element={<Test />} />
+        
 
         <Route path="*" element={<NotFound />} />
       </Routes>
