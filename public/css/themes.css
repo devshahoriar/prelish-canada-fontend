@@ -22887,3 +22887,52 @@ button:focus {
 }
 
 /*# sourceMappingURL=themes.css.map */
+
+
+
+
+
+.rent-items {
+  display: grid;
+  grid-gap: 30px;
+  grid-template-columns: repeat(auto-fit,minmax(300px, 1fr));
+  grid-auto-flow: dense;
+  margin: 20px auto;
+}
+a.nav-link.dropdown-toggle.p-0 {
+  color: #333;
+}
+a.nav-link.dropdown-toggle.p-0:hover {
+  color: #333;
+}
+a.nav-link.dropdown-toggle.p-0 li:hover {
+  color: #333;
+}
+.normal-logo, .sticky-logo{
+  width: 200px;
+}
+.map-margin{
+  margin-top: 70px;
+}
+.navbar-dark .navbar-nav .nav-link {
+    color: #000;
+}
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: #000;
+}
+
+.add-listing-button-1{
+  color: black;
+  padding: 8px auto;
+}
+.main-header.navbar-dark .btn {
+  border-color: #131313;
+  margin-bottom: 20px;
+}
+.single-page-margin{
+  margin-top: 100px;
+}
+
+.footer-logo-white img{
+  width: 150px;
+}

@@ -1,7 +1,6 @@
 /* eslint-disable react/no-unescaped-entities */
 
-
-const DashBoardMyProfile = () => {
+const MyFavorites = () => {
   return (
     <>
       <div className="wrapper dashboard-wrapper">
@@ -408,315 +407,1109 @@ const DashBoardMyProfile = () => {
             </header>
             <main id="content" className="bg-gray-01">
               <div className="px-3 px-lg-6 px-xxl-13 py-5 py-lg-10">
-                <div className="mb-6">
-                  <h2 className="mb-0 text-heading fs-22 lh-15">My Profile</h2>
-                  <p className="mb-1">
-                    Lorem ipsum dolor sit amet, consec tetur cing elit. Suspe
-                    ndisse suscipit
-                  </p>
+                <div className="d-flex flex-wrap flex-md-nowrap mb-6">
+                  <div className="mr-0 mr-md-auto">
+                    <h2 className="mb-0 text-heading fs-22 lh-15">
+                      My Favorites
+                      <span className="badge badge-white badge-pill text-primary fs-18 font-weight-bold ml-2">
+                        5
+                      </span>
+                    </h2>
+                    <p>
+                      Lorem ipsum dolor sit amet, consec tetur cing elit. Suspe
+                      ndisse suscipit
+                    </p>
+                  </div>
+                  <div className="form-inline justify-content-md-end mx-n2">
+                    <div className="p-2">
+                      <div className="input-group input-group-lg bg-white border">
+                        <div className="input-group-prepend">
+                          <button
+                            className="btn pr-0 shadow-none"
+                            type="button"
+                          >
+                            <i className="far fa-search" />
+                          </button>
+                        </div>
+                        <input
+                          type="text"
+                          className="form-control bg-transparent border-0 shadow-none text-body"
+                          placeholder="Search listing"
+                          name="search"
+                        />
+                      </div>
+                    </div>
+                    <div className="p-2">
+                      <div className="input-group input-group-lg bg-white border">
+                        <div className="input-group-prepend">
+                          <span className="input-group-text bg-transparent letter-spacing-093 border-0 pr-0">
+                            <i className="far fa-align-left mr-2" />
+                            Sort by:
+                          </span>
+                        </div>
+                        <select
+                          className="form-control bg-transparent pl-0 selectpicker d-flex align-items-center sortby"
+                          name="sort-by"
+                          data-style="bg-transparent px-1 py-0 lh-1 font-weight-600 text-body"
+                          id="status"
+                        >
+                          <option>Alphabet</option>
+                          <option>Price - Low to High</option>
+                          <option>Price - High to Low</option>
+                          <option>Date - Old to New</option>
+                          <option>Date - New to Old</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-                <form>
-                  <div className="row mb-6">
-                    <div className="col-lg-6">
-                      <div className="card mb-6">
-                        <div className="card-body px-6 pt-6 pb-5">
-                          <div className="row">
-                            <div className="col-sm-4 col-xl-12 col-xxl-7 mb-6">
-                              <h3 className="card-title mb-0 text-heading fs-22 lh-15">
-                                Photo
-                              </h3>
-                              <p className="card-text">
-                                Upload your profile photo.
-                              </p>
-                            </div>
-                            <div className="col-sm-8 col-xl-12 col-xxl-5">
-                              <img
-                                src="/images/my-profile.png"
-                                alt="My Profile"
-                                className="w-100"
-                              />
-                              <div className="custom-file mt-4 h-auto">
-                                <input
-                                  type="file"
-                                  className="custom-file-input"
-                                  hidden=""
-                                  id="customFile"
-                                  name="file"
-                                />
-                                <label
-                                  className="btn btn-secondary btn-lg btn-block"
-                                  htmlFor="customFile"
+                <div className="row">
+                  <div className="col-md-6 col-xxl-3 mb-6">
+                    <div className="card shadow-hover-1">
+                      <div className="hover-change-image bg-hover-overlay rounded-lg card-img-top">
+                        <img
+                          src="/images/properties-grid-38.jpg"
+                          alt="Home in Metric Way"
+                        />
+                        <div className="card-img-overlay p-2 d-flex flex-column">
+                          <div>
+                            <span className="badge badge-primary">
+                              for sale
+                            </span>
+                          </div>
+                          <div className="mt-auto hover-image">
+                            <ul className="list-inline mb-0 d-flex align-items-end">
+                              <li
+                                className="list-inline-item mr-2"
+                                data-toggle="tooltip"
+                                title="9 /images"
+                              >
+                                <a
+                                  href="#"
+                                  className="text-white hover-primary"
                                 >
-                                  <span className="d-inline-block mr-1">
-                                    <i className="fal fa-cloud-upload" />
-                                  </span>
-                                  Upload profile image
-                                </label>
-                              </div>
-                              <p className="mb-0 mt-2">
-                                *minimum 500px x 500px
-                              </p>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div className="card mb-6">
-                        <div className="card-body px-6 pt-6 pb-5">
-                          <h3 className="card-title mb-0 text-heading fs-22 lh-15">
-                            Contact information
-                          </h3>
-                          <p className="card-text">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                            elit
-                          </p>
-                          <div className="form-row mx-n4">
-                            <div className="form-group col-md-6 px-4">
-                              <label
-                                htmlFor="firstName"
-                                className="text-heading"
+                                  <i className="far fa-/images" />
+                                  <span className="pl-1">9</span>
+                                </a>
+                              </li>
+                              <li
+                                className="list-inline-item"
+                                data-toggle="tooltip"
+                                title="2 Video"
                               >
-                                First name
-                              </label>
-                              <input
-                                type="text"
-                                className="form-control form-control-lg border-0"
-                                id="firstName"
-                                name="firsName"
-                              />
-                            </div>
-                            <div className="form-group col-md-6 px-4">
-                              <label
-                                htmlFor="lastName"
-                                className="text-heading"
-                              >
-                                Last name
-                              </label>
-                              <input
-                                type="text"
-                                className="form-control form-control-lg border-0"
-                                id="lastName"
-                                name="lastname"
-                              />
-                            </div>
-                          </div>
-                          <div className="form-row mx-n4">
-                            <div className="form-group col-md-6 px-4">
-                              <label htmlFor="phone" className="text-heading">
-                                Phone
-                              </label>
-                              <input
-                                type="text"
-                                className="form-control form-control-lg border-0"
-                                id="phone"
-                                name="phone"
-                              />
-                            </div>
-                            <div className="form-group col-md-6 px-4">
-                              <label htmlFor="mobile" className="text-heading">
-                                Mobile
-                              </label>
-                              <input
-                                type="text"
-                                className="form-control form-control-lg border-0"
-                                id="mobile"
-                                name="mobile"
-                              />
-                            </div>
-                          </div>
-                          <div className="form-row mx-n4">
-                            <div className="form-group col-md-6 px-4 mb-md-0">
-                              <label htmlFor="email" className="text-heading">
-                                Email
-                              </label>
-                              <input
-                                type="email"
-                                className="form-control form-control-lg border-0"
-                                id="email"
-                                name="email"
-                              />
-                            </div>
-                            <div className="form-group col-md-6 px-4 mb-md-0">
-                              <label htmlFor="skype" className="text-heading">
-                                Skype
-                              </label>
-                              <input
-                                type="text"
-                                className="form-control form-control-lg border-0"
-                                id="skype"
-                                name="skype"
-                              />
-                            </div>
+                                <a
+                                  href="#"
+                                  className="text-white hover-primary"
+                                >
+                                  <i className="far fa-play-circle" />
+                                  <span className="pl-1">2</span>
+                                </a>
+                              </li>
+                            </ul>
                           </div>
                         </div>
                       </div>
-                      <div className="card mb-6 mb-lg-0">
-                        <div className="card-body px-6 pt-6 pb-5">
-                          <h3 className="card-title mb-0 text-heading fs-22 lh-15">
-                            User detail
-                          </h3>
-                          <p className="card-text">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                            elit
-                          </p>
-                          <div className="form-group mb-0">
-                            <label htmlFor="title" className="text-heading">
-                              Title / Posittion
-                            </label>
-                            <input
-                              type="text"
-                              className="form-control form-control-lg border-0"
-                              id="title"
-                              name="title"
-                            />
-                          </div>
-                        </div>
+                      <div className="card-body pt-3">
+                        <h2 className="card-title fs-16 lh-2 mb-0">
+                          <a
+                            href="single-property-1.html"
+                            className="text-dark hover-primary"
+                          >
+                            Home in Metric Way
+                          </a>
+                        </h2>
+                        <p className="card-text font-weight-500 text-gray-light mb-2">
+                          1421 San Pedro St, Los Angeles
+                        </p>
+                        <ul className="list-inline d-flex mb-0 flex-wrap">
+                          <li
+                            className="list-inline-item text-gray font-weight-500 fs-13 d-flex align-items-center mr-2 "
+                            data-toggle="tooltip"
+                            title="3 Br"
+                          >
+                            <svg className="icon icon-bedroom fs-18 text-primary mr-1">
+                              <use xlinkHref="#icon-bedroom" />
+                            </svg>
+                            3 Br
+                          </li>
+                          <li
+                            className="list-inline-item text-gray font-weight-500 fs-13 d-flex align-items-center mr-2"
+                            data-toggle="tooltip"
+                            title="3 Ba"
+                          >
+                            <svg className="icon icon-shower fs-18 text-primary mr-1">
+                              <use xlinkHref="#icon-shower" />
+                            </svg>
+                            3 Ba
+                          </li>
+                          <li
+                            className="list-inline-item text-gray font-weight-500 fs-13 d-flex align-items-center px-1 mr-2"
+                            data-toggle="tooltip"
+                            title="2300 Sq.Ft"
+                          >
+                            <svg className="icon icon-square fs-18 text-primary mr-1">
+                              <use xlinkHref="#icon-square" />
+                            </svg>
+                            2300 Sq.Ft
+                          </li>
+                          <li
+                            className="list-inline-item text-gray font-weight-500 fs-13 d-flex align-items-center mr-2"
+                            data-toggle="tooltip"
+                            title="1 Gr"
+                          >
+                            <svg className="icon icon-Garage fs-18 text-primary mr-1">
+                              <use xlinkHref="#icon-Garage" />
+                            </svg>
+                            1 Gr
+                          </li>
+                        </ul>
                       </div>
-                    </div>
-                    <div className="col-lg-6">
-                      <div className="card mb-6">
-                        <div className="card-body px-6 pt-6 pb-5">
-                          <h3 className="card-title mb-0 text-heading fs-22 lh-15">
-                            User detail
-                          </h3>
-                          <p className="card-text">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                            elit
-                          </p>
-                          <div className="form-group">
-                            <label htmlFor="facebook" className="text-heading">
-                              Facebook Url
-                            </label>
-                            <input
-                              type="url"
-                              className="form-control form-control-lg border-0"
-                              id="facebook"
-                              name="facebook"
-                            />
-                          </div>
-                          <div className="form-group">
-                            <label htmlFor="pinterest" className="text-heading">
-                              Pinterest Url
-                            </label>
-                            <input
-                              type="url"
-                              className="form-control form-control-lg border-0"
-                              id="pinterest"
-                              name="pinterest"
-                            />
-                          </div>
-                          <div className="form-group">
-                            <label htmlFor="instagram" className="text-heading">
-                              Instagram Url
-                            </label>
-                            <input
-                              type="url"
-                              className="form-control form-control-lg border-0"
-                              id="instagram"
-                              name="instagram"
-                            />
-                          </div>
-                          <div className="form-group">
-                            <label htmlFor="twitter" className="text-heading">
-                              Twitter Url
-                            </label>
-                            <input
-                              type="url"
-                              className="form-control form-control-lg border-0"
-                              id="twitter"
-                              name="twitter"
-                            />
-                          </div>
-                          <div className="form-group">
-                            <label htmlFor="linkedin" className="text-heading">
-                              Linkedin Url
-                            </label>
-                            <input
-                              type="url"
-                              className="form-control form-control-lg border-0"
-                              id="linkedin"
-                              name="linkedin"
-                            />
-                          </div>
-                          <div className="form-group mb-7">
-                            <label htmlFor="website" className="text-heading">
-                              Website Url{' '}
-                              <span className="text-muted">(without http)</span>
-                            </label>
-                            <input
-                              type="url"
-                              className="form-control form-control-lg border-0"
-                              id="website"
-                              name="website"
-                            />
-                          </div>
+                      <div className="card-footer bg-transparent d-flex justify-content-between align-items-center py-3">
+                        <div className="mr-auto">
+                          <span className="text-heading lh-15 font-weight-bold fs-17">
+                            $.1250.000
+                          </span>
                         </div>
-                      </div>
-                      <div className="card">
-                        <div className="card-body px-6 pt-6 pb-5">
-                          <h3 className="card-title mb-0 text-heading fs-22 lh-15">
-                            Change password
-                          </h3>
-                          <p className="card-text">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                            elit
-                          </p>
-                          <div className="form-group">
-                            <label
-                              htmlFor="oldPassword"
-                              className="text-heading"
+                        <ul className="list-inline mb-0">
+                          <li className="list-inline-item">
+                            <a
+                              href="#"
+                              data-toggle="tooltip"
+                              title="Wish list"
+                              className="w-40px h-40 border rounded-circle d-inline-flex align-items-center justify-content-center text-secondary bg-accent border-accent"
                             >
-                              Old Password
-                            </label>
-                            <input
-                              type="password"
-                              className="form-control form-control-lg border-0"
-                              id="oldPassword"
-                              name="oldPassword"
-                            />
-                          </div>
-                          <div className="form-row mx-n4">
-                            <div className="form-group col-md-6 col-lg-12 col-xxl-6 px-4">
-                              <label
-                                htmlFor="newPassword"
-                                className="text-heading"
-                              >
-                                New Password
-                              </label>
-                              <input
-                                type="password"
-                                className="form-control form-control-lg border-0"
-                                id="newPassword"
-                                name="newPassword"
-                              />
-                            </div>
-                            <div className="form-group col-md-6 col-lg-12 col-xxl-6 px-4">
-                              <label
-                                htmlFor="confirmNewPassword"
-                                className="text-heading"
-                              >
-                                Confirm New Password
-                              </label>
-                              <input
-                                type="password"
-                                className="form-control form-control-lg border-0"
-                                id="confirmNewPassword"
-                                name="confirmNewPassword"
-                              />
-                            </div>
-                          </div>
-                        </div>
+                              <i className="fas fa-heart" />
+                            </a>
+                          </li>
+                          <li className="list-inline-item">
+                            <a
+                              href="#"
+                              data-toggle="tooltip"
+                              title="Compare"
+                              className="w-40px h-40 border rounded-circle d-inline-flex align-items-center justify-content-center text-body hover-secondary bg-hover-accent border-hover-accent"
+                            >
+                              <i className="fas fa-exchange-alt" />
+                            </a>
+                          </li>
+                        </ul>
                       </div>
                     </div>
                   </div>
-                  <div className="d-flex justify-content-end flex-wrap">
-                    <button className="btn btn-lg bg-hover-white border rounded-lg mb-3">
-                      Delete Profile
-                    </button>
-                    <button className="btn btn-lg btn-primary ml-4 mb-3">
-                      Update Profile
-                    </button>
+                  <div className="col-md-6 col-xxl-3 mb-6">
+                    <div className="card shadow-hover-1">
+                      <div className="hover-change-image bg-hover-overlay rounded-lg card-img-top">
+                        <img
+                          src="/images/properties-grid-01.jpg"
+                          alt="Affordable Urban House"
+                        />
+                        <div className="card-img-overlay p-2 d-flex flex-column">
+                          <div>
+                            <span className="badge badge-indigo">for rent</span>
+                          </div>
+                          <div className="mt-auto hover-image">
+                            <ul className="list-inline mb-0 d-flex align-items-end">
+                              <li
+                                className="list-inline-item mr-2"
+                                data-toggle="tooltip"
+                                title="9 /images"
+                              >
+                                <a
+                                  href="#"
+                                  className="text-white hover-primary"
+                                >
+                                  <i className="far fa-/images" />
+                                  <span className="pl-1">9</span>
+                                </a>
+                              </li>
+                              <li
+                                className="list-inline-item"
+                                data-toggle="tooltip"
+                                title="2 Video"
+                              >
+                                <a
+                                  href="#"
+                                  className="text-white hover-primary"
+                                >
+                                  <i className="far fa-play-circle" />
+                                  <span className="pl-1">2</span>
+                                </a>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                      <div className="card-body pt-3">
+                        <h2 className="card-title fs-16 lh-2 mb-0">
+                          <a
+                            href="single-property-1.html"
+                            className="text-dark hover-primary"
+                          >
+                            Affordable Urban House
+                          </a>
+                        </h2>
+                        <p className="card-text font-weight-500 text-gray-light mb-2">
+                          1421 San Pedro St, Los Angeles
+                        </p>
+                        <ul className="list-inline d-flex mb-0 flex-wrap">
+                          <li
+                            className="list-inline-item text-gray font-weight-500 fs-13 d-flex align-items-center mr-2 "
+                            data-toggle="tooltip"
+                            title="3 Br"
+                          >
+                            <svg className="icon icon-bedroom fs-18 text-primary mr-1">
+                              <use xlinkHref="#icon-bedroom" />
+                            </svg>
+                            3 Br
+                          </li>
+                          <li
+                            className="list-inline-item text-gray font-weight-500 fs-13 d-flex align-items-center mr-2"
+                            data-toggle="tooltip"
+                            title="3 Ba"
+                          >
+                            <svg className="icon icon-shower fs-18 text-primary mr-1">
+                              <use xlinkHref="#icon-shower" />
+                            </svg>
+                            3 Ba
+                          </li>
+                          <li
+                            className="list-inline-item text-gray font-weight-500 fs-13 d-flex align-items-center px-1 mr-2"
+                            data-toggle="tooltip"
+                            title="2300 Sq.Ft"
+                          >
+                            <svg className="icon icon-square fs-18 text-primary mr-1">
+                              <use xlinkHref="#icon-square" />
+                            </svg>
+                            2300 Sq.Ft
+                          </li>
+                          <li
+                            className="list-inline-item text-gray font-weight-500 fs-13 d-flex align-items-center mr-2"
+                            data-toggle="tooltip"
+                            title="1 Gr"
+                          >
+                            <svg className="icon icon-Garage fs-18 text-primary mr-1">
+                              <use xlinkHref="#icon-Garage" />
+                            </svg>
+                            1 Gr
+                          </li>
+                        </ul>
+                      </div>
+                      <div className="card-footer bg-transparent d-flex justify-content-between align-items-center py-3">
+                        <div className="mr-auto">
+                          <span className="text-heading lh-15 font-weight-bold fs-17">
+                            $550
+                          </span>
+                          <span className="text-gray-light">/month</span>
+                        </div>
+                        <ul className="list-inline mb-0">
+                          <li className="list-inline-item">
+                            <a
+                              href="#"
+                              data-toggle="tooltip"
+                              title="Wish list"
+                              className="w-40px h-40 border rounded-circle d-inline-flex align-items-center justify-content-center text-secondary bg-accent border-accent"
+                            >
+                              <i className="fas fa-heart" />
+                            </a>
+                          </li>
+                          <li className="list-inline-item">
+                            <a
+                              href="#"
+                              data-toggle="tooltip"
+                              title="Compare"
+                              className="w-40px h-40 border rounded-circle d-inline-flex align-items-center justify-content-center text-body hover-secondary bg-hover-accent border-hover-accent"
+                            >
+                              <i className="fas fa-exchange-alt" />
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
                   </div>
-                </form>
+                  <div className="col-md-6 col-xxl-3 mb-6">
+                    <div className="card shadow-hover-1">
+                      <div className="hover-change-image bg-hover-overlay rounded-lg card-img-top">
+                        <img
+                          src="/images/properties-grid-03.jpg"
+                          alt="Villa on Hollywood Boulevard"
+                        />
+                        <div className="card-img-overlay p-2 d-flex flex-column">
+                          <div>
+                            <span className="badge badge-indigo">for rent</span>
+                          </div>
+                          <div className="mt-auto hover-image">
+                            <ul className="list-inline mb-0 d-flex align-items-end">
+                              <li
+                                className="list-inline-item mr-2"
+                                data-toggle="tooltip"
+                                title="9 /images"
+                              >
+                                <a
+                                  href="#"
+                                  className="text-white hover-primary"
+                                >
+                                  <i className="far fa-/images" />
+                                  <span className="pl-1">9</span>
+                                </a>
+                              </li>
+                              <li
+                                className="list-inline-item"
+                                data-toggle="tooltip"
+                                title="2 Video"
+                              >
+                                <a
+                                  href="#"
+                                  className="text-white hover-primary"
+                                >
+                                  <i className="far fa-play-circle" />
+                                  <span className="pl-1">2</span>
+                                </a>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                      <div className="card-body pt-3">
+                        <h2 className="card-title fs-16 lh-2 mb-0">
+                          <a
+                            href="single-property-1.html"
+                            className="text-dark hover-primary"
+                          >
+                            Villa on Hollywood Boulevard
+                          </a>
+                        </h2>
+                        <p className="card-text font-weight-500 text-gray-light mb-2">
+                          1421 San Pedro St, Los Angeles
+                        </p>
+                        <ul className="list-inline d-flex mb-0 flex-wrap">
+                          <li
+                            className="list-inline-item text-gray font-weight-500 fs-13 d-flex align-items-center mr-2 "
+                            data-toggle="tooltip"
+                            title="3 Br"
+                          >
+                            <svg className="icon icon-bedroom fs-18 text-primary mr-1">
+                              <use xlinkHref="#icon-bedroom" />
+                            </svg>
+                            3 Br
+                          </li>
+                          <li
+                            className="list-inline-item text-gray font-weight-500 fs-13 d-flex align-items-center mr-2"
+                            data-toggle="tooltip"
+                            title="3 Ba"
+                          >
+                            <svg className="icon icon-shower fs-18 text-primary mr-1">
+                              <use xlinkHref="#icon-shower" />
+                            </svg>
+                            3 Ba
+                          </li>
+                          <li
+                            className="list-inline-item text-gray font-weight-500 fs-13 d-flex align-items-center px-1 mr-2"
+                            data-toggle="tooltip"
+                            title="2300 Sq.Ft"
+                          >
+                            <svg className="icon icon-square fs-18 text-primary mr-1">
+                              <use xlinkHref="#icon-square" />
+                            </svg>
+                            2300 Sq.Ft
+                          </li>
+                          <li
+                            className="list-inline-item text-gray font-weight-500 fs-13 d-flex align-items-center mr-2"
+                            data-toggle="tooltip"
+                            title="1 Gr"
+                          >
+                            <svg className="icon icon-Garage fs-18 text-primary mr-1">
+                              <use xlinkHref="#icon-Garage" />
+                            </svg>
+                            1 Gr
+                          </li>
+                        </ul>
+                      </div>
+                      <div className="card-footer bg-transparent d-flex justify-content-between align-items-center py-3">
+                        <div className="mr-auto">
+                          <span className="text-heading lh-15 font-weight-bold fs-17">
+                            $550
+                          </span>
+                          <span className="text-gray-light">/month</span>
+                        </div>
+                        <ul className="list-inline mb-0">
+                          <li className="list-inline-item">
+                            <a
+                              href="#"
+                              data-toggle="tooltip"
+                              title="Wish list"
+                              className="w-40px h-40 border rounded-circle d-inline-flex align-items-center justify-content-center text-secondary bg-accent border-accent"
+                            >
+                              <i className="fas fa-heart" />
+                            </a>
+                          </li>
+                          <li className="list-inline-item">
+                            <a
+                              href="#"
+                              data-toggle="tooltip"
+                              title="Compare"
+                              className="w-40px h-40 border rounded-circle d-inline-flex align-items-center justify-content-center text-body hover-secondary bg-hover-accent border-hover-accent"
+                            >
+                              <i className="fas fa-exchange-alt" />
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="col-md-6 col-xxl-3 mb-6">
+                    <div className="card shadow-hover-1">
+                      <div className="hover-change-image bg-hover-overlay rounded-lg card-img-top">
+                        <img
+                          src="/images/properties-grid-02.jpg"
+                          alt="Villa on Hollywood Boulevard"
+                        />
+                        <div className="card-img-overlay p-2 d-flex flex-column">
+                          <div>
+                            <span className="badge badge-primary">
+                              for sale
+                            </span>
+                          </div>
+                          <div className="mt-auto hover-image">
+                            <ul className="list-inline mb-0 d-flex align-items-end">
+                              <li
+                                className="list-inline-item mr-2"
+                                data-toggle="tooltip"
+                                title="9 /images"
+                              >
+                                <a
+                                  href="#"
+                                  className="text-white hover-primary"
+                                >
+                                  <i className="far fa-/images" />
+                                  <span className="pl-1">9</span>
+                                </a>
+                              </li>
+                              <li
+                                className="list-inline-item"
+                                data-toggle="tooltip"
+                                title="2 Video"
+                              >
+                                <a
+                                  href="#"
+                                  className="text-white hover-primary"
+                                >
+                                  <i className="far fa-play-circle" />
+                                  <span className="pl-1">2</span>
+                                </a>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                      <div className="card-body pt-3">
+                        <h2 className="card-title fs-16 lh-2 mb-0">
+                          <a
+                            href="single-property-1.html"
+                            className="text-dark hover-primary"
+                          >
+                            Villa on Hollywood Boulevard
+                          </a>
+                        </h2>
+                        <p className="card-text font-weight-500 text-gray-light mb-2">
+                          1421 San Pedro St, Los Angeles
+                        </p>
+                        <ul className="list-inline d-flex mb-0 flex-wrap">
+                          <li
+                            className="list-inline-item text-gray font-weight-500 fs-13 d-flex align-items-center mr-2 "
+                            data-toggle="tooltip"
+                            title="3 Br"
+                          >
+                            <svg className="icon icon-bedroom fs-18 text-primary mr-1">
+                              <use xlinkHref="#icon-bedroom" />
+                            </svg>
+                            3 Br
+                          </li>
+                          <li
+                            className="list-inline-item text-gray font-weight-500 fs-13 d-flex align-items-center mr-2"
+                            data-toggle="tooltip"
+                            title="3 Ba"
+                          >
+                            <svg className="icon icon-shower fs-18 text-primary mr-1">
+                              <use xlinkHref="#icon-shower" />
+                            </svg>
+                            3 Ba
+                          </li>
+                          <li
+                            className="list-inline-item text-gray font-weight-500 fs-13 d-flex align-items-center px-1 mr-2"
+                            data-toggle="tooltip"
+                            title="2300 Sq.Ft"
+                          >
+                            <svg className="icon icon-square fs-18 text-primary mr-1">
+                              <use xlinkHref="#icon-square" />
+                            </svg>
+                            2300 Sq.Ft
+                          </li>
+                          <li
+                            className="list-inline-item text-gray font-weight-500 fs-13 d-flex align-items-center mr-2"
+                            data-toggle="tooltip"
+                            title="1 Gr"
+                          >
+                            <svg className="icon icon-Garage fs-18 text-primary mr-1">
+                              <use xlinkHref="#icon-Garage" />
+                            </svg>
+                            1 Gr
+                          </li>
+                        </ul>
+                      </div>
+                      <div className="card-footer bg-transparent d-flex justify-content-between align-items-center py-3">
+                        <div className="mr-auto">
+                          <span className="text-heading lh-15 font-weight-bold fs-17">
+                            $.1250.000
+                          </span>
+                        </div>
+                        <ul className="list-inline mb-0">
+                          <li className="list-inline-item">
+                            <a
+                              href="#"
+                              data-toggle="tooltip"
+                              title="Wish list"
+                              className="w-40px h-40 border rounded-circle d-inline-flex align-items-center justify-content-center text-secondary bg-accent border-accent"
+                            >
+                              <i className="fas fa-heart" />
+                            </a>
+                          </li>
+                          <li className="list-inline-item">
+                            <a
+                              href="#"
+                              data-toggle="tooltip"
+                              title="Compare"
+                              className="w-40px h-40 border rounded-circle d-inline-flex align-items-center justify-content-center text-body hover-secondary bg-hover-accent border-hover-accent"
+                            >
+                              <i className="fas fa-exchange-alt" />
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="col-md-6 col-xxl-3 mb-6">
+                    <div className="card shadow-hover-1">
+                      <div className="hover-change-image bg-hover-overlay rounded-lg card-img-top">
+                        <img
+                          src="/images/properties-grid-04.jpg"
+                          alt="Home in Metric Way"
+                        />
+                        <div className="card-img-overlay p-2 d-flex flex-column">
+                          <div>
+                            <span className="badge badge-primary">
+                              for sale
+                            </span>
+                          </div>
+                          <div className="mt-auto hover-image">
+                            <ul className="list-inline mb-0 d-flex align-items-end">
+                              <li
+                                className="list-inline-item mr-2"
+                                data-toggle="tooltip"
+                                title="9 /images"
+                              >
+                                <a
+                                  href="#"
+                                  className="text-white hover-primary"
+                                >
+                                  <i className="far fa-/images" />
+                                  <span className="pl-1">9</span>
+                                </a>
+                              </li>
+                              <li
+                                className="list-inline-item"
+                                data-toggle="tooltip"
+                                title="2 Video"
+                              >
+                                <a
+                                  href="#"
+                                  className="text-white hover-primary"
+                                >
+                                  <i className="far fa-play-circle" />
+                                  <span className="pl-1">2</span>
+                                </a>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                      <div className="card-body pt-3">
+                        <h2 className="card-title fs-16 lh-2 mb-0">
+                          <a
+                            href="single-property-1.html"
+                            className="text-dark hover-primary"
+                          >
+                            Home in Metric Way
+                          </a>
+                        </h2>
+                        <p className="card-text font-weight-500 text-gray-light mb-2">
+                          1421 San Pedro St, Los Angeles
+                        </p>
+                        <ul className="list-inline d-flex mb-0 flex-wrap">
+                          <li
+                            className="list-inline-item text-gray font-weight-500 fs-13 d-flex align-items-center mr-2 "
+                            data-toggle="tooltip"
+                            title="3 Br"
+                          >
+                            <svg className="icon icon-bedroom fs-18 text-primary mr-1">
+                              <use xlinkHref="#icon-bedroom" />
+                            </svg>
+                            3 Br
+                          </li>
+                          <li
+                            className="list-inline-item text-gray font-weight-500 fs-13 d-flex align-items-center mr-2"
+                            data-toggle="tooltip"
+                            title="3 Ba"
+                          >
+                            <svg className="icon icon-shower fs-18 text-primary mr-1">
+                              <use xlinkHref="#icon-shower" />
+                            </svg>
+                            3 Ba
+                          </li>
+                          <li
+                            className="list-inline-item text-gray font-weight-500 fs-13 d-flex align-items-center px-1 mr-2"
+                            data-toggle="tooltip"
+                            title="2300 Sq.Ft"
+                          >
+                            <svg className="icon icon-square fs-18 text-primary mr-1">
+                              <use xlinkHref="#icon-square" />
+                            </svg>
+                            2300 Sq.Ft
+                          </li>
+                          <li
+                            className="list-inline-item text-gray font-weight-500 fs-13 d-flex align-items-center mr-2"
+                            data-toggle="tooltip"
+                            title="1 Gr"
+                          >
+                            <svg className="icon icon-Garage fs-18 text-primary mr-1">
+                              <use xlinkHref="#icon-Garage" />
+                            </svg>
+                            1 Gr
+                          </li>
+                        </ul>
+                      </div>
+                      <div className="card-footer bg-transparent d-flex justify-content-between align-items-center py-3">
+                        <div className="mr-auto">
+                          <span className="text-heading lh-15 font-weight-bold fs-17">
+                            $.1250.000
+                          </span>
+                        </div>
+                        <ul className="list-inline mb-0">
+                          <li className="list-inline-item">
+                            <a
+                              href="#"
+                              data-toggle="tooltip"
+                              title="Wish list"
+                              className="w-40px h-40 border rounded-circle d-inline-flex align-items-center justify-content-center text-secondary bg-accent border-accent"
+                            >
+                              <i className="fas fa-heart" />
+                            </a>
+                          </li>
+                          <li className="list-inline-item">
+                            <a
+                              href="#"
+                              data-toggle="tooltip"
+                              title="Compare"
+                              className="w-40px h-40 border rounded-circle d-inline-flex align-items-center justify-content-center text-body hover-secondary bg-hover-accent border-hover-accent"
+                            >
+                              <i className="fas fa-exchange-alt" />
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="col-md-6 col-xxl-3 mb-6">
+                    <div className="card shadow-hover-1">
+                      <div className="hover-change-image bg-hover-overlay rounded-lg card-img-top">
+                        <img
+                          src="/images/properties-grid-06.jpg"
+                          alt="Home in Metric Way"
+                        />
+                        <div className="card-img-overlay p-2 d-flex flex-column">
+                          <div>
+                            <span className="badge badge-primary">
+                              for sale
+                            </span>
+                          </div>
+                          <div className="mt-auto hover-image">
+                            <ul className="list-inline mb-0 d-flex align-items-end">
+                              <li
+                                className="list-inline-item mr-2"
+                                data-toggle="tooltip"
+                                title="9 /images"
+                              >
+                                <a
+                                  href="#"
+                                  className="text-white hover-primary"
+                                >
+                                  <i className="far fa-/images" />
+                                  <span className="pl-1">9</span>
+                                </a>
+                              </li>
+                              <li
+                                className="list-inline-item"
+                                data-toggle="tooltip"
+                                title="2 Video"
+                              >
+                                <a
+                                  href="#"
+                                  className="text-white hover-primary"
+                                >
+                                  <i className="far fa-play-circle" />
+                                  <span className="pl-1">2</span>
+                                </a>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                      <div className="card-body pt-3">
+                        <h2 className="card-title fs-16 lh-2 mb-0">
+                          <a
+                            href="single-property-1.html"
+                            className="text-dark hover-primary"
+                          >
+                            Home in Metric Way
+                          </a>
+                        </h2>
+                        <p className="card-text font-weight-500 text-gray-light mb-2">
+                          1421 San Pedro St, Los Angeles
+                        </p>
+                        <ul className="list-inline d-flex mb-0 flex-wrap">
+                          <li
+                            className="list-inline-item text-gray font-weight-500 fs-13 d-flex align-items-center mr-2 "
+                            data-toggle="tooltip"
+                            title="3 Br"
+                          >
+                            <svg className="icon icon-bedroom fs-18 text-primary mr-1">
+                              <use xlinkHref="#icon-bedroom" />
+                            </svg>
+                            3 Br
+                          </li>
+                          <li
+                            className="list-inline-item text-gray font-weight-500 fs-13 d-flex align-items-center mr-2"
+                            data-toggle="tooltip"
+                            title="3 Ba"
+                          >
+                            <svg className="icon icon-shower fs-18 text-primary mr-1">
+                              <use xlinkHref="#icon-shower" />
+                            </svg>
+                            3 Ba
+                          </li>
+                          <li
+                            className="list-inline-item text-gray font-weight-500 fs-13 d-flex align-items-center px-1 mr-2"
+                            data-toggle="tooltip"
+                            title="2300 Sq.Ft"
+                          >
+                            <svg className="icon icon-square fs-18 text-primary mr-1">
+                              <use xlinkHref="#icon-square" />
+                            </svg>
+                            2300 Sq.Ft
+                          </li>
+                          <li
+                            className="list-inline-item text-gray font-weight-500 fs-13 d-flex align-items-center mr-2"
+                            data-toggle="tooltip"
+                            title="1 Gr"
+                          >
+                            <svg className="icon icon-Garage fs-18 text-primary mr-1">
+                              <use xlinkHref="#icon-Garage" />
+                            </svg>
+                            1 Gr
+                          </li>
+                        </ul>
+                      </div>
+                      <div className="card-footer bg-transparent d-flex justify-content-between align-items-center py-3">
+                        <div className="mr-auto">
+                          <span className="text-heading lh-15 font-weight-bold fs-17">
+                            $.1250.000
+                          </span>
+                        </div>
+                        <ul className="list-inline mb-0">
+                          <li className="list-inline-item">
+                            <a
+                              href="#"
+                              data-toggle="tooltip"
+                              title="Wish list"
+                              className="w-40px h-40 border rounded-circle d-inline-flex align-items-center justify-content-center text-secondary bg-accent border-accent"
+                            >
+                              <i className="fas fa-heart" />
+                            </a>
+                          </li>
+                          <li className="list-inline-item">
+                            <a
+                              href="#"
+                              data-toggle="tooltip"
+                              title="Compare"
+                              className="w-40px h-40 border rounded-circle d-inline-flex align-items-center justify-content-center text-body hover-secondary bg-hover-accent border-hover-accent"
+                            >
+                              <i className="fas fa-exchange-alt" />
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="col-md-6 col-xxl-3 mb-6">
+                    <div className="card shadow-hover-1">
+                      <div className="hover-change-image bg-hover-overlay rounded-lg card-img-top">
+                        <img
+                          src="/images/properties-grid-05.jpg"
+                          alt="Home in Metric Way"
+                        />
+                        <div className="card-img-overlay p-2 d-flex flex-column">
+                          <div>
+                            <span className="badge badge-primary">
+                              for sale
+                            </span>
+                          </div>
+                          <div className="mt-auto hover-image">
+                            <ul className="list-inline mb-0 d-flex align-items-end">
+                              <li
+                                className="list-inline-item mr-2"
+                                data-toggle="tooltip"
+                                title="9 /images"
+                              >
+                                <a
+                                  href="#"
+                                  className="text-white hover-primary"
+                                >
+                                  <i className="far fa-/images" />
+                                  <span className="pl-1">9</span>
+                                </a>
+                              </li>
+                              <li
+                                className="list-inline-item"
+                                data-toggle="tooltip"
+                                title="2 Video"
+                              >
+                                <a
+                                  href="#"
+                                  className="text-white hover-primary"
+                                >
+                                  <i className="far fa-play-circle" />
+                                  <span className="pl-1">2</span>
+                                </a>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                      <div className="card-body pt-3">
+                        <h2 className="card-title fs-16 lh-2 mb-0">
+                          <a
+                            href="single-property-1.html"
+                            className="text-dark hover-primary"
+                          >
+                            Home in Metric Way
+                          </a>
+                        </h2>
+                        <p className="card-text font-weight-500 text-gray-light mb-2">
+                          1421 San Pedro St, Los Angeles
+                        </p>
+                        <ul className="list-inline d-flex mb-0 flex-wrap">
+                          <li
+                            className="list-inline-item text-gray font-weight-500 fs-13 d-flex align-items-center mr-2 "
+                            data-toggle="tooltip"
+                            title="3 Br"
+                          >
+                            <svg className="icon icon-bedroom fs-18 text-primary mr-1">
+                              <use xlinkHref="#icon-bedroom" />
+                            </svg>
+                            3 Br
+                          </li>
+                          <li
+                            className="list-inline-item text-gray font-weight-500 fs-13 d-flex align-items-center mr-2"
+                            data-toggle="tooltip"
+                            title="3 Ba"
+                          >
+                            <svg className="icon icon-shower fs-18 text-primary mr-1">
+                              <use xlinkHref="#icon-shower" />
+                            </svg>
+                            3 Ba
+                          </li>
+                          <li
+                            className="list-inline-item text-gray font-weight-500 fs-13 d-flex align-items-center px-1 mr-2"
+                            data-toggle="tooltip"
+                            title="2300 Sq.Ft"
+                          >
+                            <svg className="icon icon-square fs-18 text-primary mr-1">
+                              <use xlinkHref="#icon-square" />
+                            </svg>
+                            2300 Sq.Ft
+                          </li>
+                          <li
+                            className="list-inline-item text-gray font-weight-500 fs-13 d-flex align-items-center mr-2"
+                            data-toggle="tooltip"
+                            title="1 Gr"
+                          >
+                            <svg className="icon icon-Garage fs-18 text-primary mr-1">
+                              <use xlinkHref="#icon-Garage" />
+                            </svg>
+                            1 Gr
+                          </li>
+                        </ul>
+                      </div>
+                      <div className="card-footer bg-transparent d-flex justify-content-between align-items-center py-3">
+                        <div className="mr-auto">
+                          <span className="text-heading lh-15 font-weight-bold fs-17">
+                            $.1250.000
+                          </span>
+                        </div>
+                        <ul className="list-inline mb-0">
+                          <li className="list-inline-item">
+                            <a
+                              href="#"
+                              data-toggle="tooltip"
+                              title="Wish list"
+                              className="w-40px h-40 border rounded-circle d-inline-flex align-items-center justify-content-center text-secondary bg-accent border-accent"
+                            >
+                              <i className="fas fa-heart" />
+                            </a>
+                          </li>
+                          <li className="list-inline-item">
+                            <a
+                              href="#"
+                              data-toggle="tooltip"
+                              title="Compare"
+                              className="w-40px h-40 border rounded-circle d-inline-flex align-items-center justify-content-center text-body hover-secondary bg-hover-accent border-hover-accent"
+                            >
+                              <i className="fas fa-exchange-alt" />
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="col-md-6 col-xxl-3 mb-6">
+                    <div className="card shadow-hover-1">
+                      <div className="hover-change-image bg-hover-overlay rounded-lg card-img-top">
+                        <img
+                          src="/images/properties-grid-39.jpg"
+                          alt="Affordable Urban House"
+                        />
+                        <div className="card-img-overlay p-2 d-flex flex-column">
+                          <div>
+                            <span className="badge badge-indigo">for rent</span>
+                          </div>
+                          <div className="mt-auto hover-image">
+                            <ul className="list-inline mb-0 d-flex align-items-end">
+                              <li
+                                className="list-inline-item mr-2"
+                                data-toggle="tooltip"
+                                title="9 /images"
+                              >
+                                <a
+                                  href="#"
+                                  className="text-white hover-primary"
+                                >
+                                  <i className="far fa-/images" />
+                                  <span className="pl-1">9</span>
+                                </a>
+                              </li>
+                              <li
+                                className="list-inline-item"
+                                data-toggle="tooltip"
+                                title="2 Video"
+                              >
+                                <a
+                                  href="#"
+                                  className="text-white hover-primary"
+                                >
+                                  <i className="far fa-play-circle" />
+                                  <span className="pl-1">2</span>
+                                </a>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                      <div className="card-body pt-3">
+                        <h2 className="card-title fs-16 lh-2 mb-0">
+                          <a
+                            href="single-property-1.html"
+                            className="text-dark hover-primary"
+                          >
+                            Affordable Urban House
+                          </a>
+                        </h2>
+                        <p className="card-text font-weight-500 text-gray-light mb-2">
+                          1421 San Pedro St, Los Angeles
+                        </p>
+                        <ul className="list-inline d-flex mb-0 flex-wrap">
+                          <li
+                            className="list-inline-item text-gray font-weight-500 fs-13 d-flex align-items-center mr-2 "
+                            data-toggle="tooltip"
+                            title="3 Br"
+                          >
+                            <svg className="icon icon-bedroom fs-18 text-primary mr-1">
+                              <use xlinkHref="#icon-bedroom" />
+                            </svg>
+                            3 Br
+                          </li>
+                          <li
+                            className="list-inline-item text-gray font-weight-500 fs-13 d-flex align-items-center mr-2"
+                            data-toggle="tooltip"
+                            title="3 Ba"
+                          >
+                            <svg className="icon icon-shower fs-18 text-primary mr-1">
+                              <use xlinkHref="#icon-shower" />
+                            </svg>
+                            3 Ba
+                          </li>
+                          <li
+                            className="list-inline-item text-gray font-weight-500 fs-13 d-flex align-items-center px-1 mr-2"
+                            data-toggle="tooltip"
+                            title="2300 Sq.Ft"
+                          >
+                            <svg className="icon icon-square fs-18 text-primary mr-1">
+                              <use xlinkHref="#icon-square" />
+                            </svg>
+                            2300 Sq.Ft
+                          </li>
+                          <li
+                            className="list-inline-item text-gray font-weight-500 fs-13 d-flex align-items-center mr-2"
+                            data-toggle="tooltip"
+                            title="1 Gr"
+                          >
+                            <svg className="icon icon-Garage fs-18 text-primary mr-1">
+                              <use xlinkHref="#icon-Garage" />
+                            </svg>
+                            1 Gr
+                          </li>
+                        </ul>
+                      </div>
+                      <div className="card-footer bg-transparent d-flex justify-content-between align-items-center py-3">
+                        <div className="mr-auto">
+                          <span className="text-heading lh-15 font-weight-bold fs-17">
+                            $550
+                          </span>
+                          <span className="text-gray-light">/month</span>
+                        </div>
+                        <ul className="list-inline mb-0">
+                          <li className="list-inline-item">
+                            <a
+                              href="#"
+                              data-toggle="tooltip"
+                              title="Wish list"
+                              className="w-40px h-40 border rounded-circle d-inline-flex align-items-center justify-content-center text-secondary bg-accent border-accent"
+                            >
+                              <i className="fas fa-heart" />
+                            </a>
+                          </li>
+                          <li className="list-inline-item">
+                            <a
+                              href="#"
+                              data-toggle="tooltip"
+                              title="Compare"
+                              className="w-40px h-40 border rounded-circle d-inline-flex align-items-center justify-content-center text-body hover-secondary bg-hover-accent border-hover-accent"
+                            >
+                              <i className="fas fa-exchange-alt" />
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </main>
           </div>
@@ -1269,4 +2062,4 @@ const DashBoardMyProfile = () => {
   )
 }
 
-export default DashBoardMyProfile
+export default MyFavorites

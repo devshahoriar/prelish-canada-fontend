@@ -1,27 +1,28 @@
 /* eslint-disable react/no-unescaped-entities */
-
-
-const LoginSignUp = () => {
+const Faq = () => {
   return (
     <>
-      <header className="main-header navbar-light header-sticky header-sticky-smart header-mobile-lg">
+      <header className="main-header position-absolute fixed-top m-0 navbar-dark header-sticky header-sticky-smart header-mobile-xl">
         <div className="sticky-area">
-          <div className="container">
-            <nav className="navbar navbar-expand-lg px-0">
-              <a className="navbar-brand" href="index.html">
-                <img
-                  src="images/logo.png"
-                  alt="HomeID"
-                  className="d-none d-lg-inline-block"
-                />
-                <img
-                  src="images/logo-white.png"
-                  alt="HomeID"
-                  className="d-inline-block d-lg-none"
-                />
-              </a>
-              <div className="d-flex d-lg-none ml-auto">
-                <a className="mr-4 position-relative text-white p-2" href="#">
+          <div className="container container-xxl">
+            <div className="d-flex align-items-center">
+              <nav className="navbar navbar-expand-xl bg-transparent px-0 w-100 w-xl-auto">
+                <a className="navbar-brand mr-7" href="index.html">
+                  <img
+                    src="images/logo-white.png"
+                    alt="HomeID"
+                    className="normal-logo"
+                  />
+                  <img
+                    src="images/logo.png"
+                    alt="HomeID"
+                    className="sticky-logo"
+                  />
+                </a>
+                <a
+                  className="d-block d-xl-none ml-auto mr-4 position-relative text-white p-2"
+                  href="#"
+                >
                   <i className="fal fa-heart fs-large-4" />
                   <span className="badge badge-primary badge-circle badge-absolute">
                     1
@@ -31,8 +32,8 @@ const LoginSignUp = () => {
                   className="navbar-toggler border-0 px-0"
                   type="button"
                   data-toggle="collapse"
-                  data-target="#primaryMenu01"
-                  aria-controls="primaryMenu01"
+                  data-target="#primaryMenu02"
+                  aria-controls="primaryMenu02"
                   aria-expanded="false"
                   aria-label="Toggle navigation"
                 >
@@ -40,899 +41,321 @@ const LoginSignUp = () => {
                     <i className="fal fa-bars" />
                   </span>
                 </button>
-              </div>
-              <div
-                className="collapse navbar-collapse mt-3 mt-lg-0 mx-auto flex-grow-0"
-                id="primaryMenu01"
-              >
-                <ul className="navbar-nav hover-menu main-menu px-0 mx-lg-n4">
-                  <li
-                    id="navbar-item-home"
-                    aria-haspopup="true"
-                    aria-expanded="false"
-                    className="nav-item dropdown py-2 py-lg-5 px-0 px-lg-4"
-                  >
-                    <a
-                      className="nav-link dropdown-toggle p-0"
-                      href="index.html"
-                      data-toggle="dropdown"
+                <div
+                  className="collapse navbar-collapse mt-3 mt-xl-0"
+                  id="primaryMenu02"
+                >
+                  <ul className="navbar-nav hover-menu main-menu px-0 mx-xl-n4">
+                    <li
+                      id="navbar-item-home"
+                      aria-haspopup="true"
+                      aria-expanded="false"
+                      className="nav-item py-2 py-xl-5 px-0 px-xl-4"
                     >
-                      Home
-                      <span className="caret" />
-                    </a>
-                    <ul
-                      className="dropdown-menu pt-3 pb-0 pb-lg-3"
-                      aria-labelledby="navbar-item-home"
+                      <a className="nav-link p-0 text-dark" href="index.html">
+                        Home
+                      </a>
+                    </li>
+                    <li
+                      id="navbar-item-listing"
+                      aria-haspopup="true"
+                      aria-expanded="false"
+                      className="nav-item py-2 py-xl-5 px-0 px-xl-4"
                     >
-                      <li className="dropdown-item">
-                        <a
-                          id="navbar-link-home-01"
-                          className="dropdown-link"
-                          href="home-01.html"
-                        >
-                          Home 01
-                        </a>
-                      </li>
-                      <li className="dropdown-item">
-                        <a
-                          id="navbar-link-home-02"
-                          className="dropdown-link"
-                          href="home-02.html"
-                        >
-                          Home 02
-                        </a>
-                      </li>
-                      <li className="dropdown-item">
-                        <a
-                          id="navbar-link-home-03"
-                          className="dropdown-link"
-                          href="home-03.html"
-                        >
-                          Home 03
-                        </a>
-                      </li>
-                      <li className="dropdown-item">
-                        <a
-                          id="navbar-link-home-04"
-                          className="dropdown-link"
-                          href="home-04.html"
-                        >
-                          Home 04
-                        </a>
-                      </li>
-                      <li className="dropdown-item">
-                        <a
-                          id="navbar-link-home-05"
-                          className="dropdown-link"
-                          href="home-05.html"
-                        >
-                          Home 05
-                        </a>
-                      </li>
-                      <li className="dropdown-item">
-                        <a
-                          id="navbar-link-home-06"
-                          className="dropdown-link"
-                          href="home-06.html"
-                        >
-                          Home 06
-                        </a>
-                      </li>
-                      <li className="dropdown-item">
-                        <a
-                          id="navbar-link-home-07"
-                          className="dropdown-link"
-                          href="home-07.html"
-                        >
-                          Home 07
-                        </a>
-                      </li>
-                      <li className="dropdown-item">
-                        <a
-                          id="navbar-link-home-08"
-                          className="dropdown-link"
-                          href="home-08.html"
-                        >
-                          Home 08
-                        </a>
-                      </li>
-                    </ul>
-                  </li>
-                  <li
-                    id="navbar-item-property"
-                    aria-haspopup="true"
-                    aria-expanded="false"
-                    className="nav-item dropdown py-2 py-lg-5 px-0 px-lg-4"
-                  >
-                    <a
-                      className="nav-link dropdown-toggle p-0"
-                      href="listing.html"
-                      data-toggle="dropdown"
-                    >
-                      Property
-                      <span className="caret" />
-                    </a>
-                    <div
-                      className="dropdown-menu dropdown-menu-xxl px-0 py-3 dropdown-menu-listing"
-                      aria-labelledby="navbar-item-property"
-                    >
-                      <div className="row no-gutters">
-                        <div className="col-lg-3">
-                          {/* Heading */}
-                          <h4 className="dropdown-header text-dark fs-16 mb-2">
-                            List view
-                          </h4>
-                          {/* List */}
-                          <a
-                            className="dropdown-item"
-                            href="listing-full-width-list.html"
-                          >
-                            Full width list
-                          </a>
-                          <a
-                            className="dropdown-item"
-                            href="listing-with-left-filter.html"
-                          >
-                            List with left filter
-                          </a>
-                          <a
-                            className="dropdown-item"
-                            href="listing-with-right-filter.html"
-                          >
-                            List with right filter
-                          </a>
-                          <a
-                            className="dropdown-item"
-                            href="listing-with-left-sidebar.html"
-                          >
-                            List with left sidebar
-                          </a>
-                          {/* List */}
-                          <a
-                            className="dropdown-item"
-                            href="listing-with-right-sidebar.html"
-                          >
-                            List with right sidebar
-                          </a>
-                        </div>
-                        <div className="col-lg-3">
-                          {/* Heading */}
-                          <h4 className="dropdown-header text-dark fs-16 mb-2">
-                            Grid view
-                          </h4>
-                          {/* List */}
-                          <a
-                            className="dropdown-item"
-                            href="listing-full-width-grid-1.html"
-                          >
-                            Full width grid 1
-                          </a>
-                          <a
-                            className="dropdown-item"
-                            href="listing-full-width-grid-2.html"
-                          >
-                            Full width grid 2
-                          </a>
-                          <a
-                            className="dropdown-item"
-                            href="listing-full-width-grid-3.html"
-                          >
-                            Full width grid 3
-                          </a>
-                          <a
-                            className="dropdown-item"
-                            href="listing-grid-with-left-filter.html"
-                          >
-                            Grid with left filter
-                          </a>
-                          <a
-                            className="dropdown-item"
-                            href="listing-grid-with-right-filter.html"
-                          >
-                            Grid with right filter
-                          </a>
-                          <a
-                            className="dropdown-item"
-                            href="listing-grid-with-left-sidebar.html"
-                          >
-                            Grid with left sidebar
-                          </a>
-                          <a
-                            className="dropdown-item"
-                            href="listing-grid-with-right-sidebar.html"
-                          >
-                            Grid with right sidebar
-                          </a>
-                        </div>
-                        <div className="col-lg-3">
-                          {/* Heading */}
-                          <h4 className="dropdown-header text-dark fs-16 mb-2">
-                            Map style
-                          </h4>
-                          {/* List */}
-                          <a
-                            className="dropdown-item"
-                            href="listing-half-map-list-layout-1.html"
-                          >
-                            Half map list layout 1
-                          </a>
-                          <a
-                            className="dropdown-item"
-                            href="listing-half-map-list-layout-2.html"
-                          >
-                            Half map list layout 2
-                          </a>
-                          <a
-                            className="dropdown-item"
-                            href="listing-half-map-grid-layout-1.html"
-                          >
-                            Half map grid layout 1
-                          </a>
-                          <a
-                            className="dropdown-item"
-                            href="listing-half-map-grid-layout-2.html"
-                          >
-                            Half map grid layout 2
-                          </a>
-                          <a
-                            className="dropdown-item"
-                            href="listing-full-map-1.html"
-                          >
-                            Full map 1
-                          </a>
-                          <a
-                            className="dropdown-item"
-                            href="listing-full-map-2.html"
-                          >
-                            Full map 2
-                          </a>
-                          <a
-                            className="dropdown-item"
-                            href="listing-full-map-with-sidebar.html"
-                          >
-                            Full Map with sidebar
-                          </a>
-                        </div>
-                        <div className="col-lg-3">
-                          {/* Heading */}
-                          <h4 className="dropdown-header text-dark fs-16 mb-2">
-                            Single Property
-                          </h4>
-                          {/* List */}
-                          <a
-                            className="dropdown-item"
-                            href="single-property-1.html"
-                          >
-                            Single Property 1
-                          </a>
-                          <a
-                            className="dropdown-item"
-                            href="single-property-2.html"
-                          >
-                            Single Property 2
-                          </a>
-                          <a
-                            className="dropdown-item"
-                            href="single-property-3.html"
-                          >
-                            Single Property 3
-                          </a>
-                          <a
-                            className="dropdown-item"
-                            href="single-property-4.html"
-                          >
-                            Single Property 4
-                          </a>
-                          <a
-                            className="dropdown-item"
-                            href="single-property-5.html"
-                          >
-                            Single Property 5
-                          </a>
-                          <a
-                            className="dropdown-item"
-                            href="single-property-6.html"
-                          >
-                            Single Property 6
-                          </a>
-                          <a
-                            className="dropdown-item"
-                            href="single-property-7.html"
-                          >
-                            Single Property 7
-                          </a>
-                          <a
-                            className="dropdown-item"
-                            href="single-property-8.html"
-                          >
-                            Single Property 8
-                          </a>
-                          <a
-                            className="dropdown-item"
-                            href="single-property-9.html"
-                          >
-                            Single Property 9
-                          </a>
-                        </div>
-                      </div>
-                      {/* / .row */}
-                    </div>
-                  </li>
-                  <li
-                    id="navbar-item-dashboard"
-                    aria-haspopup="true"
-                    aria-expanded="false"
-                    className="nav-item dropdown py-2 py-lg-5 px-0 px-lg-4"
-                  >
-                    <a
-                      className="nav-link dropdown-toggle p-0"
-                      href="#"
-                      data-toggle="dropdown"
-                    >
-                      Dashboard
-                      <span className="caret" />
-                    </a>
-                    <ul
-                      className="dropdown-menu pt-3 pb-0 pb-lg-3"
-                      aria-labelledby="navbar-item-dashboard"
-                    >
-                      <li className="dropdown-item">
-                        <a
-                          id="navbar-link-dashboard"
-                          className="dropdown-link"
-                          href="dashboard.html"
-                        >
-                          Dashboard
-                        </a>
-                      </li>
-                      <li className="dropdown-item">
-                        <a
-                          id="navbar-link-add-new-property"
-                          className="dropdown-link"
-                          href="dashboard-add-new-property.html"
-                        >
-                          Add New Property
-                        </a>
-                      </li>
-                      <li className="dropdown-item">
-                        <a
-                          id="navbar-link-my-properties"
-                          className="dropdown-link"
-                          href="dashboard-my-properties.html"
-                        >
-                          My Properties
-                        </a>
-                      </li>
-                      <li className="dropdown-item">
-                        <a
-                          id="navbar-link-my-favorites"
-                          className="dropdown-link"
-                          href="dashboard-my-favorites.html"
-                        >
-                          My Favorites
-                        </a>
-                      </li>
-                      <li className="dropdown-item">
-                        <a
-                          id="navbar-link-save-search"
-                          className="dropdown-link"
-                          href="dashboard-save-search.html"
-                        >
-                          Save Search
-                        </a>
-                      </li>
-                      <li className="dropdown-item">
-                        <a
-                          id="navbar-link-reviews"
-                          className="dropdown-link"
-                          href="dashboard-reviews.html"
-                        >
-                          Reviews
-                        </a>
-                      </li>
-                      <li className="dropdown-item">
-                        <a
-                          id="navbar-link-my-package"
-                          className="dropdown-link"
-                          href="dashboard-my-packages.html"
-                        >
-                          My Package
-                        </a>
-                      </li>
-                      <li className="dropdown-item">
-                        <a
-                          id="navbar-link-my-profile"
-                          className="dropdown-link"
-                          href="dashboard-my-profiles.html"
-                        >
-                          My Profile
-                        </a>
-                      </li>
-                      <li className="dropdown-item active">
-                        <a
-                          id="navbar-link-signup-and-login"
-                          className="dropdown-link"
-                          href="signup-and-login.html"
-                        >
-                          Signup and login
-                        </a>
-                      </li>
-                      <li className="dropdown-item">
-                        <a
-                          id="navbar-link-password-recovery"
-                          className="dropdown-link"
-                          href="password-recovery.html"
-                        >
-                          Password Recovery
-                        </a>
-                      </li>
-                    </ul>
-                  </li>
-                  <li
-                    id="navbar-item-pages"
-                    aria-haspopup="true"
-                    aria-expanded="false"
-                    className="nav-item dropdown py-2 py-lg-5 px-0 px-lg-4"
-                  >
-                    <a
-                      className="nav-link dropdown-toggle p-0"
-                      href="#"
-                      data-toggle="dropdown"
-                    >
-                      Pages
-                      <span className="caret" />
-                    </a>
-                    <ul
-                      className="dropdown-menu pt-3 pb-0 pb-lg-3"
-                      aria-labelledby="navbar-item-pages"
-                    >
-                      <li className="dropdown-item dropdown dropright">
-                        <a
-                          id="navbar-link-news"
-                          className="dropdown-link dropdown-toggle"
-                          href="#"
-                          data-toggle="dropdown"
-                        >
-                          News
-                        </a>
-                        <ul
-                          className="dropdown-menu dropdown-submenu pt-3 pb-0 pb-lg-3"
-                          aria-labelledby="navbar-link-news"
-                        >
-                          <li className="dropdown-item">
-                            <a
-                              className="dropdown-link"
-                              href="blog-classic.html"
-                            >
-                              Blog classic
-                            </a>
-                          </li>
-                          <li className="dropdown-item">
-                            <a className="dropdown-link" href="blog-grid.html">
-                              Blog grid
-                            </a>
-                          </li>
-                          <li className="dropdown-item">
-                            <a
-                              className="dropdown-link"
-                              href="blog-grid-with-sidebar.html"
-                            >
-                              Blog grid with sidebar
-                            </a>
-                          </li>
-                          <li className="dropdown-item">
-                            <a
-                              className="dropdown-link"
-                              href="blog-list-width-sidebar.html"
-                            >
-                              Blog list with sidebar
-                            </a>
-                          </li>
-                          <li className="dropdown-item">
-                            <a
-                              className="dropdown-link"
-                              href="blog-details-1.html"
-                            >
-                              Blog details 1
-                            </a>
-                          </li>
-                          <li className="dropdown-item">
-                            <a
-                              className="dropdown-link"
-                              href="blog-details-2.html"
-                            >
-                              Blog details 2
-                            </a>
-                          </li>
-                        </ul>
-                      </li>
-                      <li className="dropdown-item">
-                        <a
-                          id="navbar-link-about-us"
-                          className="dropdown-link"
-                          href="about-us.html"
-                        >
-                          About us
-                        </a>
-                      </li>
-                      <li className="dropdown-item dropdown dropright">
-                        <a
-                          id="navbar-link-service"
-                          className="dropdown-link dropdown-toggle"
-                          href="#"
-                          data-toggle="dropdown"
-                        >
-                          Service
-                        </a>
-                        <ul
-                          className="dropdown-menu dropdown-submenu pt-3 pb-0 pb-lg-3"
-                          aria-labelledby="navbar-link-service"
-                        >
-                          <li className="dropdown-item">
-                            <a className="dropdown-link" href="services.html">
-                              Services
-                            </a>
-                          </li>
-                          <li className="dropdown-item">
-                            <a
-                              className="dropdown-link"
-                              href="services-with-sidebar.html"
-                            >
-                              Services with sidebar
-                            </a>
-                          </li>
-                        </ul>
-                      </li>
-                      <li className="dropdown-item dropdown dropright">
-                        <a
-                          id="navbar-link-contact-us"
-                          className="dropdown-link dropdown-toggle"
-                          href="#"
-                          data-toggle="dropdown"
-                        >
-                          Contact us
-                        </a>
-                        <ul
-                          className="dropdown-menu dropdown-submenu pt-3 pb-0 pb-lg-3"
-                          aria-labelledby="navbar-link-contact-us"
-                        >
-                          <li className="dropdown-item">
-                            <a
-                              className="dropdown-link"
-                              href="contact-us-1.html"
-                            >
-                              Contact us 1
-                            </a>
-                          </li>
-                          <li className="dropdown-item">
-                            <a
-                              className="dropdown-link"
-                              href="contact-us-2.html"
-                            >
-                              Contact us 2
-                            </a>
-                          </li>
-                        </ul>
-                      </li>
-                      <li className="dropdown-item dropdown dropright">
-                        <a
-                          id="navbar-link-agent"
-                          className="dropdown-link dropdown-toggle"
-                          href="#"
-                          data-toggle="dropdown"
-                        >
-                          Agent
-                        </a>
-                        <ul
-                          className="dropdown-menu dropdown-submenu pt-3 pb-0 pb-lg-3"
-                          aria-labelledby="navbar-link-agent"
-                        >
-                          <li className="dropdown-item">
-                            <a
-                              className="dropdown-link"
-                              href="agents-grid-1.html"
-                            >
-                              Agents grid 1
-                            </a>
-                          </li>
-                          <li className="dropdown-item">
-                            <a
-                              className="dropdown-link"
-                              href="agents-grid-2.html"
-                            >
-                              Agents grid 2
-                            </a>
-                          </li>
-                          <li className="dropdown-item">
-                            <a
-                              className="dropdown-link"
-                              href="agents-grid-with-sidebar.html"
-                            >
-                              Agents grid with sidebar
-                            </a>
-                          </li>
-                          <li className="dropdown-item">
-                            <a
-                              className="dropdown-link"
-                              href="agents-list.html"
-                            >
-                              Agents list
-                            </a>
-                          </li>
-                          <li className="dropdown-item">
-                            <a
-                              className="dropdown-link"
-                              href="agent-details-1.html"
-                            >
-                              Agent detais 1
-                            </a>
-                          </li>
-                          <li className="dropdown-item">
-                            <a
-                              className="dropdown-link"
-                              href="agent-details-2.html"
-                            >
-                              Agent detais 2
-                            </a>
-                          </li>
-                        </ul>
-                      </li>
-                      <li className="dropdown-item dropdown dropright">
-                        <a
-                          id="navbar-link-agency"
-                          className="dropdown-link dropdown-toggle"
-                          href="#"
-                          data-toggle="dropdown"
-                        >
-                          Agency
-                        </a>
-                        <ul
-                          className="dropdown-menu dropdown-submenu pt-3 pb-0 pb-lg-3"
-                          aria-labelledby="navbar-link-agency"
-                        >
-                          <li className="dropdown-item">
-                            <a
-                              className="dropdown-link"
-                              href="agency-grid.html"
-                            >
-                              Agency grid
-                            </a>
-                          </li>
-                          <li className="dropdown-item">
-                            <a
-                              className="dropdown-link"
-                              href="agency-list.html"
-                            >
-                              Agency list
-                            </a>
-                          </li>
-                          <li className="dropdown-item">
-                            <a
-                              className="dropdown-link"
-                              href="agency-details-1.html"
-                            >
-                              Agency details 1
-                            </a>
-                          </li>
-                          <li className="dropdown-item">
-                            <a
-                              className="dropdown-link"
-                              href="agency-details-2.html"
-                            >
-                              Agency details 2
-                            </a>
-                          </li>
-                        </ul>
-                      </li>
-                      <li className="dropdown-item">
-                        <a
-                          id="navbar-link-faqs"
-                          className="dropdown-link"
-                          href="faqs.html"
-                        >
-                          FAQs
-                        </a>
-                      </li>
-                      <li className="dropdown-item">
-                        <a
-                          id="navbar-link-page-404"
-                          className="dropdown-link"
-                          href="page-404.html"
-                        >
-                          Page 404
-                        </a>
-                      </li>
-                      <li className="dropdown-item">
-                        <a
-                          id="navbar-link-checkout"
-                          className="dropdown-link"
-                          href="checkout-complete-1.html"
-                        >
-                          Checkout
-                        </a>
-                      </li>
-                      <li className="dropdown-item">
-                        <a
-                          id="navbar-link-payment-completed"
-                          className="dropdown-link"
-                          href="checkout-complete-2.html"
-                        >
-                          Payment Completed
-                        </a>
-                      </li>
-                      <li className="dropdown-item">
-                        <a
-                          id="navbar-link-compare"
-                          className="dropdown-link"
-                          href="compare-details.html"
-                        >
-                          Compare
-                        </a>
-                      </li>
-                      <li className="dropdown-item">
-                        <a
-                          id="navbar-link-packages"
-                          className="dropdown-link"
-                          href="packages.html"
-                        >
-                          Packages
-                        </a>
-                      </li>
-                    </ul>
-                  </li>
-                  <li
-                    id="navbar-item-docs"
-                    aria-haspopup="true"
-                    aria-expanded="false"
-                    className="nav-item dropdown py-2 py-lg-5 px-0 px-lg-4"
-                  >
-                    <a
-                      className="nav-link dropdown-toggle p-0"
-                      href="#"
-                      data-toggle="dropdown"
-                    >
-                      Docs
-                      <span className="caret" />
-                    </a>
-                    <div className="dropdown-menu px-0 pt-3 dropdown-menu-docs">
-                      <div className="dropdown-body">
-                        <a
-                          className="dropdown-item py-1"
-                          href="docs/getting-started/dev-environment-setup.html"
-                        >
-                          <div className="media">
-                            <div className="fs-20 mr-3">
-                              <i className="fal fa-file-alt" />
-                            </div>
-                            <div className="media-body">
-                              <span className="d-block lh-15">
-                                Documentation
-                              </span>
-                              <small className="d-block">
-                                Kick-start customization
-                              </small>
-                            </div>
-                          </div>
-                        </a>
-                        <div className="dropdown-divider m-0" />
-                        <a
-                          className="dropdown-item py-1"
-                          href="docs/content/typography.html"
-                        >
-                          <div className="media">
-                            <div className="fs-20 mr-3">
-                              <i className="fal fa-layer-group" />
-                            </div>
-                            <div className="media-body">
-                              <span className="d-block lh-15">
-                                UI Kit
-                                <span className="badge badge-danger ml-2">
-                                  50+
-                                </span>
-                              </span>
-                              <small className="d-block">
-                                Flexible components
-                              </small>
-                            </div>
-                          </div>
-                        </a>
-                        <div className="dropdown-divider m-0" />
-                        <a
-                          className="dropdown-item py-1"
-                          href="docs/getting-started/changelog.html"
-                        >
-                          <div className="media">
-                            <div className="fs-20 mr-3">
-                              <i className="fal fa-edit" />
-                            </div>
-                            <div className="media-body">
-                              <span className="d-block lh-15">
-                                Changelog
-                                <span className="badge badge-success ml-2">
-                                  v1.0.1
-                                </span>
-                              </span>
-                              <small className="d-block">Regular updates</small>
-                            </div>
-                          </div>
-                        </a>
-                        <div className="dropdown-divider m-0" />
-                        <a
-                          className="dropdown-item py-1"
-                          href="https://sp.g5plus.net/"
-                        >
-                          <div className="media">
-                            <div className="fs-20 mr-3">
-                              <i className="fal fa-life-ring" />
-                            </div>
-                            <div className="media-body">
-                              <span className="d-block lh-15">Support</span>
-                              <small className="d-block">
-                                https://sp.g5plus.net/
-                              </small>
-                            </div>
-                          </div>
-                        </a>
-                      </div>
-                    </div>
-                  </li>
-                </ul>
-                <div className="d-block d-lg-none">
-                  <ul className="navbar-nav flex-row justify-content-lg-end d-flex flex-wrap py-2">
-                    <li className="nav-item dropdown">
                       <a
-                        className="nav-link dropdown-toggle mr-md-2 pr-2 pl-0 pl-lg-2"
+                        className="nav-link p-0 text-dark"
+                        href="listing-half-map-list-layout-1.html"
+                      >
+                        Map
+                      </a>
+                    </li>
+                    <li
+                      id="navbar-item-dashboard"
+                      aria-haspopup="true"
+                      aria-expanded="false"
+                      className="nav-item dropdown py-2 py-xl-5 px-0 px-xl-4"
+                    >
+                      <a
+                        className="nav-link dropdown-toggle p-0"
                         href="#"
                         data-toggle="dropdown"
-                        aria-haspopup="true"
-                        aria-expanded="false"
                       >
-                        ENG
+                        Dashboard
+                        <span className="caret" />
                       </a>
-                      <div className="dropdown-menu dropdown-sm dropdown-menu-left">
-                        <a className="dropdown-item" href="#">
-                          VN
-                        </a>
-                        <a className="dropdown-item active" href="#">
-                          ENG
-                        </a>
-                        <div className="dropdown-divider" />
-                        <a className="dropdown-item" href="#">
-                          ARB
-                        </a>
-                        <a className="dropdown-item" href="#">
-                          KR
-                        </a>
-                        <a className="dropdown-item" href="#">
-                          JN
-                        </a>
-                      </div>
+                      <ul
+                        className="dropdown-menu pt-3 pb-0 pb-xl-3"
+                        aria-labelledby="navbar-item-dashboard"
+                      >
+                        <li className="dropdown-item">
+                          <a
+                            id="navbar-link-dashboard"
+                            className="dropdown-link"
+                            href="dashboard.html"
+                          >
+                            Dashboard
+                          </a>
+                        </li>
+                        <li className="dropdown-item">
+                          <a
+                            id="navbar-link-add-new-property"
+                            className="dropdown-link"
+                            href="dashboard-add-new-property.html"
+                          >
+                            Add New Property
+                          </a>
+                        </li>
+                        <li className="dropdown-item">
+                          <a
+                            id="navbar-link-my-properties"
+                            className="dropdown-link"
+                            href="dashboard-my-properties.html"
+                          >
+                            My Properties
+                          </a>
+                        </li>
+                        <li className="dropdown-item">
+                          <a
+                            id="navbar-link-my-favorites"
+                            className="dropdown-link"
+                            href="dashboard-my-favorites.html"
+                          >
+                            My Favorites
+                          </a>
+                        </li>
+                        <li className="dropdown-item">
+                          <a
+                            id="navbar-link-save-search"
+                            className="dropdown-link"
+                            href="dashboard-save-search.html"
+                          >
+                            Save Search
+                          </a>
+                        </li>
+                        <li className="dropdown-item">
+                          <a
+                            id="navbar-link-reviews"
+                            className="dropdown-link"
+                            href="dashboard-reviews.html"
+                          >
+                            Reviews
+                          </a>
+                        </li>
+                        <li className="dropdown-item">
+                          <a
+                            id="navbar-link-my-package"
+                            className="dropdown-link"
+                            href="dashboard-my-packages.html"
+                          >
+                            My Package
+                          </a>
+                        </li>
+                        <li className="dropdown-item">
+                          <a
+                            id="navbar-link-my-profile"
+                            className="dropdown-link"
+                            href="dashboard-my-profiles.html"
+                          >
+                            My Profile
+                          </a>
+                        </li>
+                        <li className="dropdown-item">
+                          <a
+                            id="navbar-link-signup-and-login"
+                            className="dropdown-link"
+                            href="signup-and-login.html"
+                          >
+                            Signup and login
+                          </a>
+                        </li>
+                        <li className="dropdown-item">
+                          <a
+                            id="navbar-link-password-recovery"
+                            className="dropdown-link"
+                            href="password-recovery.html"
+                          >
+                            Password Recovery
+                          </a>
+                        </li>
+                      </ul>
                     </li>
-                    <li className="nav-item">
+                    <li
+                      id="navbar-item-pages"
+                      aria-haspopup="true"
+                      aria-expanded="false"
+                      className="nav-item dropdown py-2 py-xl-5 px-0 px-xl-4"
+                    >
                       <a
-                        className="nav-link  px-2"
-                        data-toggle="modal"
-                        href="#login-register-modal"
+                        className="nav-link dropdown-toggle p-0"
+                        href="#"
+                        data-toggle="dropdown"
                       >
-                        SIGN IN
+                        Pages
+                        <span className="caret" />
                       </a>
+                      <ul
+                        className="dropdown-menu pt-3 pb-0 pb-xl-3"
+                        aria-labelledby="navbar-item-pages"
+                      >
+                        <li className="dropdown-item dropdown dropright">
+                          <a className="dropdown-link" href="blog-grid.html">
+                            Blog
+                          </a>
+                        </li>
+                        <li className="dropdown-item">
+                          <a
+                            id="navbar-link-about-us"
+                            className="dropdown-link"
+                            href="about-us.html"
+                          >
+                            About us
+                          </a>
+                        </li>
+                        <li className="dropdown-item dropdown dropright">
+                          <a className="dropdown-link" href="services.html">
+                            Services
+                          </a>
+                        </li>
+                        <li className="dropdown-item dropdown dropright">
+                          <a className="dropdown-link" href="contact-us-1.html">
+                            Contact us
+                          </a>
+                        </li>
+                        <li className="dropdown-item">
+                          <a
+                            id="navbar-link-faqs"
+                            className="dropdown-link"
+                            href="faqs.html"
+                          >
+                            FAQs
+                          </a>
+                        </li>
+                        <li className="dropdown-item">
+                          <a
+                            id="navbar-link-page-404"
+                            className="dropdown-link"
+                            href="page-404.html"
+                          >
+                            Page 404
+                          </a>
+                        </li>
+                        <li className="dropdown-item">
+                          <a
+                            id="navbar-link-checkout"
+                            className="dropdown-link"
+                            href="checkout-complete-1.html"
+                          >
+                            Checkout
+                          </a>
+                        </li>
+                        <li className="dropdown-item">
+                          <a
+                            id="navbar-link-payment-completed"
+                            className="dropdown-link"
+                            href="checkout-complete-2.html"
+                          >
+                            Payment Completed
+                          </a>
+                        </li>
+                        <li className="dropdown-item">
+                          <a
+                            id="navbar-link-compare"
+                            className="dropdown-link"
+                            href="compare-details.html"
+                          >
+                            Compare
+                          </a>
+                        </li>
+                        <li className="dropdown-item">
+                          <a
+                            id="navbar-link-packages"
+                            className="dropdown-link"
+                            href="packages.html"
+                          >
+                            Packages
+                          </a>
+                        </li>
+                      </ul>
                     </li>
                   </ul>
+                  <div className="d-block d-xl-none">
+                    <ul className="navbar-nav flex-row ml-auto align-items-center justify-content-lg-end flex-wrap py-2">
+                      <li className="nav-item dropdown">
+                        <a
+                          className="nav-link dropdown-toggle mr-md-2 pr-2 pl-0 pl-lg-2"
+                          href="#"
+                          id="bd-versions-mobile"
+                          data-toggle="dropdown"
+                          aria-haspopup="true"
+                          aria-expanded="false"
+                        >
+                          ENG
+                        </a>
+                        <div
+                          className="dropdown-menu dropdown-sm dropdown-menu-left"
+                          aria-labelledby="bd-versions-mobile"
+                        >
+                          <a className="dropdown-item" href="#">
+                            VN
+                          </a>
+                          <a className="dropdown-item active" href="#">
+                            ENG
+                          </a>
+                          <a className="dropdown-item" href="#">
+                            ARB
+                          </a>
+                          <a className="dropdown-item" href="#">
+                            KR
+                          </a>
+                          <a className="dropdown-item" href="#">
+                            JN
+                          </a>
+                        </div>
+                      </li>
+                      <li className="divider" />
+                      <li className="nav-item ">
+                        <a
+                          className="nav-link pl-3 pr-2"
+                          data-toggle="modal"
+                          href="#login-register-modal"
+                        >
+                          SIGN IN
+                        </a>
+                      </li>
+                      <li className="nav-item ml-auto w-100 w-sm-auto">
+                        <a
+                          className="btn btn-primary btn-lg"
+                          href="dashboard-add-new-property.html"
+                        >
+                          Add listing
+                          <img
+                            src="images/add-listing-icon.png"
+                            alt="Add listing"
+                            className="ml-1"
+                          />
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
                 </div>
-              </div>
-              <div className="d-none d-lg-block">
-                <ul className="navbar-nav flex-row justify-content-lg-end d-flex flex-wrap text-body py-2">
+              </nav>
+              <div className="ml-auto d-none d-xl-block">
+                <ul className="navbar-nav flex-row ml-auto align-items-center justify-content-lg-end flex-wrap py-2">
                   <li className="nav-item dropdown">
                     <a
                       className="nav-link dropdown-toggle mr-md-2 pr-2 pl-0 pl-lg-2"
                       href="#"
+                      id="bd-versions"
                       data-toggle="dropdown"
                       aria-haspopup="true"
                       aria-expanded="false"
                     >
                       ENG
                     </a>
-                    <div className="dropdown-menu dropdown-sm dropdown-menu-right">
+                    <div
+                      className="dropdown-menu dropdown-sm dropdown-menu-right"
+                      aria-labelledby="bd-versions"
+                    >
                       <a className="dropdown-item" href="#">
                         VN
                       </a>
@@ -950,16 +373,17 @@ const LoginSignUp = () => {
                       </a>
                     </div>
                   </li>
-                  <li className="nav-item">
+                  <li className="divider" />
+                  <li className="nav-item ">
                     <a
-                      className="nav-link  px-2"
+                      className="nav-link pl-3 pr-2"
                       data-toggle="modal"
                       href="#login-register-modal"
                     >
                       SIGN IN
                     </a>
                   </li>
-                  <li className="nav-item">
+                  <li className="nav-item mr-auto mr-lg-6">
                     <a className="nav-link px-2 position-relative" href="#">
                       <i className="fal fa-heart fs-large-4" />
                       <span className="badge badge-primary badge-circle badge-absolute">
@@ -967,303 +391,1445 @@ const LoginSignUp = () => {
                       </span>
                     </a>
                   </li>
+                  <li className="nav-item">
+                    <a
+                      className="btn btn-outline-light btn-lg text-white rounded-lg bg-hover-primary border-hover-primary hover-white d-none d-lg-block"
+                      href="dashboard-add-new-property.html"
+                    >
+                      Add listing
+                      <img
+                        src="images/add-listing-icon.png"
+                        alt="Add listing"
+                        className="ml-1 normal-button-icon"
+                      />
+                      <img
+                        src="images/add-listing-icon-primary.png"
+                        alt="Add listing"
+                        className="ml-1 sticky-button-icon"
+                      />
+                    </a>
+                    <a
+                      className="btn btn-primary btn-lg d-block d-lg-none"
+                      href="dashboard-add-new-property.html"
+                    >
+                      Add listing
+                      <img
+                        src="images/add-listing-icon.png"
+                        alt="Add listing"
+                        className="ml-1"
+                      />
+                    </a>
+                  </li>
                 </ul>
               </div>
-            </nav>
+            </div>
           </div>
         </div>
       </header>
       <main id="content">
-        <section className="py-13">
-          <div className="container">
-            <div className="row login-register">
-              <div className="col-lg-5">
-                <div className="card border-0 shadow-xxs-2 mb-6">
-                  <div className="card-body px-8 py-6">
-                    <h2 className="card-title fs-30 font-weight-600 text-dark lh-16 mb-2">
-                      Log In
-                    </h2>
-                    <p className="mb-4">
-                      Already have an account?{' '}
-                      <a href="#" className="text-heading hover-primary">
-                        <u>Log in</u>
-                      </a>
-                    </p>
-                    <form className="form">
-                      <div className="form-group mb-4">
-                        <label htmlFor="username-1">Email</label>
-                        <input
-                          type="text"
-                          className="form-control form-control-lg border-0"
-                          id="username-1"
-                          name="username"
-                          placeholder="Your email"
-                        />
-                      </div>
-                      <div className="form-group mb-4">
-                        <label htmlFor="password-2">Password</label>
-                        <div className="input-group input-group-lg">
-                          <input
-                            type="text"
-                            className="form-control border-0 shadow-none fs-13"
-                            id="password-2"
-                            name="password"
-                            placeholder="Password"
-                          />
-                          <div className="input-group-append">
-                            <span className="input-group-text bg-gray-01 border-0 text-body fs-18">
-                              <i className="far fa-eye-slash" />
-                            </span>
+        <section className="pt-4 pt-lg-12">
+          <div className="page-title mb-2">
+            <div className="container">
+              <nav aria-label="breadcrumb">
+                <ol className="breadcrumb pt-6 pt-lg-0 pb-0 justify-content-center">
+                  <li className="breadcrumb-item">
+                    <a href="#">Home</a>
+                  </li>
+                  <li className="breadcrumb-item active" aria-current="page">
+                    Pages
+                  </li>
+                </ol>
+              </nav>
+            </div>
+          </div>
+          <h2 className="fs-32 lh-16 mb-8 text-dark text-center">
+            Frequently Asked Questions
+          </h2>
+          <div className="collapse-tabs">
+            <ul
+              className="tabs-01 nav nav-tabs justify-content-center text-uppercase d-none d-md-flex"
+              role="tablist"
+            >
+              <li className="nav-item">
+                <a
+                  href="#selling1"
+                  className="nav-link active rounded-0 lh-2 fs-13 bg-white py-1 px-6 shadow-none"
+                  data-toggle="tab"
+                  role="tab"
+                >
+                  Question about selling
+                </a>
+              </li>
+              <li className="nav-item">
+                <a
+                  href="#renting1"
+                  className="nav-link rounded-0 lh-2 fs-13 bg-white py-1 px-6 shadow-none"
+                  data-toggle="tab"
+                  role="tab"
+                >
+                  Question about renting
+                </a>
+              </li>
+              <li className="nav-item dropdown">
+                <a
+                  href="#question1"
+                  className="nav-link rounded-0 lh-2 fs-13 bg-white py-1 px-6 shadow-none"
+                  data-toggle="tab"
+                  role="tab"
+                >
+                  Other question
+                </a>
+              </li>
+            </ul>
+            <div className="tab-content shadow-none rounded-0 pt-8 pt-md-10 pb-10 pb-md-12 px-0 bg-gray-01">
+              <div id="collapse-tabs-accordion-01">
+                <div
+                  className="tab-pane tab-pane-parent fade show active container "
+                  id="selling1"
+                  role="tabpanel"
+                >
+                  <div className="card border-0 bg-transparent">
+                    <div
+                      className="card-header border-0 d-block d-md-none bg-transparent px-0 py-1"
+                      id="headingSelling-01"
+                    >
+                      <h5 className="mb-0">
+                        <button
+                          className="btn lh-2 fs-18 bg-white py-1 px-6 shadow-none w-100 collapse-parent border"
+                          data-toggle="collapse"
+                          data-target="#selling-collapse-01"
+                          aria-expanded="true"
+                          aria-controls="selling-collapse-01"
+                        >
+                          Question about selling
+                        </button>
+                      </h5>
+                    </div>
+                    <div
+                      id="selling-collapse-01"
+                      className="collapse show collapsible"
+                      aria-labelledby="headingSelling-01"
+                      data-parent="#collapse-tabs-accordion-01"
+                    >
+                      <div
+                        id="accordion-style-01"
+                        className="accordion accordion-01 row my-7 my-md-0 mx-3 mx-md-0"
+                      >
+                        <div className="col-md-6">
+                          <div className="card border-0 shadow-xxs-2 mb-6 rounded-top overflow-hidden">
+                            <div
+                              className="card-header border-0 p-0 rounded-top"
+                              id="heading_1"
+                            >
+                              <h5 className="mb-0">
+                                <button
+                                  className="btn btn-link font-weight-500 pl-6 pr-7 py-3 fs-16 position-relative w-100 text-left rounded-0"
+                                  data-toggle="collapse"
+                                  data-target="#collapse_1"
+                                  aria-expanded="true"
+                                  aria-controls="collapse_1"
+                                >
+                                  How can we help?
+                                </button>
+                              </h5>
+                            </div>
+                            <div
+                              id="collapse_1"
+                              className="collapse show"
+                              aria-labelledby="heading_1"
+                              data-parent="#accordion-style-01"
+                            >
+                              <div className="card-body fs-13 lh-2 pl-6 pr-7 pb-6">
+                                GrandHome is intended to be highly responsive
+                                and customizable for site building process.
+                                Thanks to its devoted, fastidious, and compact
+                                design, Mitech can be considered among plenty of
+                                unique themes that serve to create highly
+                                responsive websites.
+                              </div>
+                            </div>
+                          </div>
+                          <div className="card border-0 shadow-xxs-2 mb-6 rounded-top overflow-hidden">
+                            <div
+                              className="card-header border-0 p-0"
+                              id="heading_2"
+                            >
+                              <h5 className="mb-0">
+                                <button
+                                  className="btn btn-link font-weight-500 pl-6 pr-7 py-3 fs-16 position-relative w-100 text-left rounded-0 collapsed"
+                                  data-toggle="collapse"
+                                  data-target="#collapse_2"
+                                  aria-expanded="true"
+                                  aria-controls="collapse_2"
+                                >
+                                  How do I delete my account?
+                                </button>
+                              </h5>
+                            </div>
+                            <div
+                              id="collapse_2"
+                              className="collapse"
+                              aria-labelledby="heading_2"
+                              data-parent="#accordion-style-01"
+                            >
+                              <div className="card-body fs-13 lh-2 pl-6 pr-7 pb-6">
+                                GrandHome is intended to be highly responsive
+                                and customizable for site building process.
+                                Thanks to its devoted, fastidious, and compact
+                                design, Mitech can be considered among plenty of
+                                unique themes that serve to create highly
+                                responsive websites.
+                              </div>
+                            </div>
+                          </div>
+                          <div className="card border-0 shadow-xxs-2 rounded-top overflow-hidden">
+                            <div
+                              className="card-header border-0 p-0"
+                              id="heading_3"
+                            >
+                              <h5 className="mb-0">
+                                <button
+                                  className="btn btn-link font-weight-500 pl-6 pr-7 py-3 fs-16 position-relative w-100 text-left rounded-0 collapsed"
+                                  data-toggle="collapse"
+                                  data-target="#collapse_3"
+                                  aria-expanded="true"
+                                  aria-controls="collapse_3"
+                                >
+                                  Do you store any of my information?
+                                </button>
+                              </h5>
+                            </div>
+                            <div
+                              id="collapse_3"
+                              className="collapse"
+                              aria-labelledby="heading_3"
+                              data-parent="#accordion-style-01"
+                            >
+                              <div className="card-body fs-13 lh-2 pl-6 pr-7 pb-6">
+                                GrandHome is intended to be highly responsive
+                                and customizable for site building process.
+                                Thanks to its devoted, fastidious, and compact
+                                design, Mitech can be considered among plenty of
+                                unique themes that serve to create highly
+                                responsive websites.
+                              </div>
+                            </div>
                           </div>
                         </div>
-                      </div>
-                      <div className="d-flex mb-4">
-                        <div className="form-check">
-                          <input
-                            className="form-check-input"
-                            type="checkbox"
-                            defaultValue=""
-                            id="remember-me-1"
-                            name="remember"
-                          />
-                          <label
-                            className="form-check-label"
-                            htmlFor="remember-me-1"
-                          >
-                            Stay signed in
-                          </label>
+                        <div className="col-md-6 pt-md-0 pt-6">
+                          <div className="card border-0 shadow-xxs-2 mb-6 rounded-top overflow-hidden">
+                            <div
+                              className="card-header border-0 p-0 rounded-top"
+                              id="heading_4"
+                            >
+                              <h5 className="mb-0">
+                                <button
+                                  className="btn btn-link font-weight-500 pl-6 pr-7 py-3 fs-16 position-relative w-100 text-left rounded-0 collapsed"
+                                  data-toggle="collapse"
+                                  data-target="#collapse_4"
+                                  aria-expanded="true"
+                                  aria-controls="collapse_4"
+                                >
+                                  I’ve got a problem, how do I contact support?
+                                </button>
+                              </h5>
+                            </div>
+                            <div
+                              id="collapse_4"
+                              className="collapse"
+                              aria-labelledby="heading_4"
+                              data-parent="#accordion-style-01"
+                            >
+                              <div className="card-body fs-13 lh-2 pl-6 pr-7 pb-6">
+                                GrandHome is intended to be highly responsive
+                                and customizable for site building process.
+                                Thanks to its devoted, fastidious, and compact
+                                design, Mitech can be considered among plenty of
+                                unique themes that serve to create highly
+                                responsive websites.
+                              </div>
+                            </div>
+                          </div>
+                          <div className="card border-0 shadow-xxs-2 mb-6 rounded-top overflow-hidden">
+                            <div
+                              className="card-header border-0 p-0"
+                              id="heading_5"
+                            >
+                              <h5 className="mb-0">
+                                <button
+                                  className="btn btn-link font-weight-500 pl-6 pr-7 py-3 fs-16 position-relative w-100 text-left rounded-0 collapsed"
+                                  data-toggle="collapse"
+                                  data-target="#collapse_5"
+                                  aria-expanded="true"
+                                  aria-controls="collapse_5"
+                                >
+                                  How do I delete my account?
+                                </button>
+                              </h5>
+                            </div>
+                            <div
+                              id="collapse_5"
+                              className="collapse"
+                              aria-labelledby="heading_5"
+                              data-parent="#accordion-style-01"
+                            >
+                              <div className="card-body fs-13 lh-2 pl-6 pr-7 pb-6">
+                                GrandHome is intended to be highly responsive
+                                and customizable for site building process.
+                                Thanks to its devoted, fastidious, and compact
+                                design, Mitech can be considered among plenty of
+                                unique themes that serve to create highly
+                                responsive websites.
+                              </div>
+                            </div>
+                          </div>
+                          <div className="card border-0 shadow-xxs-2 rounded-top overflow-hidden">
+                            <div
+                              className="card-header border-0 p-0"
+                              id="heading_6"
+                            >
+                              <h5 className="mb-0">
+                                <button
+                                  className="btn btn-link font-weight-500 pl-6 pr-7 py-3 fs-16 position-relative w-100 text-left rounded-0 collapsed"
+                                  data-toggle="collapse"
+                                  data-target="#collapse_6"
+                                  aria-expanded="true"
+                                  aria-controls="collapse_6"
+                                >
+                                  What is cloud backup?
+                                </button>
+                              </h5>
+                            </div>
+                            <div
+                              id="collapse_6"
+                              className="collapse"
+                              aria-labelledby="heading_6"
+                              data-parent="#accordion-style-01"
+                            >
+                              <div className="card-body fs-13 lh-2 pl-6 pr-7 pb-6">
+                                GrandHome is intended to be highly responsive
+                                and customizable for site building process.
+                                Thanks to its devoted, fastidious, and compact
+                                design, Mitech can be considered among plenty of
+                                unique themes that serve to create highly
+                                responsive websites.
+                              </div>
+                            </div>
+                          </div>
                         </div>
-                        <a
-                          href="password-recovery.html"
-                          className="d-inline-block ml-auto fs-13 lh-2 text-body"
-                        >
-                          <u>Forgot your password?</u>
-                        </a>
-                      </div>
-                      <button
-                        type="submit"
-                        className="btn btn-primary btn-lg btn-block rounded"
-                      >
-                        Log in
-                      </button>
-                    </form>
-                    <div className="divider text-center my-2">
-                      <span className="px-4 bg-white lh-17 text text-heading">
-                        or Log-in with
-                      </span>
-                    </div>
-                    <div className="row no-gutters mx-n2">
-                      <div className="col-sm-6 px-2 mb-4">
-                        <a
-                          href="#"
-                          className="btn btn-lg btn-block text-heading border px-0 bg-hover-accent"
-                        >
-                          <img
-                            src="images/facebook.png"
-                            alt="Google"
-                            className="mr-2"
-                          />
-                          Facebook
-                        </a>
-                      </div>
-                      <div className="col-sm-6 px-2 mb-4">
-                        <a
-                          href="#"
-                          className="btn btn-lg btn-block text-heading border px-0 bg-hover-accent"
-                        >
-                          <img
-                            src="images/google.png"
-                            alt="Google"
-                            className="mr-2"
-                          />
-                          Google
-                        </a>
                       </div>
                     </div>
                   </div>
                 </div>
-                <div className="media rounded-lg bg-gray-01 p-6 mb-6 mb-lg-0">
-                  <div className="mr-6 fs-60 lh-1 text-primary">
-                    <svg className="icon icon-r">
-                      <use xlinkHref="#icon-r" />
-                    </svg>
+                <div
+                  className="tab-pane tab-pane-parent fade container"
+                  id="renting1"
+                  role="tabpanel"
+                >
+                  <div className="card border-0 bg-transparent">
+                    <div
+                      className="card-header border-0 d-block d-md-none bg-transparent px-0 py-1"
+                      id="headingRenting-01"
+                    >
+                      <h5 className="mb-0">
+                        <button
+                          className="btn lh-2 fs-18 bg-white py-1 px-6 shadow-none w-100 collapse-parent border collapsed"
+                          data-toggle="collapse"
+                          data-target="#renting-collapse-01"
+                          aria-expanded="true"
+                          aria-controls="renting-collapse-01"
+                        >
+                          Question about renting
+                        </button>
+                      </h5>
+                    </div>
+                    <div
+                      id="renting-collapse-01"
+                      className="collapse collapsible"
+                      aria-labelledby="headingRenting-01"
+                      data-parent="#collapse-tabs-accordion-01"
+                    >
+                      <div
+                        id="accordion-style-01-2"
+                        className="accordion accordion-01 row my-7 my-md-0 mx-3 mx-md-0"
+                      >
+                        <div className="col-md-6">
+                          <div className="card border-0 shadow-xxs-2 mb-6 rounded-top overflow-hidden">
+                            <div
+                              className="card-header border-0 p-0 rounded-top"
+                              id="heading_10"
+                            >
+                              <h5 className="mb-0">
+                                <button
+                                  className="btn btn-link font-weight-500 pl-6 pr-7 py-3 fs-16 position-relative w-100 text-left rounded-0"
+                                  data-toggle="collapse"
+                                  data-target="#collapse_10"
+                                  aria-expanded="true"
+                                  aria-controls="collapse_10"
+                                >
+                                  I’ve got a problem, how do I contact support?
+                                </button>
+                              </h5>
+                            </div>
+                            <div
+                              id="collapse_10"
+                              className="collapse show"
+                              aria-labelledby="heading_10"
+                              data-parent="#accordion-style-01-2"
+                            >
+                              <div className="card-body fs-13 lh-2 pl-6 pr-7 pb-6">
+                                GrandHome is intended to be highly responsive
+                                and customizable for site building process.
+                                Thanks to its devoted, fastidious, and compact
+                                design, Mitech can be considered among plenty of
+                                unique themes that serve to create highly
+                                responsive websites.
+                              </div>
+                            </div>
+                          </div>
+                          <div className="card border-0 shadow-xxs-2 mb-6 rounded-top overflow-hidden">
+                            <div
+                              className="card-header border-0 p-0"
+                              id="heading_11"
+                            >
+                              <h5 className="mb-0">
+                                <button
+                                  className="btn btn-link font-weight-500 pl-6 pr-7 py-3 fs-16 position-relative w-100 text-left rounded-0 collapsed"
+                                  data-toggle="collapse"
+                                  data-target="#collapse_11"
+                                  aria-expanded="true"
+                                  aria-controls="collapse_11"
+                                >
+                                  How do I delete my account?
+                                </button>
+                              </h5>
+                            </div>
+                            <div
+                              id="collapse_11"
+                              className="collapse"
+                              aria-labelledby="heading_11"
+                              data-parent="#accordion-style-01-2"
+                            >
+                              <div className="card-body fs-13 lh-2 pl-6 pr-7 pb-6">
+                                GrandHome is intended to be highly responsive
+                                and customizable for site building process.
+                                Thanks to its devoted, fastidious, and compact
+                                design, Mitech can be considered among plenty of
+                                unique themes that serve to create highly
+                                responsive websites.
+                              </div>
+                            </div>
+                          </div>
+                          <div className="card border-0 shadow-xxs-2 rounded-top overflow-hidden">
+                            <div
+                              className="card-header border-0 p-0"
+                              id="heading_12"
+                            >
+                              <h5 className="mb-0">
+                                <button
+                                  className="btn btn-link font-weight-500 pl-6 pr-7 py-3 fs-16 position-relative w-100 text-left rounded-0 collapsed"
+                                  data-toggle="collapse"
+                                  data-target="#collapse_12"
+                                  aria-expanded="true"
+                                  aria-controls="collapse_12"
+                                >
+                                  What is cloud backup?
+                                </button>
+                              </h5>
+                            </div>
+                            <div
+                              id="collapse_12"
+                              className="collapse"
+                              aria-labelledby="heading_12"
+                              data-parent="#accordion-style-01-2"
+                            >
+                              <div className="card-body fs-13 lh-2 pl-6 pr-7 pb-6">
+                                GrandHome is intended to be highly responsive
+                                and customizable for site building process.
+                                Thanks to its devoted, fastidious, and compact
+                                design, Mitech can be considered among plenty of
+                                unique themes that serve to create highly
+                                responsive websites.
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div className="col-md-6 pt-md-0 pt-6">
+                          <div className="card border-0 shadow-xxs-2 mb-6 rounded-top overflow-hidden">
+                            <div
+                              className="card-header border-0 p-0 rounded-top"
+                              id="heading_7"
+                            >
+                              <h5 className="mb-0">
+                                <button
+                                  className="btn btn-link font-weight-500 pl-6 pr-7 py-3 fs-16 position-relative w-100 text-left rounded-0 collapsed"
+                                  data-toggle="collapse"
+                                  data-target="#collapse_7"
+                                  aria-expanded="true"
+                                  aria-controls="collapse_7"
+                                >
+                                  How can we help?
+                                </button>
+                              </h5>
+                            </div>
+                            <div
+                              id="collapse_7"
+                              className="collapse"
+                              aria-labelledby="heading_7"
+                              data-parent="#accordion-style-01-2"
+                            >
+                              <div className="card-body fs-13 lh-2 pl-6 pr-7 pb-6">
+                                GrandHome is intended to be highly responsive
+                                and customizable for site building process.
+                                Thanks to its devoted, fastidious, and compact
+                                design, Mitech can be considered among plenty of
+                                unique themes that serve to create highly
+                                responsive websites.
+                              </div>
+                            </div>
+                          </div>
+                          <div className="card border-0 shadow-xxs-2 mb-6 rounded-top overflow-hidden">
+                            <div
+                              className="card-header border-0 p-0"
+                              id="heading_8"
+                            >
+                              <h5 className="mb-0">
+                                <button
+                                  className="btn btn-link font-weight-500 pl-6 pr-7 py-3 fs-16 position-relative w-100 text-left rounded-0 collapsed"
+                                  data-toggle="collapse"
+                                  data-target="#collapse_8"
+                                  aria-expanded="true"
+                                  aria-controls="collapse_8"
+                                >
+                                  How do I delete my account?
+                                </button>
+                              </h5>
+                            </div>
+                            <div
+                              id="collapse_8"
+                              className="collapse"
+                              aria-labelledby="heading_8"
+                              data-parent="#accordion-style-01-2"
+                            >
+                              <div className="card-body fs-13 lh-2 pl-6 pr-7 pb-6">
+                                GrandHome is intended to be highly responsive
+                                and customizable for site building process.
+                                Thanks to its devoted, fastidious, and compact
+                                design, Mitech can be considered among plenty of
+                                unique themes that serve to create highly
+                                responsive websites.
+                              </div>
+                            </div>
+                          </div>
+                          <div className="card border-0 shadow-xxs-2 rounded-top overflow-hidden">
+                            <div
+                              className="card-header border-0 p-0"
+                              id="heading_9"
+                            >
+                              <h5 className="mb-0">
+                                <button
+                                  className="btn btn-link font-weight-500 pl-6 pr-7 py-3 fs-16 position-relative w-100 text-left rounded-0 collapsed"
+                                  data-toggle="collapse"
+                                  data-target="#collapse_9"
+                                  aria-expanded="true"
+                                  aria-controls="collapse_9"
+                                >
+                                  Do you store any of my information?
+                                </button>
+                              </h5>
+                            </div>
+                            <div
+                              id="collapse_9"
+                              className="collapse"
+                              aria-labelledby="heading_9"
+                              data-parent="#accordion-style-01-2"
+                            >
+                              <div className="card-body fs-13 lh-2 pl-6 pr-7 pb-6">
+                                GrandHome is intended to be highly responsive
+                                and customizable for site building process.
+                                Thanks to its devoted, fastidious, and compact
+                                design, Mitech can be considered among plenty of
+                                unique themes that serve to create highly
+                                responsive websites.
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                   </div>
-                  <div className="media-body">
-                    <p className="fs-13 text-heading lh-2 mb-0">
-                      You can use these credentials for demo testing:
-                    </p>
-                    <p className="fs-13 lh-2 mb-0">
-                      Login:<span className="text-heading">demo</span>
-                    </p>
-                    <p className="fs-13 lh-2 mb-0">
-                      {' '}
-                      Password: <span className="text-heading">demo123</span>
-                    </p>
+                </div>
+                <div
+                  className="tab-pane tab-pane-parent fade container"
+                  id="question1"
+                  role="tabpanel"
+                >
+                  <div className="card border-0 bg-transparent">
+                    <div
+                      className="card-header border-0 d-block d-md-none bg-transparent px-0 py-1"
+                      id="headingOther-01"
+                    >
+                      <h5 className="mb-0">
+                        <button
+                          className="btn lh-2 fs-18 bg-white py-1 px-6 shadow-none w-100 collapse-parent border collapsed"
+                          data-toggle="collapse"
+                          data-target="#other-collapse-01"
+                          aria-expanded="true"
+                          aria-controls="other-collapse-01"
+                        >
+                          Other question
+                        </button>
+                      </h5>
+                    </div>
+                    <div
+                      id="other-collapse-01"
+                      className="collapse collapsible"
+                      aria-labelledby="headingOther-01"
+                      data-parent="#collapse-tabs-accordion-01"
+                    >
+                      <div
+                        id="accordion-style-01-3"
+                        className="accordion accordion-01 row my-7 my-md-0 mx-3 mx-md-0"
+                      >
+                        <div className="col-md-6">
+                          <div className="card border-0 shadow-xxs-2 mb-6 rounded-top overflow-hidden">
+                            <div
+                              className="card-header border-0 p-0"
+                              id="heading_14"
+                            >
+                              <h5 className="mb-0">
+                                <button
+                                  className="btn btn-link font-weight-500 pl-6 pr-7 py-3 fs-16 position-relative w-100 text-left rounded-0"
+                                  data-toggle="collapse"
+                                  data-target="#collapse_14"
+                                  aria-expanded="true"
+                                  aria-controls="collapse_14"
+                                >
+                                  How do I delete my account?
+                                </button>
+                              </h5>
+                            </div>
+                            <div
+                              id="collapse_14"
+                              className="collapse show"
+                              aria-labelledby="heading_14"
+                              data-parent="#accordion-style-01-3"
+                            >
+                              <div className="card-body fs-13 lh-2 pl-6 pr-7 pb-6">
+                                GrandHome is intended to be highly responsive
+                                and customizable for site building process.
+                                Thanks to its devoted, fastidious, and compact
+                                design, Mitech can be considered among plenty of
+                                unique themes that serve to create highly
+                                responsive websites.
+                              </div>
+                            </div>
+                          </div>
+                          <div className="card border-0 shadow-xxs-2 mb-6 rounded-top overflow-hidden">
+                            <div
+                              className="card-header border-0 p-0 rounded-top"
+                              id="heading_13"
+                            >
+                              <h5 className="mb-0">
+                                <button
+                                  className="btn btn-link font-weight-500 pl-6 pr-7 py-3 fs-16 position-relative w-100 text-left rounded-0 collapsed"
+                                  data-toggle="collapse"
+                                  data-target="#collapse_13"
+                                  aria-expanded="true"
+                                  aria-controls="collapse_13"
+                                >
+                                  How can we help?
+                                </button>
+                              </h5>
+                            </div>
+                            <div
+                              id="collapse_13"
+                              className="collapse"
+                              aria-labelledby="heading_13"
+                              data-parent="#accordion-style-01-3"
+                            >
+                              <div className="card-body fs-13 lh-2 pl-6 pr-7 pb-6">
+                                GrandHome is intended to be highly responsive
+                                and customizable for site building process.
+                                Thanks to its devoted, fastidious, and compact
+                                design, Mitech can be considered among plenty of
+                                unique themes that serve to create highly
+                                responsive websites.
+                              </div>
+                            </div>
+                          </div>
+                          <div className="card border-0 shadow-xxs-2 rounded-top overflow-hidden">
+                            <div
+                              className="card-header border-0 p-0"
+                              id="heading_15"
+                            >
+                              <h5 className="mb-0">
+                                <button
+                                  className="btn btn-link font-weight-500 pl-6 pr-7 py-3 fs-16 position-relative w-100 text-left rounded-0 collapsed"
+                                  data-toggle="collapse"
+                                  data-target="#collapse_15"
+                                  aria-expanded="true"
+                                  aria-controls="collapse_15"
+                                >
+                                  Do you store any of my information?
+                                </button>
+                              </h5>
+                            </div>
+                            <div
+                              id="collapse_15"
+                              className="collapse"
+                              aria-labelledby="heading_15"
+                              data-parent="#accordion-style-01-3"
+                            >
+                              <div className="card-body fs-13 lh-2 pl-6 pr-7 pb-6">
+                                GrandHome is intended to be highly responsive
+                                and customizable for site building process.
+                                Thanks to its devoted, fastidious, and compact
+                                design, Mitech can be considered among plenty of
+                                unique themes that serve to create highly
+                                responsive websites.
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div className="col-md-6 pt-md-0 pt-6">
+                          <div className="card border-0 shadow-xxs-2 mb-6 rounded-top overflow-hidden">
+                            <div
+                              className="card-header border-0 p-0 rounded-top"
+                              id="heading_16"
+                            >
+                              <h5 className="mb-0">
+                                <button
+                                  className="btn btn-link font-weight-500 pl-6 pr-7 py-3 fs-16 position-relative w-100 text-left rounded-0 collapsed"
+                                  data-toggle="collapse"
+                                  data-target="#collapse_16"
+                                  aria-expanded="true"
+                                  aria-controls="collapse_16"
+                                >
+                                  I’ve got a problem, how do I contact support?
+                                </button>
+                              </h5>
+                            </div>
+                            <div
+                              id="collapse_16"
+                              className="collapse"
+                              aria-labelledby="heading_16"
+                              data-parent="#accordion-style-01-3"
+                            >
+                              <div className="card-body fs-13 lh-2 pl-6 pr-7 pb-6">
+                                GrandHome is intended to be highly responsive
+                                and customizable for site building process.
+                                Thanks to its devoted, fastidious, and compact
+                                design, Mitech can be considered among plenty of
+                                unique themes that serve to create highly
+                                responsive websites.
+                              </div>
+                            </div>
+                          </div>
+                          <div className="card border-0 shadow-xxs-2 mb-6 rounded-top overflow-hidden">
+                            <div
+                              className="card-header border-0 p-0"
+                              id="heading_17"
+                            >
+                              <h5 className="mb-0">
+                                <button
+                                  className="btn btn-link font-weight-500 pl-6 pr-7 py-3 fs-16 position-relative w-100 text-left rounded-0 collapsed"
+                                  data-toggle="collapse"
+                                  data-target="#collapse_17"
+                                  aria-expanded="true"
+                                  aria-controls="collapse_17"
+                                >
+                                  How do I delete my account?
+                                </button>
+                              </h5>
+                            </div>
+                            <div
+                              id="collapse_17"
+                              className="collapse"
+                              aria-labelledby="heading_17"
+                              data-parent="#accordion-style-01-3"
+                            >
+                              <div className="card-body fs-13 lh-2 pl-6 pr-7 pb-6">
+                                GrandHome is intended to be highly responsive
+                                and customizable for site building process.
+                                Thanks to its devoted, fastidious, and compact
+                                design, Mitech can be considered among plenty of
+                                unique themes that serve to create highly
+                                responsive websites.
+                              </div>
+                            </div>
+                          </div>
+                          <div className="card border-0 shadow-xxs-2 rounded-top overflow-hidden">
+                            <div
+                              className="card-header border-0 p-0"
+                              id="heading_18"
+                            >
+                              <h5 className="mb-0">
+                                <button
+                                  className="btn btn-link font-weight-500 pl-6 pr-7 py-3 fs-16 position-relative w-100 text-left rounded-0 collapsed"
+                                  data-toggle="collapse"
+                                  data-target="#collapse_18"
+                                  aria-expanded="true"
+                                  aria-controls="collapse_18"
+                                >
+                                  What is cloud backup?
+                                </button>
+                              </h5>
+                            </div>
+                            <div
+                              id="collapse_18"
+                              className="collapse"
+                              aria-labelledby="heading_18"
+                              data-parent="#accordion-style-01-3"
+                            >
+                              <div className="card-body fs-13 lh-2 pl-6 pr-7 pb-6">
+                                GrandHome is intended to be highly responsive
+                                and customizable for site building process.
+                                Thanks to its devoted, fastidious, and compact
+                                design, Mitech can be considered among plenty of
+                                unique themes that serve to create highly
+                                responsive websites.
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
-              <div className="col-lg-7">
-                <div className="card border-0">
-                  <div className="card-body px-6 pr-lg-0 pl-xl-13 py-6">
-                    <h2 className="card-title fs-30 font-weight-600 text-dark lh-16 mb-2">
-                      Sign Up
-                    </h2>
-                    <p className="mb-4">
-                      Don’t have an account yet?{' '}
-                      <a href="#" className="text-heading hover-primary">
-                        <u>Sign up for free</u>
-                      </a>
-                    </p>
-                    <form className="form">
-                      <div className="form-row mx-n2">
-                        <div className="col-sm-6 px-2">
-                          <div className="form-group">
-                            <label htmlFor="firstName" className="text-heading">
-                              First Name
-                            </label>
-                            <input
-                              type="text"
-                              name="firs-name"
-                              className="form-control form-control-lg border-0"
-                              id="firstName"
-                              placeholder="First Name"
-                            />
-                          </div>
-                        </div>
-                        <div className="col-sm-6 px-2">
-                          <div className="form-group">
-                            <label htmlFor="lastName" className="text-heading">
-                              Last Name
-                            </label>
-                            <input
-                              type="text"
-                              name="last-name"
-                              className="form-control form-control-lg border-0"
-                              id="lastName"
-                              placeholder="Last Name"
-                            />
-                          </div>
-                        </div>
-                      </div>
-                      <div className="form-row mx-n2">
-                        <div className="col-sm-6 px-2">
-                          <div className="form-group">
-                            <label htmlFor="email" className="text-heading">
-                              Email
-                            </label>
-                            <input
-                              type="text"
-                              className="form-control form-control-lg border-0"
-                              id="email"
-                              placeholder="Your Email"
-                              name="email"
-                            />
-                          </div>
-                        </div>
-                        <div className="col-sm-6 px-2">
-                          <div className="form-group">
-                            <label htmlFor="user-role" className="text-heading">
-                              User Role
-                            </label>
-                            <select
-                              className="form-control border-0 shadow-none form-control-lg selectpicker"
-                              title="Select"
-                              data-style="btn-lg h-52"
-                              id="user-role"
-                              name="user-role"
-                            >
-                              <option>Admin</option>
-                              <option>Customer</option>
-                              <option>Agent</option>
-                            </select>
-                          </div>
-                        </div>
-                      </div>
-                      <div className="form-row mx-n2">
-                        <div className="col-sm-6 px-2">
-                          <div className="form-group">
-                            <label
-                              htmlFor="password-1"
-                              className="text-heading"
-                            >
-                              Password
-                            </label>
-                            <div className="input-group input-group-lg">
-                              <input
-                                type="text"
-                                className="form-control border-0 shadow-none"
-                                id="password-1"
-                                name="password"
-                                placeholder="Password"
-                              />
-                              <div className="input-group-append">
-                                <span className="input-group-text bg-gray-01 border-0 text-body fs-18">
-                                  <i className="far fa-eye-slash" />
-                                </span>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <div className="col-sm-6 px-2">
-                          <div className="form-group">
-                            <label htmlFor="re-password">
-                              Re-Enter Password
-                            </label>
-                            <div className="input-group input-group-lg">
-                              <input
-                                type="text"
-                                className="form-control border-0 shadow-none"
-                                id="re-password"
-                                name="re-password"
-                                placeholder="Password"
-                              />
-                              <div className="input-group-append">
-                                <span className="input-group-text bg-gray-01 border-0 text-body fs-18">
-                                  <i className="far fa-eye-slash" />
-                                </span>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <button
-                        type="submit"
-                        className="btn btn-primary btn-lg btn-block rounded"
-                      >
-                        Register
-                      </button>
-                    </form>
-                    <div className="divider text-center my-2">
-                      <span className="px-4 bg-white lh-17 text text-heading">
-                        or Sign Up with
-                      </span>
+            </div>
+          </div>
+        </section>
+        <section className="pt-12">
+          <h2 className="fs-32 lh-16 mb-7 text-dark text-center">
+            Frequently Asked Questions
+          </h2>
+          <div className="collapse-tabs">
+            <ul
+              className="tabs-02 nav nav-pills d-none d-md-flex justify-content-center text-uppercase"
+              role="tablist"
+            >
+              <li className="nav-item">
+                <a
+                  href="#selling2"
+                  className="nav-link btn btn-lg rounded-0 mx-2 bg-gray-01 text-heading"
+                  data-toggle="tab"
+                  role="tab"
+                >
+                  Question about selling
+                </a>
+              </li>
+              <li className="nav-item">
+                <a
+                  href="#renting2"
+                  className="nav-link active rounded-0 btn btn-lg mx-2 bg-gray-01 text-heading"
+                  data-toggle="tab"
+                  role="tab"
+                >
+                  Question about renting
+                </a>
+              </li>
+              <li className="nav-item dropdown">
+                <a
+                  href="#question2"
+                  className="nav-link btn btn-lg mx-2 rounded-0 bg-gray-01 text-heading"
+                  data-toggle="tab"
+                  role="tab"
+                >
+                  Other question
+                </a>
+              </li>
+            </ul>
+            <div className="tab-content shadow-none rounded-0 pt-9 pb-12 px-0">
+              <div id="collapse-tabs-accordion-02">
+                <div
+                  className="tab-pane tab-pane-parent fade container"
+                  id="selling2"
+                  role="tabpanel"
+                >
+                  <div className="card border-0 bg-transparent">
+                    <div
+                      className="card-header border-0 d-block d-md-none bg-transparent px-0 py-1"
+                      id="headingSelling-02"
+                    >
+                      <h5 className="mb-0">
+                        <button
+                          className="btn lh-2 fs-20 py-1 px-6 w-100 collapse-parent bg-gray-01 collapsed"
+                          data-toggle="collapse"
+                          data-target="#selling-collapse-02"
+                          aria-expanded="true"
+                          aria-controls="selling-collapse-02"
+                        >
+                          Question about selling
+                        </button>
+                      </h5>
                     </div>
-                    <div className="row no-gutters mx-n2">
-                      <div className="col-sm-6 px-2 mb-4">
-                        <a
-                          href="#"
-                          className="btn btn-lg btn-block text-heading border px-0 rounded bg-hover-accent"
-                        >
-                          <img
-                            src="images/facebook.png"
-                            alt="Google"
-                            className="mr-2"
-                          />
-                          Facebook
-                        </a>
+                    <div
+                      id="selling-collapse-02"
+                      className="collapse collapsible"
+                      aria-labelledby="headingSelling-02"
+                      data-parent="#collapse-tabs-accordion-02"
+                    >
+                      <div className="row">
+                        <div className="col-md-6 mb-6 mb-md-0">
+                          <div
+                            id="accordion-style-02"
+                            className="accordion accordion-02 my-7 mt-md-0"
+                          >
+                            <div className="card border-top-0 border-right-0 border-left-0 border-bottom rounded-0 pb-5 mb-4 pl-7 pr-5 position-relative">
+                              <div
+                                className="card-header border-0 bg-white p-0"
+                                id="heading_19"
+                              >
+                                <h5 className="mb-0">
+                                  <button
+                                    className="btn btn-link fs-18 fs-md-22 font-weight-500 p-0 border-0"
+                                    data-toggle="collapse"
+                                    data-target="#collapse_19"
+                                    aria-expanded="true"
+                                    aria-controls="collapse_19"
+                                  >
+                                    How can we help?
+                                  </button>
+                                </h5>
+                              </div>
+                              <div
+                                id="collapse_19"
+                                className="collapse show"
+                                aria-labelledby="heading_19"
+                                data-parent="#accordion-style-02"
+                              >
+                                <div className="card-body px-0 pt-2 pb-1 lh-214">
+                                  Lorem ipsum dolor sit amet, consectetur cing
+                                  elit. Suspe ndisse suscipit sagittis leo sit
+                                  met condime ntum esti laiolainx bulum iscipit
+                                  sagittis leo sit met con ndisse su Lorem ipsum
+                                  dolor sit amet, consectetur cing elit. Suspe
+                                  ndisse suscipit sagittis leo sit met condime
+                                  ntum esti laiolainx bulum iscipit.
+                                </div>
+                              </div>
+                            </div>
+                            <div className="card border-top-0 border-right-0 border-left-0 border-bottom rounded-0 pb-5 mb-4 pl-7 pr-5 position-relative">
+                              <div
+                                className="card-header border-0 bg-white p-0"
+                                id="heading_20"
+                              >
+                                <h5 className="mb-0">
+                                  <button
+                                    className="btn btn-link fs-18 fs-md-22 font-weight-500 p-0 border-0 collapsed"
+                                    data-toggle="collapse"
+                                    data-target="#collapse_20"
+                                    aria-expanded="true"
+                                    aria-controls="collapse_20"
+                                  >
+                                    How do I delete my account?
+                                  </button>
+                                </h5>
+                              </div>
+                              <div
+                                id="collapse_20"
+                                className="collapse"
+                                aria-labelledby="heading_20"
+                                data-parent="#accordion-style-02"
+                              >
+                                <div className="card-body px-0 pt-2 pb-1 lh-214">
+                                  Lorem ipsum dolor sit amet, consectetur cing
+                                  elit. Suspe ndisse suscipit sagittis leo sit
+                                  met condime ntum esti laiolainx bulum iscipit
+                                  sagittis leo sit met con ndisse su Lorem ipsum
+                                  dolor sit amet, consectetur cing elit. Suspe
+                                  ndisse suscipit sagittis leo sit met condime
+                                  ntum esti laiolainx bulum iscipit.
+                                </div>
+                              </div>
+                            </div>
+                            <div className="card border-top-0 border-right-0 border-left-0 border-bottom rounded-0 pb-5 mb-4 pl-7 pr-5 position-relative">
+                              <div
+                                className="card-header border-0 bg-white p-0"
+                                id="heading_21"
+                              >
+                                <h5 className="mb-0">
+                                  <button
+                                    className="btn btn-link fs-18 fs-md-22 font-weight-500 p-0 border-0 collapsed"
+                                    data-toggle="collapse"
+                                    data-target="#collapse_21"
+                                    aria-expanded="true"
+                                    aria-controls="collapse_21"
+                                  >
+                                    What is cloud backup?
+                                  </button>
+                                </h5>
+                              </div>
+                              <div
+                                id="collapse_21"
+                                className="collapse"
+                                aria-labelledby="heading_21"
+                                data-parent="#accordion-style-02"
+                              >
+                                <div className="card-body px-0 pt-2 pb-1 lh-214">
+                                  Lorem ipsum dolor sit amet, consectetur cing
+                                  elit. Suspe ndisse suscipit sagittis leo sit
+                                  met condime ntum esti laiolainx bulum iscipit
+                                  sagittis leo sit met con ndisse su Lorem ipsum
+                                  dolor sit amet, consectetur cing elit. Suspe
+                                  ndisse suscipit sagittis leo sit met condime
+                                  ntum esti laiolainx bulum iscipit.
+                                </div>
+                              </div>
+                            </div>
+                            <div className="card border-top-0 border-right-0 border-left-0 border-bottom rounded-0 pb-5 mb-4 pl-7 pr-5 position-relative">
+                              <div
+                                className="card-header border-0 bg-white p-0"
+                                id="heading_22"
+                              >
+                                <h5 className="mb-0">
+                                  <button
+                                    className="btn btn-link fs-18 fs-md-22 font-weight-500 p-0 border-0 collapsed"
+                                    data-toggle="collapse"
+                                    data-target="#collapse_22"
+                                    aria-expanded="true"
+                                    aria-controls="collapse_22"
+                                  >
+                                    Do you store any of my information?
+                                  </button>
+                                </h5>
+                              </div>
+                              <div
+                                id="collapse_22"
+                                className="collapse"
+                                aria-labelledby="heading_22"
+                                data-parent="#accordion-style-02"
+                              >
+                                <div className="card-body px-0 pt-2 pb-1 lh-214">
+                                  Lorem ipsum dolor sit amet, consectetur cing
+                                  elit. Suspe ndisse suscipit sagittis leo sit
+                                  met condime ntum esti laiolainx bulum iscipit
+                                  sagittis leo sit met con ndisse su Lorem ipsum
+                                  dolor sit amet, consectetur cing elit. Suspe
+                                  ndisse suscipit sagittis leo sit met condime
+                                  ntum esti laiolainx bulum iscipit.
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div className="col-md-6 mb-6 mb-md-0">
+                          <div className="card border-0 pl-lg-6">
+                            <img
+                              src="images/faqs.jpg"
+                              alt="FAQs"
+                              className="card-img"
+                            />
+                            <div className="card-img-overlay d-flex align-items-center justify-content-center">
+                              <a
+                                href="http://www.youtube.com/watch?v=0O2aH4XLbto"
+                                className="d-inline-block m-auto position-relative play-animation"
+                                data-gtf-mfp="true"
+                                data-mfp-options='{"type":"iframe"}'
+                              >
+                                <span className="text-white bg-primary w-78px h-78 rounded-circle d-flex align-items-center justify-content-center">
+                                  <i className="fas fa-play" />
+                                </span>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
                       </div>
-                      <div className="col-sm-6 px-2 mb-4">
-                        <a
-                          href="#"
-                          className="btn btn-lg btn-block text-heading border px-0 rounded bg-hover-accent"
+                    </div>
+                  </div>
+                </div>
+                <div
+                  className="tab-pane fade container tab-pane-parent show active"
+                  id="renting2"
+                  role="tabpanel"
+                >
+                  <div className="card border-0 bg-transparent">
+                    <div
+                      className="card-header border-0 d-block d-md-none bg-transparent px-0 py-1"
+                      id="headingRenting-02"
+                    >
+                      <h5 className="mb-0">
+                        <button
+                          className="btn lh-2 fs-20 py-1 px-6 w-100 collapse-parent bg-gray-01"
+                          data-toggle="collapse"
+                          data-target="#renting-collapse-02"
+                          aria-expanded="true"
+                          aria-controls="renting-collapse-02"
                         >
-                          <img
-                            src="images/google.png"
-                            alt="Google"
-                            className="mr-2"
-                          />
-                          Google
-                        </a>
+                          Question about renting
+                        </button>
+                      </h5>
+                    </div>
+                    <div
+                      id="renting-collapse-02"
+                      className="collapse show collapsible"
+                      aria-labelledby="headingRenting-02"
+                      data-parent="#collapse-tabs-accordion-02"
+                    >
+                      <div className="row">
+                        <div className="col-md-6 mb-6 mb-md-0">
+                          <div
+                            id="accordion-style-02-1"
+                            className="accordion accordion-02 my-7 mt-md-0"
+                          >
+                            <div className="card border-top-0 border-right-0 border-left-0 border-bottom rounded-0 pb-5 mb-4 pl-7 pr-5 position-relative">
+                              <div
+                                className="card-header border-0 bg-white p-0"
+                                id="heading_23"
+                              >
+                                <h5 className="mb-0">
+                                  <button
+                                    className="btn btn-link fs-18 fs-md-22 font-weight-500 p-0 border-0"
+                                    data-toggle="collapse"
+                                    data-target="#collapse_23"
+                                    aria-expanded="true"
+                                    aria-controls="collapse_23"
+                                  >
+                                    How do I delete my account?
+                                  </button>
+                                </h5>
+                              </div>
+                              <div
+                                id="collapse_23"
+                                className="collapse show"
+                                aria-labelledby="heading_23"
+                                data-parent="#accordion-style-02-1"
+                              >
+                                <div className="card-body px-0 pt-2 pb-1 lh-214">
+                                  Lorem ipsum dolor sit amet, consectetur cing
+                                  elit. Suspe ndisse suscipit sagittis leo sit
+                                  met condime ntum esti laiolainx bulum iscipit
+                                  sagittis leo sit met con ndisse su Lorem ipsum
+                                  dolor sit amet, consectetur cing elit. Suspe
+                                  ndisse suscipit sagittis leo sit met condime
+                                  ntum esti laiolainx bulum iscipit.
+                                </div>
+                              </div>
+                            </div>
+                            <div className="card border-top-0 border-right-0 border-left-0 border-bottom rounded-0 pb-5 mb-4 pl-7 pr-5 position-relative">
+                              <div
+                                className="card-header border-0 bg-white p-0"
+                                id="heading_24"
+                              >
+                                <h5 className="mb-0">
+                                  <button
+                                    className="btn btn-link fs-18 fs-md-22 font-weight-500 p-0 border-0 collapsed"
+                                    data-toggle="collapse"
+                                    data-target="#collapse_24"
+                                    aria-expanded="true"
+                                    aria-controls="collapse_24"
+                                  >
+                                    How can we help?
+                                  </button>
+                                </h5>
+                              </div>
+                              <div
+                                id="collapse_24"
+                                className="collapse"
+                                aria-labelledby="heading_24"
+                                data-parent="#accordion-style-02-1"
+                              >
+                                <div className="card-body px-0 pt-2 pb-1 lh-214">
+                                  Lorem ipsum dolor sit amet, consectetur cing
+                                  elit. Suspe ndisse suscipit sagittis leo sit
+                                  met condime ntum esti laiolainx bulum iscipit
+                                  sagittis leo sit met con ndisse su Lorem ipsum
+                                  dolor sit amet, consectetur cing elit. Suspe
+                                  ndisse suscipit sagittis leo sit met condime
+                                  ntum esti laiolainx bulum iscipit.
+                                </div>
+                              </div>
+                            </div>
+                            <div className="card border-top-0 border-right-0 border-left-0 border-bottom rounded-0 pb-5 mb-4 pl-7 pr-5 position-relative">
+                              <div
+                                className="card-header border-0 bg-white p-0"
+                                id="heading_25"
+                              >
+                                <h5 className="mb-0">
+                                  <button
+                                    className="btn btn-link fs-18 fs-md-22 font-weight-500 p-0 border-0 collapsed"
+                                    data-toggle="collapse"
+                                    data-target="#collapse_25"
+                                    aria-expanded="true"
+                                    aria-controls="collapse_25"
+                                  >
+                                    Do you store any of my information?
+                                  </button>
+                                </h5>
+                              </div>
+                              <div
+                                id="collapse_25"
+                                className="collapse"
+                                aria-labelledby="heading_25"
+                                data-parent="#accordion-style-02-1"
+                              >
+                                <div className="card-body px-0 pt-2 pb-1 lh-214">
+                                  Lorem ipsum dolor sit amet, consectetur cing
+                                  elit. Suspe ndisse suscipit sagittis leo sit
+                                  met condime ntum esti laiolainx bulum iscipit
+                                  sagittis leo sit met con ndisse su Lorem ipsum
+                                  dolor sit amet, consectetur cing elit. Suspe
+                                  ndisse suscipit sagittis leo sit met condime
+                                  ntum esti laiolainx bulum iscipit.
+                                </div>
+                              </div>
+                            </div>
+                            <div className="card border-top-0 border-right-0 border-left-0 border-bottom rounded-0 pb-5 mb-4 pl-7 pr-5 position-relative">
+                              <div
+                                className="card-header border-0 bg-white p-0"
+                                id="heading_26"
+                              >
+                                <h5 className="mb-0">
+                                  <button
+                                    className="btn btn-link fs-18 fs-md-22 font-weight-500 p-0 border-0 collapsed"
+                                    data-toggle="collapse"
+                                    data-target="#collapse_26"
+                                    aria-expanded="true"
+                                    aria-controls="collapse_26"
+                                  >
+                                    What is cloud backup?
+                                  </button>
+                                </h5>
+                              </div>
+                              <div
+                                id="collapse_26"
+                                className="collapse"
+                                aria-labelledby="heading_26"
+                                data-parent="#accordion-style-02-1"
+                              >
+                                <div className="card-body px-0 pt-2 pb-1 lh-214">
+                                  Lorem ipsum dolor sit amet, consectetur cing
+                                  elit. Suspe ndisse suscipit sagittis leo sit
+                                  met condime ntum esti laiolainx bulum iscipit
+                                  sagittis leo sit met con ndisse su Lorem ipsum
+                                  dolor sit amet, consectetur cing elit. Suspe
+                                  ndisse suscipit sagittis leo sit met condime
+                                  ntum esti laiolainx bulum iscipit.
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div className="col-md-6 mb-6 mb-md-0">
+                          <div className="card border-0 pl-lg-6">
+                            <img
+                              src="images/faqs.jpg"
+                              alt="FAQs"
+                              className="card-img"
+                            />
+                            <div className="card-img-overlay d-flex align-items-center justify-content-center">
+                              <a
+                                href="http://www.youtube.com/watch?v=0O2aH4XLbto"
+                                className="d-inline-block m-auto position-relative play-animation"
+                                data-gtf-mfp="true"
+                                data-mfp-options='{"type":"iframe"}'
+                              >
+                                <span className="text-white bg-primary w-78px h-78 rounded-circle d-flex align-items-center justify-content-center">
+                                  <i className="fas fa-play" />
+                                </span>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  className="tab-pane fade container tab-pane-parent"
+                  id="question2"
+                  role="tabpanel"
+                >
+                  <div className="card border-0 bg-transparent">
+                    <div
+                      className="card-header border-0 d-block d-md-none bg-transparent px-0 py-1"
+                      id="headingOther-02"
+                    >
+                      <h5 className="mb-0">
+                        <button
+                          className="btn lh-2 fs-20 py-1 px-6 w-100 collapse-parent bg-gray-01 collapsed"
+                          data-toggle="collapse"
+                          data-target="#other-collapse-02"
+                          aria-expanded="true"
+                          aria-controls="other-collapse-02"
+                        >
+                          Other question
+                        </button>
+                      </h5>
+                    </div>
+                    <div
+                      id="other-collapse-02"
+                      className="collapse collapsible"
+                      aria-labelledby="headingOther-02"
+                      data-parent="#collapse-tabs-accordion-02"
+                    >
+                      <div className="row">
+                        <div className="col-md-6 mb-6 mb-md-0">
+                          <div
+                            id="accordion-style-02-2"
+                            className="accordion accordion-02 my-7 mt-md-0"
+                          >
+                            <div className="card border-top-0 border-right-0 border-left-0 border-bottom rounded-0 pb-5 mb-4 pl-7 pr-5 position-relative">
+                              <div
+                                className="card-header border-0 bg-white p-0"
+                                id="heading_27"
+                              >
+                                <h5 className="mb-0">
+                                  <button
+                                    className="btn btn-link fs-18 fs-md-22 font-weight-500 p-0 border-0"
+                                    data-toggle="collapse"
+                                    data-target="#collapse_27"
+                                    aria-expanded="true"
+                                    aria-controls="collapse_27"
+                                  >
+                                    What is cloud backup?
+                                  </button>
+                                </h5>
+                              </div>
+                              <div
+                                id="collapse_27"
+                                className="collapse show"
+                                aria-labelledby="heading_27"
+                                data-parent="#accordion-style-02-2"
+                              >
+                                <div className="card-body px-0 pt-2 pb-1 lh-214">
+                                  Lorem ipsum dolor sit amet, consectetur cing
+                                  elit. Suspe ndisse suscipit sagittis leo sit
+                                  met condime ntum esti laiolainx bulum iscipit
+                                  sagittis leo sit met con ndisse su Lorem ipsum
+                                  dolor sit amet, consectetur cing elit. Suspe
+                                  ndisse suscipit sagittis leo sit met condime
+                                  ntum esti laiolainx bulum iscipit.
+                                </div>
+                              </div>
+                            </div>
+                            <div className="card border-top-0 border-right-0 border-left-0 border-bottom rounded-0 pb-5 mb-4 pl-7 pr-5 position-relative">
+                              <div
+                                className="card-header border-0 bg-white p-0"
+                                id="heading_28"
+                              >
+                                <h5 className="mb-0">
+                                  <button
+                                    className="btn btn-link fs-18 fs-md-22 font-weight-500 p-0 border-0 collapsed"
+                                    data-toggle="collapse"
+                                    data-target="#collapse_28"
+                                    aria-expanded="true"
+                                    aria-controls="collapse_28"
+                                  >
+                                    How can we help?
+                                  </button>
+                                </h5>
+                              </div>
+                              <div
+                                id="collapse_28"
+                                className="collapse"
+                                aria-labelledby="heading_28"
+                                data-parent="#accordion-style-02-2"
+                              >
+                                <div className="card-body px-0 pt-2 pb-1 lh-214">
+                                  Lorem ipsum dolor sit amet, consectetur cing
+                                  elit. Suspe ndisse suscipit sagittis leo sit
+                                  met condime ntum esti laiolainx bulum iscipit
+                                  sagittis leo sit met con ndisse su Lorem ipsum
+                                  dolor sit amet, consectetur cing elit. Suspe
+                                  ndisse suscipit sagittis leo sit met condime
+                                  ntum esti laiolainx bulum iscipit.
+                                </div>
+                              </div>
+                            </div>
+                            <div className="card border-top-0 border-right-0 border-left-0 border-bottom rounded-0 pb-5 mb-4 pl-7 pr-5 position-relative">
+                              <div
+                                className="card-header border-0 bg-white p-0"
+                                id="heading_29"
+                              >
+                                <h5 className="mb-0">
+                                  <button
+                                    className="btn btn-link fs-18 fs-md-22 font-weight-500 p-0 border-0 collapsed"
+                                    data-toggle="collapse"
+                                    data-target="#collapse_29"
+                                    aria-expanded="true"
+                                    aria-controls="collapse_29"
+                                  >
+                                    Do you store any of my information?
+                                  </button>
+                                </h5>
+                              </div>
+                              <div
+                                id="collapse_29"
+                                className="collapse"
+                                aria-labelledby="heading_29"
+                                data-parent="#accordion-style-02-2"
+                              >
+                                <div className="card-body px-0 pt-2 pb-1 lh-214">
+                                  Lorem ipsum dolor sit amet, consectetur cing
+                                  elit. Suspe ndisse suscipit sagittis leo sit
+                                  met condime ntum esti laiolainx bulum iscipit
+                                  sagittis leo sit met con ndisse su Lorem ipsum
+                                  dolor sit amet, consectetur cing elit. Suspe
+                                  ndisse suscipit sagittis leo sit met condime
+                                  ntum esti laiolainx bulum iscipit.
+                                </div>
+                              </div>
+                            </div>
+                            <div className="card border-top-0 border-right-0 border-left-0 border-bottom rounded-0 pb-5 mb-4 pl-7 pr-5 position-relative">
+                              <div
+                                className="card-header border-0 bg-white p-0"
+                                id="heading_30"
+                              >
+                                <h5 className="mb-0">
+                                  <button
+                                    className="btn btn-link fs-18 fs-md-22 font-weight-500 p-0 border-0 collapsed"
+                                    data-toggle="collapse"
+                                    data-target="#collapse_30"
+                                    aria-expanded="true"
+                                    aria-controls="collapse_30"
+                                  >
+                                    How do I delete my account?
+                                  </button>
+                                </h5>
+                              </div>
+                              <div
+                                id="collapse_30"
+                                className="collapse"
+                                aria-labelledby="heading_30"
+                                data-parent="#accordion-style-02-2"
+                              >
+                                <div className="card-body px-0 pt-2 pb-1 lh-214">
+                                  Lorem ipsum dolor sit amet, consectetur cing
+                                  elit. Suspe ndisse suscipit sagittis leo sit
+                                  met condime ntum esti laiolainx bulum iscipit
+                                  sagittis leo sit met con ndisse su Lorem ipsum
+                                  dolor sit amet, consectetur cing elit. Suspe
+                                  ndisse suscipit sagittis leo sit met condime
+                                  ntum esti laiolainx bulum iscipit.
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div className="col-md-6 mb-6 mb-md-0">
+                          <div className="card border-0 pl-lg-6">
+                            <img
+                              src="images/faqs.jpg"
+                              alt="FAQs"
+                              className="card-img"
+                            />
+                            <div className="card-img-overlay d-flex align-items-center justify-content-center">
+                              <a
+                                href="http://www.youtube.com/watch?v=0O2aH4XLbto"
+                                className="d-inline-block m-auto position-relative play-animation"
+                                data-gtf-mfp="true"
+                                data-mfp-options='{"type":"iframe"}'
+                              >
+                                <span className="text-white bg-primary w-78px h-78 rounded-circle d-flex align-items-center justify-content-center">
+                                  <i className="fas fa-play" />
+                                </span>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -1284,9 +1850,9 @@ const LoginSignUp = () => {
                 <p className="mb-0">58 Howard Street #2 San Francisco</p>
                 <a
                   className="d-block text-muted hover-white"
-                  href="mailto:contact@homeid.com"
+                  href="mailto:contact@preleasecanada.com"
                 >
-                  contact@homeid.com
+                  contact@preleasecanada.com
                 </a>
                 <a
                   className="d-block text-lighter font-weight-bold fs-15 hover-white"
@@ -1295,7 +1861,7 @@ const LoginSignUp = () => {
                   (+68)1221 09876
                 </a>
                 <a className="d-block text-muted hover-white" href=".">
-                  www.homeid.com
+                  www.preleasecanada.com
                 </a>
               </div>
             </div>
@@ -1457,7 +2023,7 @@ const LoginSignUp = () => {
               </li>
             </ul>
             <p className="col-md-auto mb-0 text-muted">
-              © 2020 homeID. All Rights Reserved
+              © 2020 Prelease Canada. All Rights Reserved
             </p>
           </div>
         </div>
@@ -2018,4 +2584,4 @@ const LoginSignUp = () => {
   )
 }
 
-export default LoginSignUp
+export default Faq

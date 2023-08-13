@@ -1,6 +1,6 @@
 /* eslint-disable react/no-unescaped-entities */
 
-const AddNewPropaty = () => {
+const EditInvoice = () => {
   return (
     <>
       <div className="wrapper dashboard-wrapper">
@@ -357,7 +357,7 @@ const AddNewPropaty = () => {
                       >
                         <div className="mr-4 w-48px">
                           <img
-                            src="images/testimonial-5.jpg"
+                            src="/images/testimonial-5.jpg"
                             alt="Ronald Hunter"
                             className="rounded-circle"
                           />
@@ -406,1846 +406,754 @@ const AddNewPropaty = () => {
               </div>
             </header>
             <main id="content" className="bg-gray-01">
-              <div className="px-3 px-lg-6 px-xxl-13 py-5 py-lg-10 my-profile">
-                <div className="mb-6">
-                  <h2 className="mb-0 text-heading fs-22 lh-15">
-                    Add new property
-                  </h2>
-                  <p className="mb-1">
-                    Lorem ipsum dolor sit amet, consec tetur cing elit. Suspe
-                    ndisse suscipit
-                  </p>
-                </div>
-                <div className="collapse-tabs new-property-step">
-                  <ul
-                    className="nav nav-pills border py-2 px-3 mb-6 d-none d-md-flex mb-6"
-                    role="tablist"
-                  >
-                    <li className="nav-item col">
-                      <a
-                        className="nav-link active bg-transparent shadow-none py-2 font-weight-500 text-center lh-214 d-block"
-                        id="description-tab"
-                        data-toggle="pill"
-                        data-number={1}
-                        href="#description"
-                        role="tab"
-                        aria-controls="description"
-                        aria-selected="true"
-                      >
-                        <span className="number">1.</span> Description
-                      </a>
-                    </li>
-                    <li className="nav-item col">
-                      <a
-                        className="nav-link bg-transparent shadow-none py-2 font-weight-500 text-center lh-214 d-block"
-                        id="media-tab"
-                        data-toggle="pill"
-                        data-number={2}
-                        href="#media"
-                        role="tab"
-                        aria-controls="media"
-                        aria-selected="false"
-                      >
-                        <span className="number">2.</span> Media
-                      </a>
-                    </li>
-                    <li className="nav-item col">
-                      <a
-                        className="nav-link bg-transparent shadow-none py-2 font-weight-500 text-center lh-214 d-block"
-                        id="location-tab"
-                        data-toggle="pill"
-                        data-number={3}
-                        href="#location"
-                        role="tab"
-                        aria-controls="location"
-                        aria-selected="false"
-                      >
-                        <span className="number">3.</span> Location
-                      </a>
-                    </li>
-                    <li className="nav-item col">
-                      <a
-                        className="nav-link bg-transparent shadow-none py-2 font-weight-500 text-center lh-214 d-block"
-                        id="detail-tab"
-                        data-toggle="pill"
-                        data-number={4}
-                        href="#detail"
-                        role="tab"
-                        aria-controls="detail"
-                        aria-selected="false"
-                      >
-                        <span className="number">4.</span> Detail
-                      </a>
-                    </li>
-                    <li className="nav-item col">
-                      <a
-                        className="nav-link bg-transparent shadow-none py-2 font-weight-500 text-center lh-214 d-block"
-                        id="amenities-tab"
-                        data-toggle="pill"
-                        data-number={5}
-                        href="#amenities"
-                        role="tab"
-                        aria-controls="amenities"
-                        aria-selected="false"
-                      >
-                        <span className="number">5.</span> Amenities
-                      </a>
-                    </li>
-                  </ul>
-                  <div className="tab-content shadow-none p-0">
+              <div className="px-3 px-lg-6 px-xxl-13 py-5 py-lg-10 add-new-invoice">
+                <div className="row">
+                  <div className="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
                     <form>
-                      <div id="collapse-tabs-accordion">
-                        <div
-                          className="tab-pane tab-pane-parent fade show active px-0"
-                          id="description"
-                          role="tabpanel"
-                          aria-labelledby="description-tab"
-                        >
-                          <div className="card bg-transparent border-0">
-                            <div
-                              className="card-header d-block d-md-none bg-transparent px-0 py-1 border-bottom-0"
-                              id="heading-description"
-                            >
-                              <h5 className="mb-0">
-                                <button
-                                  className="btn btn-lg collapse-parent btn-block border shadow-none"
-                                  data-toggle="collapse"
-                                  data-number={1}
-                                  data-target="#description-collapse"
-                                  aria-expanded="true"
-                                  aria-controls="description-collapse"
-                                >
-                                  <span className="number">1.</span> Description
-                                </button>
-                              </h5>
-                            </div>
-                            <div
-                              id="description-collapse"
-                              className="collapse show collapsible"
-                              aria-labelledby="heading-description"
-                              data-parent="#collapse-tabs-accordion"
-                            >
-                              <div className="card-body py-4 py-md-0 px-0">
-                                <div className="row">
-                                  <div className="col-lg-6">
-                                    <div className="card mb-6">
-                                      <div className="card-body p-6">
-                                        <h3 className="card-title mb-0 text-heading fs-22 lh-15">
-                                          Property Description
-                                        </h3>
-                                        <p className="card-text mb-5">
-                                          Lorem ipsum dolor sit amet,
-                                          consectetur adipiscing elit
-                                        </p>
-                                        <div className="form-group">
-                                          <label
-                                            htmlFor="title"
-                                            className="text-heading"
-                                          >
-                                            Title{' '}
-                                            <span className="text-muted">
-                                              (mandatory)
-                                            </span>
-                                          </label>
-                                          <input
-                                            type="text"
-                                            className="form-control form-control-lg border-0"
-                                            id="title"
-                                            name="title"
-                                          />
-                                        </div>
-                                        <div className="form-group mb-0">
-                                          <label
-                                            htmlFor="description-01"
-                                            className="text-heading"
-                                          >
-                                            Description
-                                          </label>
-                                          <textarea
-                                            className="form-control border-0"
-                                            rows={5}
-                                            name="description"
-                                            id="description-01"
-                                            defaultValue={''}
-                                          />
-                                        </div>
-                                      </div>
-                                    </div>
-                                    <div className="card mb-6">
-                                      <div className="card-body p-6">
-                                        <h3 className="card-title mb-0 text-heading fs-22 lh-15">
-                                          Select Category
-                                        </h3>
-                                        <p className="card-text mb-5">
-                                          Lorem ipsum dolor sit amet,
-                                          consectetur adipiscing elit
-                                        </p>
-                                        <div className="form-row mx-n2">
-                                          <div className="col-md-6 col-lg-12 col-xxl-6 px-2 mb-4 mb-md-0">
-                                            <div className="form-group mb-0">
-                                              <label
-                                                htmlFor="category"
-                                                className="text-heading"
-                                              >
-                                                Category
-                                              </label>
-                                              <select
-                                                className="form-control border-0 shadow-none form-control-lg selectpicker"
-                                                title="Select"
-                                                data-style="btn-lg py-2 h-52"
-                                                id="category"
-                                                name="category"
-                                              >
-                                                <option>For Rent</option>
-                                                <option>For Sale</option>
-                                              </select>
-                                            </div>
-                                          </div>
-                                          <div className="col-md-6 col-lg-12 col-xxl-6 px-2 mb-4 mb-md-0">
-                                            <div className="form-group mb-0">
-                                              <label
-                                                htmlFor="list-in"
-                                                className="text-heading"
-                                              >
-                                                Listed in
-                                              </label>
-                                              <select
-                                                className="form-control border-0 shadow-none form-control-lg selectpicker"
-                                                title="Select"
-                                                data-style="btn-lg py-2 h-52"
-                                                id="list-in"
-                                                name="list-in"
-                                              >
-                                                <option>For Rent</option>
-                                                <option>For Sale</option>
-                                              </select>
-                                            </div>
-                                          </div>
-                                        </div>
-                                      </div>
-                                    </div>
-                                  </div>
-                                  <div className="col-lg-6">
-                                    <div className="card mb-6">
-                                      <div className="card-body p-6">
-                                        <h3 className="card-title mb-0 text-heading fs-22 lh-15">
-                                          Property Price
-                                        </h3>
-                                        <p className="card-text mb-5">
-                                          Lorem ipsum dolor sit amet,
-                                          consectetur adipiscing elit
-                                        </p>
-                                        <div className="form-row mx-n2">
-                                          <div className="col-md-6 col-lg-12 col-xxl-6 px-2">
-                                            <div className="form-group">
-                                              <label
-                                                htmlFor="price"
-                                                className="text-heading"
-                                              >
-                                                Price in ${' '}
-                                                <span className="text-muted">
-                                                  (only numbers)
-                                                </span>
-                                              </label>
-                                              <input
-                                                type="text"
-                                                className="form-control form-control-lg border-0"
-                                                id="price"
-                                                name="price"
-                                              />
-                                            </div>
-                                          </div>
-                                          <div className="col-md-6 col-lg-12 col-xxl-6 px-2">
-                                            <div className="form-group">
-                                              <label
-                                                htmlFor="tax"
-                                                className="text-heading"
-                                              >
-                                                Yearly Tax Rate
-                                              </label>
-                                              <input
-                                                type="text"
-                                                name="tax"
-                                                className="form-control form-control-lg border-0"
-                                                id="tax"
-                                              />
-                                            </div>
-                                          </div>
-                                        </div>
-                                        <div className="form-row mx-n2">
-                                          <div className="col-md-6 col-lg-12 col-xxl-6 px-2">
-                                            <div className="form-group">
-                                              <label
-                                                htmlFor="fee"
-                                                className="text-heading"
-                                              >
-                                                Homeowners Association Fee{' '}
-                                                <span className="text-muted">
-                                                  (monthly)
-                                                </span>
-                                              </label>
-                                              <input
-                                                type="text"
-                                                className="form-control form-control-lg border-0"
-                                                id="fee"
-                                                name="fee"
-                                              />
-                                            </div>
-                                          </div>
-                                          <div className="col-md-6 col-lg-12 col-xxl-6 px-2">
-                                            <div className="form-group">
-                                              <label
-                                                htmlFor="after-price"
-                                                className="text-heading"
-                                              >
-                                                After Price Label{' '}
-                                                <span className="text-muted">
-                                                  ( ex: /month)
-                                                </span>
-                                              </label>
-                                              <input
-                                                type="text"
-                                                className="form-control form-control-lg border-0"
-                                                id="after-price"
-                                                name="after-price"
-                                              />
-                                            </div>
-                                          </div>
-                                        </div>
-                                        <div className="form-row mx-n2">
-                                          <div className="col-md-6 col-lg-12 col-xxl-6 px-2">
-                                            <div className="form-group mb-0">
-                                              <label
-                                                htmlFor="before-price"
-                                                className="text-heading"
-                                              >
-                                                Before Price label{' '}
-                                                <span className="text-muted">
-                                                  (ex: "from")
-                                                </span>
-                                              </label>
-                                              <input
-                                                type="text"
-                                                className="form-control form-control-lg border-0"
-                                                id="before-price"
-                                                name="before-price"
-                                              />
-                                            </div>
-                                          </div>
-                                        </div>
-                                      </div>
-                                    </div>
-                                    <div className="card mb-6">
-                                      <div className="card-body p-6">
-                                        <h3 className="card-title mb-0 text-heading fs-22 lh-15">
-                                          Select Poperty Status
-                                        </h3>
-                                        <p className="card-text mb-5">
-                                          Lorem ipsum dolor sit amet,
-                                          consectetur adipiscing elit
-                                        </p>
-                                        <div className="form-group mb-0">
-                                          <label
-                                            htmlFor="status"
-                                            className="text-heading"
-                                          >
-                                            Property Status
-                                          </label>
-                                          <select
-                                            className="form-control border-0 shadow-none form-control-lg selectpicker"
-                                            title="Select"
-                                            data-style="btn-lg py-2 h-52"
-                                            id="status"
-                                            name="status"
-                                          >
-                                            <option>For Rent</option>
-                                            <option>For Sale</option>
-                                          </select>
-                                        </div>
-                                      </div>
-                                    </div>
-                                  </div>
-                                </div>
-                                <div className="text-right">
-                                  <button className="btn btn-lg btn-primary next-button">
-                                    Next step
-                                    <span className="d-inline-block ml-2 fs-16">
-                                      <i className="fal fa-long-arrow-right" />
-                                    </span>
-                                  </button>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <div
-                          className="tab-pane tab-pane-parent fade px-0"
-                          id="media"
-                          role="tabpanel"
-                          aria-labelledby="media-tab"
-                        >
-                          <div className="card bg-transparent border-0">
-                            <div
-                              className="card-header d-block d-md-none bg-transparent px-0 py-1 border-bottom-0"
-                              id="heading-media"
-                            >
-                              <h5 className="mb-0">
-                                <button
-                                  className="btn btn-lg collapse-parent btn-block border shadow-none"
-                                  data-toggle="collapse"
-                                  data-number={2}
-                                  data-target="#media-collapse"
-                                  aria-expanded="true"
-                                  aria-controls="media-collapse"
-                                >
-                                  <span className="number">2.</span> Media
-                                </button>
-                              </h5>
-                            </div>
-                            <div
-                              id="media-collapse"
-                              className="collapse collapsible"
-                              aria-labelledby="heading-media"
-                              data-parent="#collapse-tabs-accordion"
-                            >
-                              <div className="card-body py-4 py-md-0 px-0">
-                                <div className="row">
-                                  <div className="col-lg-6">
-                                    <div className="card mb-6">
-                                      <div className="card-body p-6">
-                                        <h3 className="card-title mb-0 text-heading fs-22 lh-15">
-                                          Upload photos of your property
-                                        </h3>
-                                        <p className="card-text mb-5">
-                                          Lorem ipsum dolor sit amet,
-                                          consectetur adipiscing elit
-                                        </p>
-                                        <div
-                                          className="dropzone upload-file text-center py-5"
-                                          data-uploader="true"
-                                          id="myDropzone"
-                                          data-uploader-url="./dashboard-add-new-property.html"
-                                        >
-                                          <div className="dz-default dz-message">
-                                            <span className="upload-icon lh-1 d-inline-block mb-4">
-                                              <i className="fal fa-cloud-upload-alt" />
-                                            </span>
-                                            <p className="text-heading fs-22 lh-15 mb-4">
-                                              Drag and drop image or
-                                            </p>
-                                            <button
-                                              className="btn btn-indigo px-7 mb-2"
-                                              type="button"
-                                            >
-                                              Browse file
-                                            </button>
-                                            <input type="file" hidden="" />
-                                            <p>
-                                              Photos must be JPEG or PNG format
-                                              and least 1024x768
-                                            </p>
-                                          </div>
-                                        </div>
-                                      </div>
-                                    </div>
-                                  </div>
-                                  <div className="col-lg-6">
-                                    <div className="card mb-6">
-                                      <div className="card-body p-6">
-                                        <h3 className="card-title mb-0 text-heading fs-22 lh-15">
-                                          Video Option
-                                        </h3>
-                                        <p className="card-text mb-5">
-                                          Lorem ipsum dolor sit amet,
-                                          consectetur adipiscing elit
-                                        </p>
-                                        <div className="form-row mx-n2">
-                                          <div className="col-md-6 col-lg-12 col-xxl-6 px-2">
-                                            <div className="form-group mb-md-0">
-                                              <label
-                                                htmlFor="video-from"
-                                                className="text-heading"
-                                              >
-                                                Video from{' '}
-                                              </label>
-                                              <select
-                                                className="form-control border-0 shadow-none form-control-lg selectpicker"
-                                                data-style="btn-lg py-2 h-52"
-                                                id="video-from"
-                                                name="video-from"
-                                              >
-                                                <option>Vimeo</option>
-                                                <option>Youtube</option>
-                                              </select>
-                                            </div>
-                                          </div>
-                                          <div className="col-md-6 col-lg-12 col-xxl-6 px-2">
-                                            <div className="form-group mb-md-0">
-                                              <label
-                                                htmlFor="embed-video-id"
-                                                className="text-heading"
-                                              >
-                                                Embed Video id
-                                              </label>
-                                              <input
-                                                type="text"
-                                                name="embed-video-id"
-                                                className="form-control form-control-lg border-0"
-                                                id="embed-video-id"
-                                              />
-                                            </div>
-                                          </div>
-                                        </div>
-                                      </div>
-                                    </div>
-                                    <div className="card mb-6">
-                                      <div className="card-body p-6">
-                                        <h3 className="card-title mb-0 text-heading fs-22 lh-15">
-                                          Virtual Tour
-                                        </h3>
-                                        <p className="card-text mb-5">
-                                          Lorem ipsum dolor sit amet,
-                                          consectetur adipiscing elit
-                                        </p>
-                                        <div className="form-group mb-0">
-                                          <label
-                                            htmlFor="virtual-tour"
-                                            className="text-heading"
-                                          >
-                                            Virtual Tour
-                                          </label>
-                                          <input
-                                            type="text"
-                                            className="form-control form-control-lg border-0"
-                                            id="virtual-tour"
-                                            name="virtual-tour"
-                                          />
-                                        </div>
-                                      </div>
-                                    </div>
-                                  </div>
-                                </div>
-                                <div className="d-flex flex-wrap">
-                                  <a
-                                    href="#"
-                                    className="btn btn-lg bg-hover-white border rounded-lg mb-3 mr-auto prev-button"
+                      <div className="row">
+                        <div className="col-xl-9 mb-6 mb-xl-0">
+                          <div className="card">
+                            <div className="card-body p-6">
+                              <div className="row mb-6">
+                                <div className="invoice-logo col-md-6 mb-3 mb-md-0">
+                                  <h4 className="card-title mb-5 text-heading fs-22 lh-15">
+                                    Invoice Logo
+                                  </h4>
+                                  <div
+                                    className="dropzone upload-file text-center py-5"
+                                    data-uploader="true"
+                                    data-uploader-image="/images/logo.png"
+                                    id="myDropzone"
+                                    data-uploader-url="./dashboard-edit-invoice.html"
                                   >
-                                    <span className="d-inline-block text-primary mr-2 fs-16">
-                                      <i className="fal fa-long-arrow-left" />
-                                    </span>
-                                    Prev step
-                                  </a>
-                                  <button className="btn btn-lg btn-primary next-button mb-3">
-                                    Next step
-                                    <span className="d-inline-block ml-2 fs-16">
-                                      <i className="fal fa-long-arrow-right" />
-                                    </span>
-                                  </button>
+                                    <div className="dz-default dz-message">
+                                      <span className="upload-icon lh-1 d-inline-block mb-4">
+                                        <i className="fal fa-cloud-upload-alt" />
+                                      </span>
+                                      <p className="text-heading fs-22 lh-15 mb-4">
+                                        Drag and drop image or
+                                      </p>
+                                      <button
+                                        className="btn btn-indigo px-7 mb-2"
+                                        type="button"
+                                      >
+                                        Browse file
+                                      </button>
+                                      <input
+                                        type="file"
+                                        hidden
+                                        name="file"
+                                        // defaultValue="/images/logo.png"
+                                      />
+                                    </div>
+                                  </div>
+                                </div>
+                                <div className="col-md-6">
+                                  <h4 className="card-title mb-5 text-heading fs-22 lh-15">
+                                    Invoice Label
+                                  </h4>
+                                  <input
+                                    type="text"
+                                    className="form-control border-0 shadow-none form-control-lg"
+                                    placeholder="Invoice Label"
+                                    name="invoice-label"
+                                    defaultValue="G5Themes"
+                                  />
                                 </div>
                               </div>
-                            </div>
-                          </div>
-                        </div>
-                        <div
-                          className="tab-pane tab-pane-parent fade px-0"
-                          id="location"
-                          role="tabpanel"
-                          aria-labelledby="location-tab"
-                        >
-                          <div className="card bg-transparent border-0">
-                            <div
-                              className="card-header d-block d-md-none bg-transparent px-0 py-1 border-bottom-0"
-                              id="heading-location"
-                            >
-                              <h5 className="mb-0">
-                                <button
-                                  className="btn btn-block collapse-parent collapsed border shadow-none"
-                                  data-toggle="collapse"
-                                  data-number={3}
-                                  data-target="#location-collapse"
-                                  aria-expanded="true"
-                                  aria-controls="location-collapse"
-                                >
-                                  <span className="number">3.</span> Location
-                                </button>
-                              </h5>
-                            </div>
-                            <div
-                              id="location-collapse"
-                              className="collapse collapsible"
-                              aria-labelledby="heading-location"
-                              data-parent="#collapse-tabs-accordion"
-                            >
-                              <div className="card-body py-4 py-md-0 px-0">
-                                <div className="row">
-                                  <div className="col-lg-6">
-                                    <div className="card mb-6">
-                                      <div className="card-body p-6">
-                                        <h3 className="card-title mb-0 text-heading fs-22 lh-15">
-                                          Listing Location
-                                        </h3>
-                                        <p className="card-text mb-5">
-                                          Lorem ipsum dolor sit amet,
-                                          consectetur adipiscing elit
-                                        </p>
-                                        <div className="form-group">
-                                          <label
-                                            htmlFor="address"
-                                            className="text-heading"
-                                          >
-                                            Address
-                                          </label>
+                              <div className="row">
+                                <div className="col-md-6 invoice-address-company">
+                                  <h4 className="card-title mb-5 text-heading fs-22 lh-15">
+                                    From
+                                  </h4>
+                                  <div className="invoice-address-company-fields">
+                                    <div className="form-group">
+                                      <label
+                                        htmlFor="company-name"
+                                        className="text-heading"
+                                      >
+                                        Name
+                                      </label>
+                                      <input
+                                        type="text"
+                                        className="form-control border-0 shadow-none form-control-lg"
+                                        id="company-name"
+                                        placeholder="Business Name"
+                                        defaultValue="G5Themes"
+                                        name="name"
+                                      />
+                                    </div>
+                                    <div className="form-group">
+                                      <label
+                                        htmlFor="company-email"
+                                        className="text-heading"
+                                      >
+                                        Email
+                                      </label>
+                                      <input
+                                        type="text"
+                                        className="form-control border-0 shadow-none form-control-lg"
+                                        id="company-email"
+                                        placeholder="name@company.com"
+                                        defaultValue="info@company.com"
+                                        name="email"
+                                      />
+                                    </div>
+                                    <div className="form-group">
+                                      <label
+                                        htmlFor="company-address"
+                                        className="text-heading"
+                                      >
+                                        Address
+                                      </label>
+                                      <input
+                                        type="text"
+                                        className="form-control border-0 shadow-none form-control-lg"
+                                        id="company-address"
+                                        placeholder="XYZ Street"
+                                        defaultValue="XYZ Delta Street"
+                                        name="address"
+                                      />
+                                    </div>
+                                    <div className="form-group">
+                                      <label
+                                        htmlFor="company-phone"
+                                        className="text-heading"
+                                      >
+                                        Phone
+                                      </label>
+                                      <input
+                                        type="text"
+                                        className="form-control border-0 shadow-none form-control-lg"
+                                        id="company-phone"
+                                        placeholder="(123) 456 789"
+                                        defaultValue="(120) 456 789"
+                                        name="phone"
+                                      />
+                                    </div>
+                                  </div>
+                                </div>
+                                <div className="col-md-6 invoice-address-client">
+                                  <h4 className="card-title mb-5 text-heading fs-22 lh-15">
+                                    Bill To
+                                  </h4>
+                                  <div className="invoice-address-client-fields">
+                                    <div className="form-group">
+                                      <label
+                                        htmlFor="client-name"
+                                        className="text-heading"
+                                      >
+                                        Name
+                                      </label>
+                                      <input
+                                        type="text"
+                                        className="form-control border-0 shadow-none form-control-lg"
+                                        id="client-name"
+                                        placeholder="Client Name"
+                                        defaultValue="Jesse Cory"
+                                        name="client-name"
+                                      />
+                                    </div>
+                                    <div className="form-group">
+                                      <label
+                                        htmlFor="client-email"
+                                        className="text-heading"
+                                      >
+                                        Email
+                                      </label>
+                                      <input
+                                        type="text"
+                                        className="form-control border-0 shadow-none form-control-lg"
+                                        id="client-email"
+                                        placeholder="name@company.com"
+                                        defaultValue="redq@company.com"
+                                        name="client-email"
+                                      />
+                                    </div>
+                                    <div className="form-group">
+                                      <label
+                                        htmlFor="client-address"
+                                        className="text-heading"
+                                      >
+                                        Address
+                                      </label>
+                                      <input
+                                        type="text"
+                                        className="form-control border-0 shadow-none form-control-lg"
+                                        id="client-address"
+                                        placeholder="XYZ Street"
+                                        defaultValue="405 Mulberry Rd. Mc Grady, NC, 28649"
+                                        name="client-address"
+                                      />
+                                    </div>
+                                    <div className="form-group">
+                                      <label
+                                        htmlFor="client-phone"
+                                        className="text-heading"
+                                      >
+                                        Phone
+                                      </label>
+                                      <input
+                                        type="text"
+                                        className="form-control border-0 shadow-none form-control-lg"
+                                        id="client-phone"
+                                        placeholder="(123) 456 789"
+                                        defaultValue="(128) 666 070"
+                                        name="client-phone"
+                                      />
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div className="row">
+                                <div className="col-md-4">
+                                  <div className="form-group mb-4">
+                                    <label htmlFor="number">
+                                      Invoice Number
+                                    </label>
+                                    <input
+                                      type="text"
+                                      className="form-control border-0 shadow-none form-control-lg"
+                                      id="number"
+                                      placeholder="#0001"
+                                      defaultValue="#0001"
+                                      name="invoice-number"
+                                    />
+                                  </div>
+                                </div>
+                                <div className="col-md-4">
+                                  <div className="form-group mb-4">
+                                    <label htmlFor="date">Invoice Date</label>
+                                    <input
+                                      type="date"
+                                      className="form-control form-control-lg border-0"
+                                      id="date"
+                                      placeholder="Add date picker"
+                                      name="available-from"
+                                      defaultValue="2021-04-07"
+                                    />
+                                  </div>
+                                </div>
+                                <div className="col-md-4">
+                                  <div className="form-group mb-4">
+                                    <label htmlFor="due">Due Date</label>
+                                    <input
+                                      type="date"
+                                      className="form-control form-control-lg border-0"
+                                      id="due"
+                                      placeholder="None"
+                                      name="available-to"
+                                      defaultValue="2021-04-12"
+                                    />
+                                  </div>
+                                </div>
+                              </div>
+                              <div className="mb-6">
+                                <div className="table-responsive">
+                                  <table className="table table-bordered item-table">
+                                    <thead>
+                                      <tr>
+                                        <th className="" />
+                                        <th>Items</th>
+                                        <th className="">Rate</th>
+                                        <th className="">Qty</th>
+                                        <th className="text-right">Price</th>
+                                        <th className="text-center">Tax</th>
+                                      </tr>
+                                    </thead>
+                                    <tbody>
+                                      <tr>
+                                        <td className="delete-item-row d-block d-md-table-cell w-100 w-md-auto">
+                                          <ul className="table-controls list-unstyled">
+                                            <li>
+                                              <a
+                                                href="javascript:void(0);"
+                                                className="delete-item"
+                                                data-toggle="tooltip"
+                                                data-placement="top"
+                                                title=""
+                                                data-original-title="Delete"
+                                              >
+                                                <svg
+                                                  xmlns="http://www.w3.org/2000/svg"
+                                                  width={24}
+                                                  height={24}
+                                                  viewBox="0 0 24 24"
+                                                  fill="none"
+                                                  stroke="currentColor"
+                                                  strokeWidth={2}
+                                                  strokeLinecap="round"
+                                                  strokeLinejoin="round"
+                                                  className="feather feather-x-circle"
+                                                >
+                                                  <circle
+                                                    cx={12}
+                                                    cy={12}
+                                                    r={10}
+                                                  />
+                                                  <line
+                                                    x1={15}
+                                                    y1={9}
+                                                    x2={9}
+                                                    y2={15}
+                                                  />
+                                                  <line
+                                                    x1={9}
+                                                    y1={9}
+                                                    x2={15}
+                                                    y2={15}
+                                                  />
+                                                </svg>
+                                              </a>
+                                            </li>
+                                          </ul>
+                                        </td>
+                                        <td className="description d-block d-md-table-cell w-100 w-md-auto">
                                           <input
                                             type="text"
-                                            className="form-control form-control-lg border-0"
-                                            id="address"
-                                            name="address"
+                                            className="form-control border-0 shadow-none form-control-lg mb-3"
+                                            placeholder="Item Name"
+                                            defaultValue="Calendar App Customization"
+                                            name="description[]"
                                           />
-                                        </div>
-                                        <div className="form-row mx-n2">
-                                          <div className="col-md-6 col-lg-12 col-xxl-6 px-2">
-                                            <div className="form-group">
-                                              <label
-                                                htmlFor="state"
-                                                className="text-heading"
-                                              >
-                                                Country / State
-                                              </label>
-                                              <input
-                                                type="text"
-                                                className="form-control form-control-lg border-0"
-                                                id="state"
-                                                name="state"
-                                              />
-                                            </div>
-                                          </div>
-                                          <div className="col-md-6 col-lg-12 col-xxl-6 px-2">
-                                            <div className="form-group">
-                                              <label
-                                                htmlFor="city"
-                                                className="text-heading"
-                                              >
-                                                City
-                                              </label>
-                                              <input
-                                                type="text"
-                                                className="form-control form-control-lg border-0"
-                                                id="city"
-                                                name="city"
-                                              />
-                                            </div>
-                                          </div>
-                                        </div>
-                                        <div className="form-row mx-n2">
-                                          <div className="col-md-6 col-lg-12 col-xxl-6 px-2">
-                                            <div className="form-group">
-                                              <label
-                                                htmlFor="neighborhood"
-                                                className="text-heading"
-                                              >
-                                                Neighborhood
-                                              </label>
-                                              <input
-                                                type="text"
-                                                className="form-control form-control-lg border-0"
-                                                id="neighborhood"
-                                                name="neighborhood"
-                                              />
-                                            </div>
-                                          </div>
-                                          <div className="col-md-6 col-lg-12 col-xxl-6 px-2">
-                                            <div className="form-group">
-                                              <label
-                                                htmlFor="zip"
-                                                className="text-heading"
-                                              >
-                                                Zip
-                                              </label>
-                                              <input
-                                                type="text"
-                                                className="form-control form-control-lg border-0"
-                                                id="zip"
-                                                name="zip"
-                                              />
-                                            </div>
-                                          </div>
-                                        </div>
-                                        <div className="form-group mb-md-0">
-                                          <label
-                                            htmlFor="country"
-                                            className="text-heading"
-                                          >
-                                            Country{' '}
-                                          </label>
                                           <select
-                                            className="form-control border-0 shadow-none form-control-lg selectpicker"
+                                            className="form-control border-0 shadow-none form-control-lg"
                                             title="Select"
-                                            data-style="btn-lg py-2 h-52"
                                             id="country"
-                                            name="country"
+                                            name="unit[]"
                                           >
-                                            <option>Vimeo</option>
-                                            <option>Youtube</option>
+                                            <option>Select your unit</option>
+                                            <option selected="">Hours</option>
+                                            <option>Months</option>
                                           </select>
+                                        </td>
+                                        <td className="rate d-inline-block d-md-table-cell">
+                                          <input
+                                            type="text"
+                                            className="form-control border-0 shadow-none form-control-lg"
+                                            placeholder="Price"
+                                            defaultValue={65}
+                                            name="price[]"
+                                          />
+                                        </td>
+                                        <td className="text-md-right qty d-inline-block d-md-table-cell">
+                                          <input
+                                            type="text"
+                                            className="form-control border-0 shadow-none form-control-lg"
+                                            placeholder="Quantity"
+                                            defaultValue={1}
+                                            name="quality[]"
+                                          />
+                                        </td>
+                                        <td className="text-md-right amount d-inline-block d-md-table-cell">
+                                          <span className="editable-amount">
+                                            <span className="currency">$</span>{' '}
+                                            <span className="amount">
+                                              100.00
+                                            </span>
+                                          </span>
+                                        </td>
+                                        <td className="text-md-center tax d-inline-block d-md-table-cell">
+                                          <div className="n-chk">
+                                            <label className="new-control new-checkbox new-checkbox-text checkbox-primary h-18 mx-auto my-0">
+                                              <input
+                                                type="checkbox"
+                                                className="new-control-input"
+                                                name="tax[]"
+                                              />
+                                              <span className="d-inline-block d-md-none">
+                                                Tax
+                                              </span>
+                                            </label>
+                                          </div>
+                                        </td>
+                                      </tr>
+                                    </tbody>
+                                  </table>
+                                </div>
+                                <button
+                                  type="button"
+                                  className="btn btn-secondary btn-invoice-add-item"
+                                >
+                                  Add Item
+                                </button>
+                              </div>
+                              <div className="row">
+                                <div className="col-md-6 mb-6">
+                                  <div className="shadow-xxs-2 pt-1 pb-2 px-6 border-bottom border-primary border-5x rounded-lg">
+                                    <div className="list-group list-group-flush">
+                                      <div className="list-group-item d-flex py-2 px-0">
+                                        <div className="invoice-summary-label">
+                                          Subtotal
+                                        </div>
+                                        <div className="font-weight-500 text-heading ml-auto">
+                                          <span className="currency">$</span>
+                                          <span className="amount">100</span>
+                                        </div>
+                                      </div>
+                                      <div className="list-group-item d-flex py-2 px-0">
+                                        <div className="invoice-summary-label">
+                                          Discount
+                                        </div>
+                                        <div className="font-weight-500 text-heading ml-auto">
+                                          <span className="currency">$</span>
+                                          <span>10</span>
+                                        </div>
+                                      </div>
+                                      <div className="list-group-item d-flex py-2 px-0">
+                                        <div className="invoice-summary-label">
+                                          Tax
+                                        </div>
+                                        <div className="font-weight-500 text-heading ml-auto">
+                                          <span>0%</span>
+                                        </div>
+                                      </div>
+                                      <div className="list-group-item d-flex py-2 px-0">
+                                        <div className="invoice-summary-label">
+                                          Total
+                                        </div>
+                                        <div className="font-weight-500 text-heading ml-auto">
+                                          <span className="currency">$</span>
+                                          <span>90</span>
                                         </div>
                                       </div>
                                     </div>
                                   </div>
-                                  <div className="col-lg-6">
-                                    <div className="card mb-6">
-                                      <div className="card-body p-6">
-                                        <h3 className="card-title mb-6 text-heading fs-22 lh-15">
-                                          Place the listing pin on the map
-                                        </h3>
-                                        <div
-                                          id="map"
-                                          className="mapbox-gl map-point-animate mb-6"
-                                          style={{ height: 296 }}
-                                          data-mapbox-access-token="pk.eyJ1IjoiZHVvbmdsaCIsImEiOiJjanJnNHQ4czExMzhyNDVwdWo5bW13ZmtnIn0.f1bmXQsS6o4bzFFJc8RCcQ"
-                                          data-mapbox-options='{"center":[-73.981566, 40.739011],"setLngLat":[-73.981566, 40.739011]}'
-                                          data-mapbox-marker='[{"position":[-73.981566, 40.739011],"className":"marker","backgroundImage":"images/googlle-market-01.png","backgroundRepeat":"no-repeat","width":"32px","height":"40px"}]'
+                                </div>
+                              </div>
+                              <div className="form-group">
+                                <label
+                                  htmlFor="invoice-detail-notes"
+                                  className="text-heading"
+                                >
+                                  Notes
+                                </label>
+                                <textarea
+                                  className="form-control border-0 shadow-none form-control-lg"
+                                  id="invoice-detail-notes"
+                                  name="note"
+                                  placeholder='Notes - For example, "Thank you for doing business with us"'
+                                  style={{ height: 88 }}
+                                  defaultValue={
+                                    'Thank you for doing business with us.'
+                                  }
+                                />
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div className="col-xl-3">
+                          <div className="card card-body mb-6 p-6">
+                            <div className="invoice-action-currency mb-5">
+                              <h5 className="card-title fs-16 lh-2 text-dark mb-3">
+                                Currency
+                              </h5>
+                              <div className="form-group mb-0">
+                                <input name="currency" hidden="" type="text" />
+                                <div className="dropdown selectable-dropdown invoice-select-currency no-caret">
+                                  <a
+                                    id="currencyDropdown"
+                                    className="d-flex dropdown-toggle form-control bg-transparent form-control-lg bg-input"
+                                    data-toggle="dropdown"
+                                    aria-haspopup="true"
+                                    aria-expanded="false"
+                                  >
+                                    <div className="w-18px mr-1 image-flag">
+                                      <img
+                                        src="/images/svg/flag-us.svg"
+                                        alt="flag"
+                                      />
+                                    </div>
+                                    <span className="selectable-text text-truncate">
+                                      USD - US Dollar
+                                    </span>
+                                    <span className="d-inline-block ml-auto">
+                                      <i className="fal fa-angle-down" />
+                                    </span>
+                                  </a>
+                                  <div
+                                    className="dropdown-menu"
+                                    aria-labelledby="currencyDropdown"
+                                  >
+                                    <a
+                                      className="dropdown-item d-flex"
+                                      data-img-value="assets/img/flag-us.svg"
+                                      data-value="USD - US Dollar"
+                                      href="javascript:void(0);"
+                                    >
+                                      <div className="w-18px mr-1 image-flag">
+                                        <img
+                                          src="/images/svg/flag-us.svg"
+                                          className="flag-width"
+                                          alt="flag"
                                         />
-                                        <div className="form-row mx-n2">
-                                          <div className="col-md-6 col-lg-12 col-xxl-6 px-2">
-                                            <div className="form-group mb-md-0">
-                                              <label
-                                                htmlFor="latitude"
-                                                className="text-heading"
-                                              >
-                                                Latitude{' '}
-                                              </label>
-                                              <input
-                                                type="text"
-                                                className="form-control form-control-lg border-0"
-                                                id="latitude"
-                                                name="latitude"
-                                              />
-                                            </div>
-                                          </div>
-                                          <div className="col-md-6 col-lg-12 col-xxl-6 px-2">
-                                            <div className="form-group mb-md-0">
-                                              <label
-                                                htmlFor="longitude"
-                                                className="text-heading"
-                                              >
-                                                Longitude
-                                              </label>
-                                              <input
-                                                type="text"
-                                                className="form-control form-control-lg border-0"
-                                                id="longitude"
-                                                name="longitude"
-                                              />
-                                            </div>
-                                          </div>
-                                        </div>
                                       </div>
-                                    </div>
+                                      <span className="selectable-text">
+                                        USD - US Dollar
+                                      </span>
+                                    </a>
+                                    <a
+                                      className="dropdown-item d-flex"
+                                      data-img-value="assets/img/flag-gbp.svg"
+                                      data-value="GBP - British Pound"
+                                      href="javascript:void(0);"
+                                    >
+                                      <div className="w-18px mr-1 image-flag">
+                                        <img
+                                          src="/images/svg/flag-gbp.svg"
+                                          className="flag-width"
+                                          alt="flag"
+                                        />
+                                      </div>
+                                      <span className="selectable-text">
+                                        {' '}
+                                        GBP - British Pound
+                                      </span>
+                                    </a>
+                                    <a
+                                      className="dropdown-item d-flex"
+                                      data-img-value="assets/img/flag-idr.svg"
+                                      data-value="IDR - Indonesian Rupiah"
+                                      href="javascript:void(0);"
+                                    >
+                                      <div className="w-18px mr-1 image-flag">
+                                        <img
+                                          src="/images/svg/flag-idr.svg"
+                                          className="flag-width"
+                                          alt="flag"
+                                        />
+                                      </div>
+                                      <span className="selectable-text">
+                                        IDR - Indonesian Rupiah
+                                      </span>
+                                    </a>
+                                    <a
+                                      className="dropdown-item d-flex"
+                                      data-img-value="assets/img/flag-inr.svg"
+                                      data-value="INR - Indian Rupee"
+                                      href="javascript:void(0);"
+                                    >
+                                      <div className="w-18px mr-1 image-flag">
+                                        <img
+                                          src="/images/svg/flag-inr.svg"
+                                          className="flag-width"
+                                          alt="flag"
+                                        />
+                                      </div>
+                                      <span className="selectable-text">
+                                        INR - Indian Rupee
+                                      </span>
+                                    </a>
+                                    <a
+                                      className="dropdown-item d-flex"
+                                      data-img-value="assets/img/flag-brl.svg"
+                                      data-value="BRL - Brazilian Real"
+                                      href="javascript:void(0);"
+                                    >
+                                      <div className="w-18px mr-1 image-flag">
+                                        <img
+                                          src="/images/svg/flag-brl.svg"
+                                          className="flag-width"
+                                          alt="flag"
+                                        />
+                                      </div>
+                                      <span className="selectable-text">
+                                        BRL - Brazilian Real
+                                      </span>
+                                    </a>
+                                    <a
+                                      className="dropdown-item d-flex"
+                                      data-img-value="assets/img/flag-de.svg"
+                                      data-value="EUR - Germany (Euro)"
+                                      href="javascript:void(0);"
+                                    >
+                                      <div className="w-18px mr-1 image-flag">
+                                        <img
+                                          src="/images/svg/flag-de.svg"
+                                          className="flag-width"
+                                          alt="flag"
+                                        />
+                                      </div>
+                                      <span className="selectable-text">
+                                        EUR - Germany (Euro)
+                                      </span>
+                                    </a>
+                                    <a
+                                      className="dropdown-item d-flex"
+                                      data-img-value="assets/img/flag-try.svg"
+                                      data-value="TRY - Turkish Lira"
+                                      href="javascript:void(0);"
+                                    >
+                                      <div className="w-18px mr-1 image-flag">
+                                        <img
+                                          src="/images/svg/flag-try.svg"
+                                          className="flag-width"
+                                          alt="flag"
+                                        />
+                                      </div>
+                                      <span className="selectable-text">
+                                        TRY - Turkish Lira
+                                      </span>
+                                    </a>
                                   </div>
-                                </div>
-                                <div className="d-flex flex-wrap">
-                                  <a
-                                    href="#"
-                                    className="btn btn-lg bg-hover-white border rounded-lg mb-3 mr-auto prev-button"
-                                  >
-                                    <span className="d-inline-block text-primary mr-2 fs-16">
-                                      <i className="fal fa-long-arrow-left" />
-                                    </span>
-                                    Prev step
-                                  </a>
-                                  <button className="btn btn-lg btn-primary next-button mb-3">
-                                    Next step
-                                    <span className="d-inline-block ml-2 fs-16">
-                                      <i className="fal fa-long-arrow-right" />
-                                    </span>
-                                  </button>
                                 </div>
                               </div>
                             </div>
-                          </div>
-                        </div>
-                        <div
-                          className="tab-pane tab-pane-parent fade px-0"
-                          id="detail"
-                          role="tabpanel"
-                          aria-labelledby="detail-tab"
-                        >
-                          <div className="card bg-transparent border-0">
-                            <div
-                              className="card-header d-block d-md-none bg-transparent px-0 py-1 border-bottom-0"
-                              id="heading-detail"
-                            >
-                              <h5 className="mb-0">
-                                <button
-                                  className="btn btn-block collapse-parent collapsed border shadow-none"
-                                  data-toggle="collapse"
-                                  data-number={4}
-                                  data-target="#detail-collapse"
-                                  aria-expanded="true"
-                                  aria-controls="detail-collapse"
-                                >
-                                  <span className="number">4.</span> Detail
-                                </button>
+                            <div className="invoice-action-tax mb-5">
+                              <h5 className="card-title fs-16 lh-2 text-dark mb-3">
+                                Tax
                               </h5>
-                            </div>
-                            <div
-                              id="detail-collapse"
-                              className="collapse collapsible"
-                              aria-labelledby="heading-detail"
-                              data-parent="#collapse-tabs-accordion"
-                            >
-                              <div className="card-body py-4 py-md-0 px-0">
-                                <div className="card mb-6">
-                                  <div className="card-body p-6">
-                                    <h3 className="card-title mb-0 text-heading fs-22 lh-15">
-                                      Listing Detail
-                                    </h3>
-                                    <p className="card-text mb-5">
-                                      Lorem ipsum dolor sit amet, consectetur
-                                      adipiscing elit
-                                    </p>
-                                    <div className="row">
-                                      <div className="col-lg-4">
-                                        <div className="form-group">
-                                          <label
-                                            htmlFor="size-in-ft"
-                                            className="text-heading"
-                                          >
-                                            Size in ft{' '}
-                                            <span className="text-muted">
-                                              (only numbers)
-                                            </span>
-                                          </label>
-                                          <input
-                                            type="text"
-                                            className="form-control form-control-lg border-0"
-                                            id="size-in-ft"
-                                            name="size-in-ft"
-                                          />
-                                        </div>
-                                      </div>
-                                      <div className="col-lg-4">
-                                        <div className="form-group">
-                                          <label
-                                            htmlFor="lot-size-in-ft"
-                                            className="text-heading"
-                                          >
-                                            Lot size in ft{' '}
-                                            <span className="text-muted">
-                                              (only numbers)
-                                            </span>
-                                          </label>
-                                          <input
-                                            type="text"
-                                            className="form-control form-control-lg border-0"
-                                            id="lot-size-in-ft"
-                                            name="lot-size-in-ft"
-                                          />
-                                        </div>
-                                      </div>
-                                      <div className="col-lg-4">
-                                        <div className="form-group">
-                                          <label
-                                            htmlFor="room"
-                                            className="text-heading"
-                                          >
-                                            Rooms
-                                          </label>
-                                          <input
-                                            type="text"
-                                            className="form-control form-control-lg border-0"
-                                            id="room"
-                                            name="rooms"
-                                          />
-                                        </div>
-                                      </div>
-                                    </div>
-                                    <div className="row">
-                                      <div className="col-lg-4">
-                                        <div className="form-group">
-                                          <label
-                                            htmlFor="bedrooms"
-                                            className="text-heading"
-                                          >
-                                            Bedrooms
-                                          </label>
-                                          <input
-                                            type="text"
-                                            className="form-control form-control-lg border-0"
-                                            id="bedrooms"
-                                            name="bedrooms"
-                                          />
-                                        </div>
-                                      </div>
-                                      <div className="col-lg-4">
-                                        <div className="form-group">
-                                          <label
-                                            htmlFor="bathrooms"
-                                            className="text-heading"
-                                          >
-                                            Bathrooms
-                                          </label>
-                                          <input
-                                            type="text"
-                                            className="form-control form-control-lg border-0"
-                                            id="bathrooms"
-                                            name="bathrooms"
-                                          />
-                                        </div>
-                                      </div>
-                                      <div className="col-lg-4">
-                                        <div className="form-group">
-                                          <label
-                                            htmlFor="customID"
-                                            className="text-heading"
-                                          >
-                                            Custom ID{' '}
-                                            <span className="text-muted">
-                                              (text)
-                                            </span>
-                                          </label>
-                                          <input
-                                            type="text"
-                                            className="form-control form-control-lg border-0"
-                                            id="customID"
-                                            name="customID"
-                                          />
-                                        </div>
-                                      </div>
-                                    </div>
-                                    <div className="row">
-                                      <div className="col-lg-4">
-                                        <div className="form-group">
-                                          <label
-                                            htmlFor="garages"
-                                            className="text-heading"
-                                          >
-                                            Garages
-                                          </label>
-                                          <input
-                                            type="text"
-                                            className="form-control form-control-lg border-0"
-                                            id="garages"
-                                            name="garages"
-                                          />
-                                        </div>
-                                      </div>
-                                      <div className="col-lg-4">
-                                        <div className="form-group">
-                                          <label
-                                            htmlFor="garage-size"
-                                            className="text-heading"
-                                          >
-                                            Garage size
-                                          </label>
-                                          <input
-                                            type="text"
-                                            className="form-control form-control-lg border-0"
-                                            id="garage-size"
-                                            name="garage-size"
-                                          />
-                                        </div>
-                                      </div>
-                                      <div className="col-lg-4">
-                                        <div className="form-group">
-                                          <label
-                                            htmlFor="year-built"
-                                            className="text-heading"
-                                          >
-                                            Year built{' '}
-                                            <span className="text-muted">
-                                              (numeric)
-                                            </span>
-                                          </label>
-                                          <input
-                                            type="text"
-                                            className="form-control form-control-lg border-0"
-                                            id="year-built"
-                                            name="year-built"
-                                          />
-                                        </div>
-                                      </div>
-                                    </div>
-                                    <div className="row">
-                                      <div className="col-lg-4">
-                                        <div className="form-group">
-                                          <label
-                                            htmlFor="available-from"
-                                            className="text-heading"
-                                          >
-                                            Available from
-                                            <span className="text-muted">
-                                              (date)
-                                            </span>
-                                          </label>
-                                          <input
-                                            type="date"
-                                            className="form-control form-control-lg border-0"
-                                            id="available-from"
-                                            name="available-from"
-                                          />
-                                        </div>
-                                      </div>
-                                      <div className="col-lg-4">
-                                        <div className="form-group">
-                                          <label
-                                            htmlFor="basement"
-                                            className="text-heading"
-                                          >
-                                            Basement
-                                          </label>
-                                          <input
-                                            type="text"
-                                            className="form-control form-control-lg border-0"
-                                            id="basement"
-                                            name="basement"
-                                          />
-                                        </div>
-                                      </div>
-                                      <div className="col-lg-4">
-                                        <div className="form-group">
-                                          <label
-                                            htmlFor="extra-details"
-                                            className="text-heading"
-                                          >
-                                            Extra details
-                                          </label>
-                                          <input
-                                            type="text"
-                                            className="form-control form-control-lg border-0"
-                                            id="extra-details"
-                                            name="extra-details"
-                                          />
-                                        </div>
-                                      </div>
-                                    </div>
-                                    <div className="row">
-                                      <div className="col-lg-4">
-                                        <div className="form-group">
-                                          <label
-                                            htmlFor="roofing"
-                                            className="text-heading"
-                                          >
-                                            Roofing
-                                          </label>
-                                          <input
-                                            type="text"
-                                            className="form-control form-control-lg border-0"
-                                            id="roofing"
-                                            name="roofing"
-                                          />
-                                        </div>
-                                      </div>
-                                      <div className="col-lg-4">
-                                        <div className="form-group">
-                                          <label
-                                            htmlFor="exterior-material"
-                                            className="text-heading"
-                                          >
-                                            Exterior Material
-                                          </label>
-                                          <input
-                                            type="text"
-                                            className="form-control form-control-lg border-0"
-                                            id="exterior-material"
-                                            name="exterior-material"
-                                          />
-                                        </div>
-                                      </div>
-                                      <div className="col-lg-4">
-                                        <div className="form-group">
-                                          <label
-                                            htmlFor="structure-type"
-                                            className="text-heading"
-                                          >
-                                            Structure type
-                                          </label>
-                                          <select
-                                            className="form-control border-0 shadow-none form-control-lg selectpicker"
-                                            title="Select"
-                                            data-style="btn-lg py-2 h-52"
-                                            id="structure-type"
-                                            name="structure-type"
-                                          >
-                                            <option>For Rent</option>
-                                            <option>For Sale</option>
-                                          </select>
-                                        </div>
-                                      </div>
-                                    </div>
-                                    <div className="row">
-                                      <div className="col-lg-8">
-                                        <div className="form-group">
-                                          <label
-                                            htmlFor="floors-no"
-                                            className="text-heading"
-                                          >
-                                            Floors no
-                                          </label>
-                                          <select
-                                            className="form-control border-0 shadow-none form-control-lg selectpicker"
-                                            title="Select"
-                                            data-style="btn-lg py-2 h-52"
-                                            id="floors-no"
-                                            name="floors-no"
-                                          >
-                                            <option>1</option>
-                                            <option>2</option>
-                                            <option>3</option>
-                                          </select>
-                                        </div>
-                                      </div>
-                                    </div>
-                                    <div className="row">
-                                      <div className="col-lg-8">
-                                        <div className="form-group mb-0">
-                                          <label
-                                            htmlFor="owner"
-                                            className="text-heading"
-                                          >
-                                            Owner/ Agent nots (not visible on
-                                            front end)
-                                          </label>
-                                          <textarea
-                                            className="form-control border-0"
-                                            id="owner"
-                                            name="owner"
-                                            defaultValue={''}
-                                          />
-                                        </div>
-                                      </div>
+                              <div className="invoice-action-tax-fields">
+                                <div className="form-group mb-0">
+                                  <label>Type</label>
+                                  <div className="dropdown selectable-dropdown invoice-tax-select no-caret">
+                                    <a
+                                      id="typeDropdown"
+                                      className="dropdown-toggle form-control bg-transparent form-control-lg d-flex bg-input"
+                                      data-toggle="dropdown"
+                                      aria-haspopup="true"
+                                      aria-expanded="false"
+                                    >
+                                      <span className="selectable-text d-inline-block mr-auto text-truncate">
+                                        On Total
+                                      </span>
+                                      <span>
+                                        <i className="fal fa-angle-down" />
+                                      </span>
+                                    </a>
+                                    <div
+                                      className="dropdown-menu"
+                                      aria-labelledby="typeDropdown"
+                                    >
+                                      <a
+                                        className="dropdown-item"
+                                        data-value={10}
+                                        href="javascript:void(0);"
+                                      >
+                                        Deducted
+                                      </a>
+                                      <a
+                                        className="dropdown-item"
+                                        data-value={5}
+                                        href="javascript:void(0);"
+                                      >
+                                        Per Item
+                                      </a>
+                                      <a
+                                        className="dropdown-item"
+                                        data-value={25}
+                                        href="javascript:void(0);"
+                                      >
+                                        On Total
+                                      </a>
+                                      <a
+                                        className="dropdown-item"
+                                        data-value={0}
+                                        href="javascript:void(0);"
+                                      >
+                                        None
+                                      </a>
                                     </div>
                                   </div>
                                 </div>
-                                <div className="card mb-6">
-                                  <div className="card-body p-6">
-                                    <h3 className="card-title mb-0 text-heading fs-22 lh-15">
-                                      Select Energy Class
-                                    </h3>
-                                    <p className="card-text mb-5">
-                                      Lorem ipsum dolor sit amet, consectetur
-                                      adipiscing elit
-                                    </p>
-                                    <div className="row">
-                                      <div className="col-lg-6">
-                                        <div className="form-group mb-lg-0">
-                                          <label
-                                            htmlFor="energy-class"
-                                            className="text-heading"
-                                          >
-                                            Energy Class
-                                          </label>
-                                          <select
-                                            className="form-control border-0 shadow-none form-control-lg selectpicker"
-                                            title="Select"
-                                            data-style="btn-lg py-2 h-52"
-                                            id="energy-class"
-                                            name="energy-class"
-                                          >
-                                            <option>1</option>
-                                            <option>2</option>
-                                            <option>3</option>
-                                          </select>
-                                        </div>
-                                      </div>
-                                      <div className="col-lg-6">
-                                        <div className="form-group mb-lg-0">
-                                          <label
-                                            htmlFor="energy-index"
-                                            className="text-heading"
-                                          >
-                                            Energy index in kWh/m2a
-                                          </label>
-                                          <select
-                                            className="form-control border-0 shadow-none form-control-lg selectpicker"
-                                            title="Select"
-                                            data-style="btn-lg py-2 h-52"
-                                            id="energy-index"
-                                            name="energy-index"
-                                          >
-                                            <option>1</option>
-                                            <option>2</option>
-                                            <option>3</option>
-                                          </select>
-                                        </div>
-                                      </div>
-                                    </div>
-                                  </div>
-                                </div>
-                                <div className="d-flex flex-wrap">
-                                  <a
-                                    href="#"
-                                    className="btn btn-lg bg-hover-white border rounded-lg mb-3 mr-auto prev-button"
-                                  >
-                                    <span className="d-inline-block text-primary mr-2 fs-16">
-                                      <i className="fal fa-long-arrow-left" />
-                                    </span>
-                                    Prev step
-                                  </a>
-                                  <button className="btn btn-lg btn-primary next-button mb-3">
-                                    Next step
-                                    <span className="d-inline-block ml-2 fs-16">
-                                      <i className="fal fa-long-arrow-right" />
-                                    </span>
-                                  </button>
+                                <div className="form-group mb-0 mt-3 tax-rate">
+                                  <label htmlFor="rate1">Rate (%)</label>
+                                  <input
+                                    type="number"
+                                    className="form-control border-0 shadow-none form-control-lg input-rate"
+                                    name="tax-rate"
+                                    id="rate1"
+                                    placeholder="Rate"
+                                    defaultValue={25}
+                                  />
                                 </div>
                               </div>
                             </div>
-                          </div>
-                        </div>
-                        <div
-                          className="tab-pane tab-pane-parent fade px-0"
-                          id="amenities"
-                          role="tabpanel"
-                          aria-labelledby="amenities-tab"
-                        >
-                          <div className="card bg-transparent border-0">
-                            <div
-                              className="card-header d-block d-md-none bg-transparent px-0 py-1 border-bottom-0"
-                              id="heading-amenities"
-                            >
-                              <h5 className="mb-0">
-                                <button
-                                  className="btn btn-block collapse-parent collapsed border shadow-none"
-                                  data-toggle="collapse"
-                                  data-number={5}
-                                  data-target="#amenities-collapse"
-                                  aria-expanded="true"
-                                  aria-controls="amenities-collapse"
-                                >
-                                  <span className="number">5.</span> Amenities
-                                </button>
+                            <div className="invoice-action-discount mb-5">
+                              <h5 className="card-title fs-16 lh-2 text-dark mb-3">
+                                Discount
                               </h5>
-                            </div>
-                            <div
-                              id="amenities-collapse"
-                              className="collapse collapsible"
-                              aria-labelledby="heading-amenities"
-                              data-parent="#collapse-tabs-accordion"
-                            >
-                              <div className="card-body py-4 py-md-0 px-0">
-                                <div className="card mb-6">
-                                  <div className="card-body p-6">
-                                    <h3 className="card-title mb-0 text-heading fs-22 lh-15">
-                                      Listing Detail
-                                    </h3>
-                                    <p className="card-text mb-5">
-                                      Lorem ipsum dolor sit amet, consectetur
-                                      adipiscing elit
-                                    </p>
-                                    <div className="row">
-                                      <div className="col-sm-6 col-lg-3">
-                                        <ul className="list-group list-group-no-border">
-                                          <li className="list-group-item px-0 pt-0 pb-2">
-                                            <div className="custom-control custom-checkbox">
-                                              <input
-                                                type="checkbox"
-                                                className="custom-control-input"
-                                                name="features[]"
-                                                id="attic"
-                                              />
-                                              <label
-                                                className="custom-control-label"
-                                                htmlFor="attic"
-                                              >
-                                                Attic
-                                              </label>
-                                            </div>
-                                          </li>
-                                          <li className="list-group-item px-0 pt-0 pb-2">
-                                            <div className="custom-control custom-checkbox">
-                                              <input
-                                                type="checkbox"
-                                                className="custom-control-input"
-                                                name="features[]"
-                                                id="basketball-court"
-                                              />
-                                              <label
-                                                className="custom-control-label"
-                                                htmlFor="basketball-court"
-                                              >
-                                                Basketball court
-                                              </label>
-                                            </div>
-                                          </li>
-                                          <li className="list-group-item px-0 pt-0 pb-2">
-                                            <div className="custom-control custom-checkbox">
-                                              <input
-                                                type="checkbox"
-                                                className="custom-control-input"
-                                                name="features[]"
-                                                id="doorman"
-                                              />
-                                              <label
-                                                className="custom-control-label"
-                                                htmlFor="doorman"
-                                              >
-                                                Doorman
-                                              </label>
-                                            </div>
-                                          </li>
-                                          <li className="list-group-item px-0 pt-0 pb-2">
-                                            <div className="custom-control custom-checkbox">
-                                              <input
-                                                type="checkbox"
-                                                className="custom-control-input"
-                                                name="features[]"
-                                                id="front-yard"
-                                              />
-                                              <label
-                                                className="custom-control-label"
-                                                htmlFor="front-yard"
-                                              >
-                                                Front yard
-                                              </label>
-                                            </div>
-                                          </li>
-                                          <li className="list-group-item px-0 pt-0 pb-2">
-                                            <div className="custom-control custom-checkbox">
-                                              <input
-                                                type="checkbox"
-                                                className="custom-control-input"
-                                                name="features[]"
-                                                id="lake-view"
-                                              />
-                                              <label
-                                                className="custom-control-label"
-                                                htmlFor="lake-view"
-                                              >
-                                                Lake view
-                                              </label>
-                                            </div>
-                                          </li>
-                                          <li className="list-group-item px-0 pt-0 pb-2">
-                                            <div className="custom-control custom-checkbox">
-                                              <input
-                                                type="checkbox"
-                                                className="custom-control-input"
-                                                name="features[]"
-                                                id="ocean-view"
-                                              />
-                                              <label
-                                                className="custom-control-label"
-                                                htmlFor="ocean-view"
-                                              >
-                                                Ocean view
-                                              </label>
-                                            </div>
-                                          </li>
-                                          <li className="list-group-item px-0 pt-0 pb-2">
-                                            <div className="custom-control custom-checkbox">
-                                              <input
-                                                type="checkbox"
-                                                className="custom-control-input"
-                                                name="features[]"
-                                                id="private-space"
-                                              />
-                                              <label
-                                                className="custom-control-label"
-                                                htmlFor="private-space"
-                                              >
-                                                Private space
-                                              </label>
-                                            </div>
-                                          </li>
-                                          <li className="list-group-item px-0 pt-0 pb-2">
-                                            <div className="custom-control custom-checkbox">
-                                              <input
-                                                type="checkbox"
-                                                className="custom-control-input"
-                                                name="features[]"
-                                                id="sprinklers"
-                                              />
-                                              <label
-                                                className="custom-control-label"
-                                                htmlFor="sprinklers"
-                                              >
-                                                Sprinklers
-                                              </label>
-                                            </div>
-                                          </li>
-                                          <li className="list-group-item px-0 pt-0 pb-2">
-                                            <div className="custom-control custom-checkbox">
-                                              <input
-                                                type="checkbox"
-                                                className="custom-control-input"
-                                                name="features[]"
-                                                id="wine-cellar"
-                                              />
-                                              <label
-                                                className="custom-control-label"
-                                                htmlFor="wine-cellar"
-                                              >
-                                                Wine cellar
-                                              </label>
-                                            </div>
-                                          </li>
-                                        </ul>
-                                      </div>
-                                      <div className="col-sm-6 col-lg-3">
-                                        <ul className="list-group list-group-no-border">
-                                          <li className="list-group-item px-0 pt-0 pb-2">
-                                            <div className="custom-control custom-checkbox">
-                                              <input
-                                                type="checkbox"
-                                                className="custom-control-input"
-                                                name="features[]"
-                                                id="attic-01"
-                                              />
-                                              <label
-                                                className="custom-control-label"
-                                                htmlFor="attic-01"
-                                              >
-                                                Attic
-                                              </label>
-                                            </div>
-                                          </li>
-                                          <li className="list-group-item px-0 pt-0 pb-2">
-                                            <div className="custom-control custom-checkbox">
-                                              <input
-                                                type="checkbox"
-                                                className="custom-control-input"
-                                                name="features[]"
-                                                id="basketball-court-01"
-                                              />
-                                              <label
-                                                className="custom-control-label"
-                                                htmlFor="basketball-court-01"
-                                              >
-                                                Basketball court
-                                              </label>
-                                            </div>
-                                          </li>
-                                          <li className="list-group-item px-0 pt-0 pb-2">
-                                            <div className="custom-control custom-checkbox">
-                                              <input
-                                                type="checkbox"
-                                                className="custom-control-input"
-                                                name="features[]"
-                                                id="doorman-01"
-                                              />
-                                              <label
-                                                className="custom-control-label"
-                                                htmlFor="doorman-01"
-                                              >
-                                                Doorman
-                                              </label>
-                                            </div>
-                                          </li>
-                                          <li className="list-group-item px-0 pt-0 pb-2">
-                                            <div className="custom-control custom-checkbox">
-                                              <input
-                                                type="checkbox"
-                                                className="custom-control-input"
-                                                name="features[]"
-                                                id="front-yard-01"
-                                              />
-                                              <label
-                                                className="custom-control-label"
-                                                htmlFor="front-yard-01"
-                                              >
-                                                Front yard
-                                              </label>
-                                            </div>
-                                          </li>
-                                          <li className="list-group-item px-0 pt-0 pb-2">
-                                            <div className="custom-control custom-checkbox">
-                                              <input
-                                                type="checkbox"
-                                                className="custom-control-input"
-                                                name="features[]"
-                                                id="lake-view-01"
-                                              />
-                                              <label
-                                                className="custom-control-label"
-                                                htmlFor="lake-view-01"
-                                              >
-                                                Lake view
-                                              </label>
-                                            </div>
-                                          </li>
-                                          <li className="list-group-item px-0 pt-0 pb-2">
-                                            <div className="custom-control custom-checkbox">
-                                              <input
-                                                type="checkbox"
-                                                className="custom-control-input"
-                                                name="features[]"
-                                                id="ocean-view-01"
-                                              />
-                                              <label
-                                                className="custom-control-label"
-                                                htmlFor="ocean-view-01"
-                                              >
-                                                Ocean view
-                                              </label>
-                                            </div>
-                                          </li>
-                                          <li className="list-group-item px-0 pt-0 pb-2">
-                                            <div className="custom-control custom-checkbox">
-                                              <input
-                                                type="checkbox"
-                                                className="custom-control-input"
-                                                name="features[]"
-                                                id="private-space-01"
-                                              />
-                                              <label
-                                                className="custom-control-label"
-                                                htmlFor="private-space-01"
-                                              >
-                                                Private space
-                                              </label>
-                                            </div>
-                                          </li>
-                                          <li className="list-group-item px-0 pt-0 pb-2">
-                                            <div className="custom-control custom-checkbox">
-                                              <input
-                                                type="checkbox"
-                                                className="custom-control-input"
-                                                name="features[]"
-                                                id="sprinklers-01"
-                                              />
-                                              <label
-                                                className="custom-control-label"
-                                                htmlFor="sprinklers-01"
-                                              >
-                                                Sprinklers
-                                              </label>
-                                            </div>
-                                          </li>
-                                          <li className="list-group-item px-0 pt-0 pb-2">
-                                            <div className="custom-control custom-checkbox">
-                                              <input
-                                                type="checkbox"
-                                                className="custom-control-input"
-                                                name="features[]"
-                                                id="wine-cellar-01"
-                                              />
-                                              <label
-                                                className="custom-control-label"
-                                                htmlFor="wine-cellar-01"
-                                              >
-                                                Wine cellar
-                                              </label>
-                                            </div>
-                                          </li>
-                                        </ul>
-                                      </div>
-                                      <div className="col-sm-6 col-lg-3">
-                                        <ul className="list-group list-group-no-border">
-                                          <li className="list-group-item px-0 pt-0 pb-2">
-                                            <div className="custom-control custom-checkbox">
-                                              <input
-                                                type="checkbox"
-                                                className="custom-control-input"
-                                                name="features[]"
-                                                id="attic-02"
-                                              />
-                                              <label
-                                                className="custom-control-label"
-                                                htmlFor="attic-02"
-                                              >
-                                                Attic
-                                              </label>
-                                            </div>
-                                          </li>
-                                          <li className="list-group-item px-0 pt-0 pb-2">
-                                            <div className="custom-control custom-checkbox">
-                                              <input
-                                                type="checkbox"
-                                                className="custom-control-input"
-                                                name="features[]"
-                                                id="basketball-court-02"
-                                              />
-                                              <label
-                                                className="custom-control-label"
-                                                htmlFor="basketball-court-02"
-                                              >
-                                                Basketball court
-                                              </label>
-                                            </div>
-                                          </li>
-                                          <li className="list-group-item px-0 pt-0 pb-2">
-                                            <div className="custom-control custom-checkbox">
-                                              <input
-                                                type="checkbox"
-                                                className="custom-control-input"
-                                                name="features[]"
-                                                id="doorman-02"
-                                              />
-                                              <label
-                                                className="custom-control-label"
-                                                htmlFor="doorman-02"
-                                              >
-                                                Doorman
-                                              </label>
-                                            </div>
-                                          </li>
-                                          <li className="list-group-item px-0 pt-0 pb-2">
-                                            <div className="custom-control custom-checkbox">
-                                              <input
-                                                type="checkbox"
-                                                className="custom-control-input"
-                                                name="features[]"
-                                                id="front-yard-02"
-                                              />
-                                              <label
-                                                className="custom-control-label"
-                                                htmlFor="front-yard-02"
-                                              >
-                                                Front yard
-                                              </label>
-                                            </div>
-                                          </li>
-                                          <li className="list-group-item px-0 pt-0 pb-2">
-                                            <div className="custom-control custom-checkbox">
-                                              <input
-                                                type="checkbox"
-                                                className="custom-control-input"
-                                                name="features[]"
-                                                id="lake-view-02"
-                                              />
-                                              <label
-                                                className="custom-control-label"
-                                                htmlFor="lake-view-02"
-                                              >
-                                                Lake view
-                                              </label>
-                                            </div>
-                                          </li>
-                                          <li className="list-group-item px-0 pt-0 pb-2">
-                                            <div className="custom-control custom-checkbox">
-                                              <input
-                                                type="checkbox"
-                                                className="custom-control-input"
-                                                name="features[]"
-                                                id="ocean-view-02"
-                                              />
-                                              <label
-                                                className="custom-control-label"
-                                                htmlFor="ocean-view-02"
-                                              >
-                                                Ocean view
-                                              </label>
-                                            </div>
-                                          </li>
-                                          <li className="list-group-item px-0 pt-0 pb-2">
-                                            <div className="custom-control custom-checkbox">
-                                              <input
-                                                type="checkbox"
-                                                className="custom-control-input"
-                                                name="features[]"
-                                                id="private-space-02"
-                                              />
-                                              <label
-                                                className="custom-control-label"
-                                                htmlFor="private-space-02"
-                                              >
-                                                Private space
-                                              </label>
-                                            </div>
-                                          </li>
-                                          <li className="list-group-item px-0 pt-0 pb-2">
-                                            <div className="custom-control custom-checkbox">
-                                              <input
-                                                type="checkbox"
-                                                className="custom-control-input"
-                                                name="features[]"
-                                                id="sprinklers-02"
-                                              />
-                                              <label
-                                                className="custom-control-label"
-                                                htmlFor="sprinklers-02"
-                                              >
-                                                Sprinklers
-                                              </label>
-                                            </div>
-                                          </li>
-                                          <li className="list-group-item px-0 pt-0 pb-2">
-                                            <div className="custom-control custom-checkbox">
-                                              <input
-                                                type="checkbox"
-                                                className="custom-control-input"
-                                                name="features[]"
-                                                id="wine-cellar-02"
-                                              />
-                                              <label
-                                                className="custom-control-label"
-                                                htmlFor="wine-cellar-02"
-                                              >
-                                                Wine cellar
-                                              </label>
-                                            </div>
-                                          </li>
-                                        </ul>
-                                      </div>
-                                      <div className="col-sm-6 col-lg-3">
-                                        <ul className="list-group list-group-no-border">
-                                          <li className="list-group-item px-0 pt-0 pb-2">
-                                            <div className="custom-control custom-checkbox">
-                                              <input
-                                                type="checkbox"
-                                                className="custom-control-input"
-                                                name="features[]"
-                                                id="attic-03"
-                                              />
-                                              <label
-                                                className="custom-control-label"
-                                                htmlFor="attic-03"
-                                              >
-                                                Attic
-                                              </label>
-                                            </div>
-                                          </li>
-                                          <li className="list-group-item px-0 pt-0 pb-2">
-                                            <div className="custom-control custom-checkbox">
-                                              <input
-                                                type="checkbox"
-                                                className="custom-control-input"
-                                                name="features[]"
-                                                id="basketball-court-03"
-                                              />
-                                              <label
-                                                className="custom-control-label"
-                                                htmlFor="basketball-court-03"
-                                              >
-                                                Basketball court
-                                              </label>
-                                            </div>
-                                          </li>
-                                          <li className="list-group-item px-0 pt-0 pb-2">
-                                            <div className="custom-control custom-checkbox">
-                                              <input
-                                                type="checkbox"
-                                                className="custom-control-input"
-                                                name="features[]"
-                                                id="doorman-03"
-                                              />
-                                              <label
-                                                className="custom-control-label"
-                                                htmlFor="doorman-03"
-                                              >
-                                                Doorman
-                                              </label>
-                                            </div>
-                                          </li>
-                                          <li className="list-group-item px-0 pt-0 pb-2">
-                                            <div className="custom-control custom-checkbox">
-                                              <input
-                                                type="checkbox"
-                                                className="custom-control-input"
-                                                name="features[]"
-                                                id="front-yard-03"
-                                              />
-                                              <label
-                                                className="custom-control-label"
-                                                htmlFor="front-yard-03"
-                                              >
-                                                Front yard
-                                              </label>
-                                            </div>
-                                          </li>
-                                          <li className="list-group-item px-0 pt-0 pb-2">
-                                            <div className="custom-control custom-checkbox">
-                                              <input
-                                                type="checkbox"
-                                                className="custom-control-input"
-                                                name="features[]"
-                                                id="lake-view-03"
-                                              />
-                                              <label
-                                                className="custom-control-label"
-                                                htmlFor="lake-view-03"
-                                              >
-                                                Lake view
-                                              </label>
-                                            </div>
-                                          </li>
-                                          <li className="list-group-item px-0 pt-0 pb-2">
-                                            <div className="custom-control custom-checkbox">
-                                              <input
-                                                type="checkbox"
-                                                className="custom-control-input"
-                                                name="features[]"
-                                                id="ocean-view-03"
-                                              />
-                                              <label
-                                                className="custom-control-label"
-                                                htmlFor="ocean-view-03"
-                                              >
-                                                Ocean view
-                                              </label>
-                                            </div>
-                                          </li>
-                                          <li className="list-group-item px-0 pt-0 pb-2">
-                                            <div className="custom-control custom-checkbox">
-                                              <input
-                                                type="checkbox"
-                                                className="custom-control-input"
-                                                name="features[]"
-                                                id="private-space-03"
-                                              />
-                                              <label
-                                                className="custom-control-label"
-                                                htmlFor="private-space-03"
-                                              >
-                                                Private space
-                                              </label>
-                                            </div>
-                                          </li>
-                                          <li className="list-group-item px-0 pt-0 pb-2">
-                                            <div className="custom-control custom-checkbox">
-                                              <input
-                                                type="checkbox"
-                                                className="custom-control-input"
-                                                name="features[]"
-                                                id="sprinklers-03"
-                                              />
-                                              <label
-                                                className="custom-control-label"
-                                                htmlFor="sprinklers-03"
-                                              >
-                                                Sprinklers
-                                              </label>
-                                            </div>
-                                          </li>
-                                          <li className="list-group-item px-0 pt-0 pb-2">
-                                            <div className="custom-control custom-checkbox">
-                                              <input
-                                                type="checkbox"
-                                                className="custom-control-input"
-                                                name="features[]"
-                                                id="wine-cellar-03"
-                                              />
-                                              <label
-                                                className="custom-control-label"
-                                                htmlFor="wine-cellar-03"
-                                              >
-                                                Wine cellar
-                                              </label>
-                                            </div>
-                                          </li>
-                                        </ul>
-                                      </div>
-                                    </div>
+                              <div className="form-group mb-0">
+                                <label>Type</label>
+                                <div className="dropdown selectable-dropdown invoice-discount-select no-caret">
+                                  <a
+                                    id="discountDropdown"
+                                    className="d-flex dropdown-toggle form-control bg-transparent form-control-lg d-block bg-input"
+                                    data-toggle="dropdown"
+                                    aria-haspopup="true"
+                                    aria-expanded="false"
+                                  >
+                                    {' '}
+                                    <span className="selectable-text d-inline-block mr-auto text-truncate">
+                                      Flat Amount
+                                    </span>
+                                    <span>
+                                      <i className="fal fa-angle-down" />
+                                    </span>
+                                  </a>
+                                  <div
+                                    className="dropdown-menu"
+                                    aria-labelledby="discountDropdown"
+                                  >
+                                    <a
+                                      className="dropdown-item d-flex"
+                                      data-value={10}
+                                      href="javascript:void(0);"
+                                    >
+                                      Percent
+                                    </a>
+                                    <a
+                                      className="dropdown-item d-flex"
+                                      data-value={25}
+                                      href="javascript:void(0);"
+                                    >
+                                      Flat Amount
+                                    </a>
+                                    <a
+                                      className="dropdown-item d-flex"
+                                      data-value={0}
+                                      href="javascript:void(0);"
+                                    >
+                                      None
+                                    </a>
                                   </div>
                                 </div>
-                                <div className="d-flex flex-wrap">
-                                  <a
-                                    href="#"
-                                    className="btn btn-lg bg-hover-white border rounded-lg mb-3 mr-auto prev-button"
-                                  >
-                                    <span className="d-inline-block text-primary mr-2 fs-16">
-                                      <i className="fal fa-long-arrow-left" />
-                                    </span>
-                                    Prev step
-                                  </a>
-                                  <button
-                                    className="btn btn-lg btn-primary mb-3"
-                                    type="submit"
-                                  >
-                                    Submit property
-                                  </button>
-                                </div>
+                              </div>
+                              <div className="form-group mb-0 mt-3 discount-amount">
+                                <label htmlFor="amount">Amount</label>
+                                <input
+                                  type="number"
+                                  className="form-control border-0 shadow-none form-control-lg input-rate"
+                                  name="discount-rate"
+                                  id="amount"
+                                  placeholder="Rate"
+                                  defaultValue={25}
+                                />
+                              </div>
+                            </div>
+                          </div>
+                          <div className="invoice-actions-btn card card-body p-6">
+                            <div className="invoice-action-btn">
+                              <div className="mb-3">
+                                <a
+                                  href="javascript:void(0);"
+                                  className="btn btn-primary btn-send btn-block btn-lg"
+                                >
+                                  Send Invoice
+                                </a>
+                              </div>
+                              <div className="mb-3">
+                                <a
+                                  href="dashboard-preview-invoice.html"
+                                  className="btn btn-secondary btn-preview btn-block btn-lg"
+                                >
+                                  Preview
+                                </a>
+                              </div>
+                              <div>
+                                <button className="btn btn-success btn-download btn-block btn-lg">
+                                  Save
+                                </button>
                               </div>
                             </div>
                           </div>
@@ -2259,7 +1167,6 @@ const AddNewPropaty = () => {
           </div>
         </div>
       </div>
-      {/* Vendors scripts */}
       <div
         className="modal fade login-register login-register-modal"
         id="login-register-modal"
@@ -2407,7 +1314,7 @@ const AddNewPropaty = () => {
                         </label>
                       </div>
                       <a href="#" className="d-inline-block ml-auto">
-                        <img src="images/re-captcha.png" alt="Re-capcha" />
+                        <img src="/images/re-captcha.png" alt="Re-capcha" />
                       </a>
                     </div>
                     <button
@@ -2433,7 +1340,7 @@ const AddNewPropaty = () => {
                     </div>
                     <div className="col-4 px-2 mb-4">
                       <a href="#" className="btn btn-lg btn-block google px-0">
-                        <img src="images/google.png" alt="Google" />
+                        <img src="/images/google.png" alt="Google" />
                       </a>
                     </div>
                     <div className="col-4 px-2 mb-4">
@@ -2544,7 +1451,7 @@ const AddNewPropaty = () => {
                     </div>
                     <div className="col-4 px-2 mb-4">
                       <a href="#" className="btn btn-lg btn-block google px-0">
-                        <img src="images/google.png" alt="Google" />
+                        <img src="/images/google.png" alt="Google" />
                       </a>
                     </div>
                     <div className="col-4 px-2 mb-4">
@@ -2807,4 +1714,4 @@ const AddNewPropaty = () => {
   )
 }
 
-export default AddNewPropaty
+export default EditInvoice

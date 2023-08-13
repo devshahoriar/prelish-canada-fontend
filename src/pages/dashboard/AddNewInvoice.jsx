@@ -1,6 +1,6 @@
 /* eslint-disable react/no-unescaped-entities */
 
-const Dashboard = () => {
+const AddNewInvoice = () => {
   return (
     <>
       <div className="wrapper dashboard-wrapper">
@@ -10,7 +10,7 @@ const Dashboard = () => {
               <div className="sticky-area shadow-xs-1 py-3">
                 <div className="d-flex px-3 px-xl-6 w-100">
                   <a className="navbar-brand" href="index.html">
-                    <img src="images/logo.png" alt="HomeID" />
+                    <img src="/images/logo.png" alt="HomeID" />
                   </a>
                   <div className="ml-auto d-flex align-items-center ">
                     <div className="d-flex align-items-center d-xl-none">
@@ -22,7 +22,7 @@ const Dashboard = () => {
                         >
                           <div className="w-48px">
                             <img
-                              src="images/testimonial-5.jpg"
+                              src="/images/testimonial-5.jpg"
                               alt="Ronald Hunter"
                               className="rounded-circle"
                             />
@@ -357,7 +357,7 @@ const Dashboard = () => {
                       >
                         <div className="mr-4 w-48px">
                           <img
-                            src="images/testimonial-5.jpg"
+                            src="/images/testimonial-5.jpg"
                             alt="Ronald Hunter"
                             className="rounded-circle"
                           />
@@ -406,436 +406,748 @@ const Dashboard = () => {
               </div>
             </header>
             <main id="content" className="bg-gray-01">
-              <div className="px-3 px-lg-6 px-xxl-13 py-5 py-lg-10">
-                <div className="d-flex flex-wrap flex-md-nowrap mb-6">
-                  <div className="mr-0 mr-md-auto">
-                    <h2 className="mb-0 text-heading fs-22 lh-15">
-                      Welcome back, Ronald Hunter!
-                    </h2>
-                    <p>
-                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                      At iusto, laboriosam. Atque
-                    </p>
-                  </div>
-                  <div>
-                    <a
-                      href="dashboard-add-new-property.html"
-                      className="btn btn-primary btn-lg"
-                    >
-                      <span>Add New Property</span>
-                      <span className="d-inline-block ml-1 fs-20 lh-1">
-                        <svg className="icon icon-add-new">
-                          <use xlinkHref="#icon-add-new" />
-                        </svg>
-                      </span>
-                    </a>
-                  </div>
-                </div>
+              <div className="px-3 px-lg-6 px-xxl-13 py-5 py-lg-10 add-new-invoice">
                 <div className="row">
-                  <div className="col-sm-6 col-xxl-3 mb-6">
-                    <div className="card">
-                      <div className="card-body row align-items-center px-6 py-7">
-                        <div className="col-5">
-                          <span className="w-83px h-83 d-flex align-items-center justify-content-center fs-36 badge badge-blue badge-circle">
-                            <svg className="icon icon-1">
-                              <use xlinkHref="#icon-1" />
-                            </svg>
-                          </span>
-                        </div>
-                        <div className="col-7 text-center">
-                          <p
-                            className="fs-42 lh-12 mb-0 counterup"
-                            data-start={0}
-                            data-end={29}
-                            data-decimals={0}
-                            data-duration={0}
-                            data-separator=""
-                          >
-                            29
-                          </p>
-                          <p>Properties</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="col-sm-6 col-xxl-3 mb-6">
-                    <div className="card">
-                      <div className="card-body row align-items-center px-6 py-7">
-                        <div className="col-5">
-                          <span className="w-83px h-83 d-flex align-items-center justify-content-center fs-36 badge badge-green badge-circle">
-                            <svg className="icon icon-2">
-                              <use xlinkHref="#icon-2" />
-                            </svg>
-                          </span>
-                        </div>
-                        <div className="col-7 text-center">
-                          <p
-                            className="fs-42 lh-12 mb-0 counterup"
-                            data-start={0}
-                            data-end={1730}
-                            data-decimals={0}
-                            data-duration={0}
-                            data-separator=""
-                          >
-                            1730
-                          </p>
-                          <p>Total views</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="col-sm-6 col-xxl-3 mb-6">
-                    <div className="card">
-                      <div className="card-body row align-items-center px-6 py-7">
-                        <div className="col-4">
-                          <span className="w-83px h-83 d-flex align-items-center justify-content-center fs-36 badge badge-yellow badge-circle">
-                            <svg className="icon icon-review">
-                              <use xlinkHref="#icon-review" />
-                            </svg>
-                          </span>
-                        </div>
-                        <div className="col-8 text-center">
-                          <p
-                            className="fs-42 lh-12 mb-0 counterup"
-                            data-start={0}
-                            data-end={329}
-                            data-decimals={0}
-                            data-duration={0}
-                            data-separator=""
-                          >
-                            329
-                          </p>
-                          <p>Total Visitor Reviews</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="col-sm-6 col-xxl-3 mb-6">
-                    <div className="card">
-                      <div className="card-body row align-items-center px-6 py-7">
-                        <div className="col-5">
-                          <span className="w-83px h-83 d-flex align-items-center justify-content-center fs-36 badge badge-pink badge-circle">
-                            <svg className="icon icon-heart">
-                              <use xlinkHref="#icon-heart" />
-                            </svg>
-                          </span>
-                        </div>
-                        <div className="col-7 text-center">
-                          <p
-                            className="fs-42 lh-12 mb-0 counterup"
-                            data-start={0}
-                            data-end={914}
-                            data-decimals={0}
-                            data-duration={0}
-                            data-separator=""
-                          >
-                            914
-                          </p>
-                          <p>Total Favorites</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div className="row">
-                  <div className="col-xxl-8 mb-6">
-                    <div className="card px-7 py-6 h-100 chart">
-                      <div className="card-body p-0 collapse-tabs">
-                        <div className="d-flex align-items-center mb-5">
-                          <h2 className="mb-0 text-heading fs-22 lh-15 mr-auto">
-                            View statistics
-                          </h2>
-                          <ul
-                            className="nav nav-pills justify-content-end d-none d-sm-flex nav-pills-01"
-                            role="tablist"
-                          >
-                            <li className="nav-item px-5 py-1">
-                              <a
-                                className="nav-link active bg-transparent shadow-none p-0 letter-spacing-1"
-                                id="hours-tab"
-                                data-toggle="tab"
-                                href="#hours"
-                                role="tab"
-                                aria-controls="hours"
-                                aria-selected="true"
-                              >
-                                Hours
-                              </a>
-                            </li>
-                            <li className="nav-item px-5 py-1">
-                              <a
-                                className="nav-link bg-transparent shadow-none p-0 letter-spacing-1"
-                                id="weekly-tab"
-                                data-toggle="tab"
-                                href="#weekly"
-                                role="tab"
-                                aria-controls="weekly"
-                                aria-selected="false"
-                              >
-                                Weekly
-                              </a>
-                            </li>
-                            <li className="nav-item px-5 py-1">
-                              <a
-                                className="nav-link bg-transparent shadow-none p-0 letter-spacing-1"
-                                id="monthly-tab"
-                                data-toggle="tab"
-                                href="#monthly"
-                                role="tab"
-                                aria-controls="monthly"
-                                aria-selected="false"
-                              >
-                                Monthly
-                              </a>
-                            </li>
-                          </ul>
-                        </div>
-                        <div className="tab-content shadow-none p-0">
-                          <div id="collapse-tabs-accordion">
-                            <div
-                              className="tab-pane tab-pane-parent fade show active px-0"
-                              id="hours"
-                              role="tabpanel"
-                              aria-labelledby="hours-tab"
-                            >
-                              <div className="card bg-transparent mb-sm-0 border-0">
-                                <div
-                                  className="card-header d-block d-sm-none bg-transparent px-0 py-1 border-bottom-0"
-                                  id="headingHours"
-                                >
-                                  <h5 className="mb-0">
-                                    <button
-                                      className="btn collapse-parent font-size-h5 btn-block border shadow-none"
-                                      data-toggle="collapse"
-                                      data-target="#hours-collapse"
-                                      aria-expanded="true"
-                                      aria-controls="hours-collapse"
-                                    >
-                                      Hours
-                                    </button>
-                                  </h5>
+                  <div className="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                    <form method="get">
+                      <div className="row">
+                        <div className="col-xl-9 mb-6 mb-xl-0">
+                          <div className="card">
+                            <div className="card-body p-6">
+                              <div className="row mb-6">
+                                <div className="invoice-logo col-md-6 mb-3 mb-md-0">
+                                  <h4 className="card-title mb-5 text-heading fs-22 lh-15">
+                                    Invoice Logo
+                                  </h4>
+                                  <div
+                                    className="dropzone upload-file text-center py-5"
+                                    data-uploader="true"
+                                    id="myDropzone"
+                                    data-uploader-url="./dashboard-add-new-invoice.html"
+                                  >
+                                    <div className="dz-default dz-message">
+                                      <span className="upload-icon lh-1 d-inline-block mb-4">
+                                        <i className="fal fa-cloud-upload-alt" />
+                                      </span>
+                                      <p className="text-heading fs-22 lh-15 mb-4">
+                                        Drag and drop image or
+                                      </p>
+                                      <button
+                                        className="btn btn-indigo px-7 mb-2"
+                                        type="button"
+                                      >
+                                        Browse file
+                                      </button>
+                                      <input
+                                        type="file"
+                                        hidden
+                                        name="file"
+                                      />
+                                    </div>
+                                  </div>
                                 </div>
-                                <div
-                                  id="hours-collapse"
-                                  className="collapse show collapsible"
-                                  aria-labelledby="headingHours"
-                                  data-parent="#collapse-tabs-accordion"
+                                <div className="col-md-6">
+                                  <h4 className="card-title mb-5 text-heading fs-22 lh-15">
+                                    Invoice Label
+                                  </h4>
+                                  <input
+                                    type="text"
+                                    className="form-control border-0 shadow-none form-control-lg"
+                                    placeholder="Invoice Label"
+                                    name="invoice-label"
+                                    defaultValue="Invoice Label"
+                                  />
+                                </div>
+                              </div>
+                              <div className="row">
+                                <div className="col-md-6 invoice-address-company">
+                                  <h4 className="card-title mb-5 text-heading fs-22 lh-15">
+                                    From
+                                  </h4>
+                                  <div className="invoice-address-company-fields">
+                                    <div className="form-group">
+                                      <label
+                                        htmlFor="company-name"
+                                        className="text-heading"
+                                      >
+                                        Name
+                                      </label>
+                                      <input
+                                        type="text"
+                                        className="form-control border-0 shadow-none form-control-lg"
+                                        id="company-name"
+                                        placeholder="Business Name"
+                                        name="name"
+                                      />
+                                    </div>
+                                    <div className="form-group">
+                                      <label
+                                        htmlFor="company-email"
+                                        className="text-heading"
+                                      >
+                                        Email
+                                      </label>
+                                      <input
+                                        type="text"
+                                        className="form-control border-0 shadow-none form-control-lg"
+                                        id="company-email"
+                                        placeholder="name@company.com"
+                                        name="email"
+                                      />
+                                    </div>
+                                    <div className="form-group">
+                                      <label
+                                        htmlFor="company-address"
+                                        className="text-heading"
+                                      >
+                                        Address
+                                      </label>
+                                      <input
+                                        type="text"
+                                        className="form-control border-0 shadow-none form-control-lg"
+                                        id="company-address"
+                                        placeholder="XYZ Street"
+                                        name="address"
+                                      />
+                                    </div>
+                                    <div className="form-group">
+                                      <label
+                                        htmlFor="company-phone"
+                                        className="text-heading"
+                                      >
+                                        Phone
+                                      </label>
+                                      <input
+                                        type="text"
+                                        className="form-control border-0 shadow-none form-control-lg"
+                                        id="company-phone"
+                                        placeholder="(123) 456 789"
+                                        name="phone"
+                                      />
+                                    </div>
+                                  </div>
+                                </div>
+                                <div className="col-md-6 invoice-address-client">
+                                  <h4 className="card-title mb-5 text-heading fs-22 lh-15">
+                                    Bill To
+                                  </h4>
+                                  <div className="invoice-address-client-fields">
+                                    <div className="form-group">
+                                      <label
+                                        htmlFor="client-name"
+                                        className="text-heading"
+                                      >
+                                        Name
+                                      </label>
+                                      <input
+                                        type="text"
+                                        className="form-control border-0 shadow-none form-control-lg"
+                                        id="client-name"
+                                        name="client-name"
+                                        placeholder="Client Name"
+                                      />
+                                    </div>
+                                    <div className="form-group">
+                                      <label
+                                        htmlFor="client-email"
+                                        className="text-heading"
+                                      >
+                                        Email
+                                      </label>
+                                      <input
+                                        type="text"
+                                        className="form-control border-0 shadow-none form-control-lg"
+                                        id="client-email"
+                                        placeholder="name@company.com"
+                                        name="client-email"
+                                      />
+                                    </div>
+                                    <div className="form-group">
+                                      <label
+                                        htmlFor="client-address"
+                                        className="text-heading"
+                                      >
+                                        Address
+                                      </label>
+                                      <input
+                                        type="text"
+                                        className="form-control border-0 shadow-none form-control-lg"
+                                        id="client-address"
+                                        placeholder="XYZ Street"
+                                        name="client-address"
+                                      />
+                                    </div>
+                                    <div className="form-group">
+                                      <label
+                                        htmlFor="client-phone"
+                                        className="text-heading"
+                                      >
+                                        Phone
+                                      </label>
+                                      <input
+                                        type="text"
+                                        className="form-control border-0 shadow-none form-control-lg"
+                                        id="client-phone"
+                                        placeholder="(123) 456 789"
+                                        name="client-phone"
+                                      />
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div className="row">
+                                <div className="col-md-4">
+                                  <div className="form-group mb-4">
+                                    <label htmlFor="number">
+                                      Invoice Number
+                                    </label>
+                                    <input
+                                      type="text"
+                                      className="form-control border-0 shadow-none form-control-lg"
+                                      id="number"
+                                      placeholder="#0001"
+                                      name="invoice-number"
+                                    />
+                                  </div>
+                                </div>
+                                <div className="col-md-4">
+                                  <div className="form-group mb-4">
+                                    <label htmlFor="date">Invoice Date</label>
+                                    <input
+                                      type="date"
+                                      className="form-control form-control-lg border-0"
+                                      id="date"
+                                      placeholder="Add date picker"
+                                      name="available-from"
+                                    />
+                                  </div>
+                                </div>
+                                <div className="col-md-4">
+                                  <div className="form-group mb-4">
+                                    <label htmlFor="due">Due Date</label>
+                                    <input
+                                      type="date"
+                                      className="form-control form-control-lg border-0"
+                                      id="due"
+                                      placeholder="None"
+                                      name="available-to"
+                                    />
+                                  </div>
+                                </div>
+                              </div>
+                              <div className="mb-6">
+                                <div className="table-responsive">
+                                  <table className="table table-bordered item-table">
+                                    <thead>
+                                      <tr>
+                                        <th className="" />
+                                        <th>Items</th>
+                                        <th className="">Rate</th>
+                                        <th className="">Qty</th>
+                                        <th className="text-right">Price</th>
+                                        <th className="text-center">Tax</th>
+                                      </tr>
+                                    </thead>
+                                    <tbody>
+                                      <tr>
+                                        <td className="delete-item-row d-block d-md-table-cell w-100 w-md-auto">
+                                          <ul className="table-controls list-unstyled">
+                                            <li>
+                                              <a
+                                                href="javascript:void(0);"
+                                                className="delete-item"
+                                                data-toggle="tooltip"
+                                                data-placement="top"
+                                                title=""
+                                                data-original-title="Delete"
+                                              >
+                                                <svg
+                                                  xmlns="http://www.w3.org/2000/svg"
+                                                  width={24}
+                                                  height={24}
+                                                  viewBox="0 0 24 24"
+                                                  fill="none"
+                                                  stroke="currentColor"
+                                                  strokeWidth={2}
+                                                  strokeLinecap="round"
+                                                  strokeLinejoin="round"
+                                                  className="feather feather-x-circle"
+                                                >
+                                                  <circle
+                                                    cx={12}
+                                                    cy={12}
+                                                    r={10}
+                                                  />
+                                                  <line
+                                                    x1={15}
+                                                    y1={9}
+                                                    x2={9}
+                                                    y2={15}
+                                                  />
+                                                  <line
+                                                    x1={9}
+                                                    y1={9}
+                                                    x2={15}
+                                                    y2={15}
+                                                  />
+                                                </svg>
+                                              </a>
+                                            </li>
+                                          </ul>
+                                        </td>
+                                        <td className="description d-block d-md-table-cell w-100 w-md-auto">
+                                          <input
+                                            type="text"
+                                            className="form-control border-0 shadow-none form-control-lg mb-3"
+                                            placeholder="Item Name"
+                                            name="description[]"
+                                          />
+                                          <select
+                                            className="form-control border-0 shadow-none form-control-lg"
+                                            title="Select"
+                                            id="country"
+                                            name="unit[]"
+                                          >
+                                            <option>Select your unit</option>
+                                            <option>Hours</option>
+                                            <option>Months</option>
+                                          </select>
+                                        </td>
+                                        <td className="rate d-inline-block d-md-table-cell">
+                                          <input
+                                            type="text"
+                                            className="form-control border-0 shadow-none form-control-lg"
+                                            placeholder="Price"
+                                            name="price[]"
+                                          />
+                                        </td>
+                                        <td className="text-md-right qty d-inline-block d-md-table-cell">
+                                          <input
+                                            type="text"
+                                            className="form-control border-0 shadow-none form-control-lg"
+                                            placeholder="Quantity"
+                                            name="quality[]"
+                                          />
+                                        </td>
+                                        <td className="text-md-right amount d-inline-block d-md-table-cell">
+                                          <span className="editable-amount">
+                                            <span className="currency">$</span>{' '}
+                                            <span className="amount">
+                                              100.00
+                                            </span>
+                                          </span>
+                                        </td>
+                                        <td className="text-md-center tax d-inline-block d-md-table-cell">
+                                          <div className="n-chk">
+                                            <label className="new-control new-checkbox new-checkbox-text checkbox-primary h-18 mx-auto my-0">
+                                              <input
+                                                type="checkbox"
+                                                className="new-control-input"
+                                                name="tax[]"
+                                              />
+                                              <span className="d-inline-block d-md-none">
+                                                Tax
+                                              </span>
+                                            </label>
+                                          </div>
+                                        </td>
+                                      </tr>
+                                    </tbody>
+                                  </table>
+                                </div>
+                                <button
+                                  type="button"
+                                  className="btn btn-secondary btn-invoice-add-item"
                                 >
-                                  <div className="card-body p-0 py-4">
-                                    <canvas
-                                      className="chartjs"
-                                      data-chart-options="[]"
-                                      data-chart-labels='["05h","08h","11h","14h","17h","20h","23h"]'
-                                      data-chart-datasets='[{"label":"Clicked","data":[0,7,10,3,15,30,10],"backgroundColor":"rgba(105, 105, 235, 0.1)","borderColor":"#6969eb","borderWidth":3,"fill":true},{"label":"View","data":[10,9,18,20,28,40,27],"backgroundColor":"rgba(254, 91, 52, 0.1)","borderColor":"#ff6935","borderWidth":3,"fill":true}]'
-                                    ></canvas>
+                                  Add Item
+                                </button>
+                              </div>
+                              <div className="row">
+                                <div className="col-md-6 mb-6">
+                                  <div className="shadow-xxs-2 pt-1 pb-2 px-6 border-bottom border-primary border-5x rounded-lg">
+                                    <div className="list-group list-group-flush">
+                                      <div className="list-group-item d-flex py-2 px-0">
+                                        <div className="invoice-summary-label">
+                                          Subtotal
+                                        </div>
+                                        <div className="font-weight-500 text-heading ml-auto">
+                                          <span className="currency">$</span>
+                                          <span className="amount">100</span>
+                                        </div>
+                                      </div>
+                                      <div className="list-group-item d-flex py-2 px-0">
+                                        <div className="invoice-summary-label">
+                                          Discount
+                                        </div>
+                                        <div className="font-weight-500 text-heading ml-auto">
+                                          <span className="currency">$</span>
+                                          <span>10</span>
+                                        </div>
+                                      </div>
+                                      <div className="list-group-item d-flex py-2 px-0">
+                                        <div className="invoice-summary-label">
+                                          Tax
+                                        </div>
+                                        <div className="font-weight-500 text-heading ml-auto">
+                                          <span>0%</span>
+                                        </div>
+                                      </div>
+                                      <div className="list-group-item d-flex py-2 px-0">
+                                        <div className="invoice-summary-label">
+                                          Total
+                                        </div>
+                                        <div className="font-weight-500 text-heading ml-auto">
+                                          <span className="currency">$</span>
+                                          <span>90</span>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div className="form-group">
+                                <label
+                                  htmlFor="invoice-detail-notes"
+                                  className="text-heading"
+                                >
+                                  Notes
+                                </label>
+                                <textarea
+                                  className="form-control border-0 shadow-none form-control-lg"
+                                  name="note"
+                                  id="invoice-detail-notes"
+                                  placeholder='Notes - For example, "Thank you for doing business with us"'
+                                  style={{ height: 88 }}
+                                  defaultValue={''}
+                                />
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div className="col-xl-3">
+                          <div className="card card-body mb-6 p-6">
+                            <div className="invoice-action-currency mb-5">
+                              <h5 className="card-title fs-16 lh-2 text-dark mb-3">
+                                Currency
+                              </h5>
+                              <div className="form-group mb-0">
+                                <input name="currency" hidden="" type="text" />
+                                <div className="dropdown selectable-dropdown invoice-select-currency no-caret">
+                                  <a
+                                    id="currencyDropdown"
+                                    className="d-flex dropdown-toggle form-control bg-transparent form-control-lg bg-input"
+                                    data-toggle="dropdown"
+                                    aria-haspopup="true"
+                                    aria-expanded="false"
+                                  >
+                                    <div className="w-18px mr-1 image-flag">
+                                      <img
+                                        src="/images/svg/flag-us.svg"
+                                        alt="flag"
+                                      />
+                                    </div>
+                                    <span className="selectable-text text-truncate">
+                                      USD - US Dollar
+                                    </span>
+                                    <span className="d-inline-block ml-auto">
+                                      <i className="fal fa-angle-down" />
+                                    </span>
+                                  </a>
+                                  <div
+                                    className="dropdown-menu"
+                                    aria-labelledby="currencyDropdown"
+                                  >
+                                    <a
+                                      className="dropdown-item d-flex"
+                                      data-img-value="assets/img/flag-us.svg"
+                                      data-value="USD - US Dollar"
+                                      href="javascript:void(0);"
+                                    >
+                                      <div className="w-18px mr-1 image-flag">
+                                        <img
+                                          src="/images/svg/flag-us.svg"
+                                          className="flag-width"
+                                          alt="flag"
+                                        />
+                                      </div>
+                                      <span className="selectable-text">
+                                        USD - US Dollar
+                                      </span>
+                                    </a>
+                                    <a
+                                      className="dropdown-item d-flex"
+                                      data-img-value="assets/img/flag-gbp.svg"
+                                      data-value="GBP - British Pound"
+                                      href="javascript:void(0);"
+                                    >
+                                      <div className="w-18px mr-1 image-flag">
+                                        <img
+                                          src="/images/svg/flag-gbp.svg"
+                                          className="flag-width"
+                                          alt="flag"
+                                        />
+                                      </div>
+                                      <span className="selectable-text">
+                                        {' '}
+                                        GBP - British Pound
+                                      </span>
+                                    </a>
+                                    <a
+                                      className="dropdown-item d-flex"
+                                      data-img-value="assets/img/flag-idr.svg"
+                                      data-value="IDR - Indonesian Rupiah"
+                                      href="javascript:void(0);"
+                                    >
+                                      <div className="w-18px mr-1 image-flag">
+                                        <img
+                                          src="/images/svg/flag-idr.svg"
+                                          className="flag-width"
+                                          alt="flag"
+                                        />
+                                      </div>
+                                      <span className="selectable-text">
+                                        IDR - Indonesian Rupiah
+                                      </span>
+                                    </a>
+                                    <a
+                                      className="dropdown-item d-flex"
+                                      data-img-value="assets/img/flag-inr.svg"
+                                      data-value="INR - Indian Rupee"
+                                      href="javascript:void(0);"
+                                    >
+                                      <div className="w-18px mr-1 image-flag">
+                                        <img
+                                          src="/images/svg/flag-inr.svg"
+                                          className="flag-width"
+                                          alt="flag"
+                                        />
+                                      </div>
+                                      <span className="selectable-text">
+                                        INR - Indian Rupee
+                                      </span>
+                                    </a>
+                                    <a
+                                      className="dropdown-item d-flex"
+                                      data-img-value="assets/img/flag-brl.svg"
+                                      data-value="BRL - Brazilian Real"
+                                      href="javascript:void(0);"
+                                    >
+                                      <div className="w-18px mr-1 image-flag">
+                                        <img
+                                          src="/images/svg/flag-brl.svg"
+                                          className="flag-width"
+                                          alt="flag"
+                                        />
+                                      </div>
+                                      <span className="selectable-text">
+                                        BRL - Brazilian Real
+                                      </span>
+                                    </a>
+                                    <a
+                                      className="dropdown-item d-flex"
+                                      data-img-value="assets/img/flag-de.svg"
+                                      data-value="EUR - Germany (Euro)"
+                                      href="javascript:void(0);"
+                                    >
+                                      <div className="w-18px mr-1 image-flag">
+                                        <img
+                                          src="/images/svg/flag-de.svg"
+                                          className="flag-width"
+                                          alt="flag"
+                                        />
+                                      </div>
+                                      <span className="selectable-text">
+                                        EUR - Germany (Euro)
+                                      </span>
+                                    </a>
+                                    <a
+                                      className="dropdown-item d-flex"
+                                      data-img-value="assets/img/flag-try.svg"
+                                      data-value="TRY - Turkish Lira"
+                                      href="javascript:void(0);"
+                                    >
+                                      <div className="w-18px mr-1 image-flag">
+                                        <img
+                                          src="/images/svg/flag-try.svg"
+                                          className="flag-width"
+                                          alt="flag"
+                                        />
+                                      </div>
+                                      <span className="selectable-text">
+                                        TRY - Turkish Lira
+                                      </span>
+                                    </a>
                                   </div>
                                 </div>
                               </div>
                             </div>
-                            <div
-                              className="tab-pane tab-pane-parent fade px-0"
-                              id="weekly"
-                              role="tabpanel"
-                              aria-labelledby="weekly-tab"
-                            >
-                              <div className="card bg-transparent mb-sm-0 border-0">
-                                <div
-                                  className="card-header d-block d-sm-none bg-transparent px-0 py-1 border-bottom-0"
-                                  id="headingWeekly"
-                                >
-                                  <h5 className="mb-0">
-                                    <button
-                                      className="btn collapse-parent font-size-h5 btn-block collapsed border shadow-none"
-                                      data-toggle="collapse"
-                                      data-target="#weekly-collapse"
-                                      aria-expanded="true"
-                                      aria-controls="weekly-collapse"
+                            <div className="invoice-action-tax mb-5">
+                              <h5 className="card-title fs-16 lh-2 text-dark mb-3">
+                                Tax
+                              </h5>
+                              <div className="invoice-action-tax-fields">
+                                <div className="form-group mb-0">
+                                  <label>Type</label>
+                                  <div className="dropdown selectable-dropdown invoice-tax-select no-caret">
+                                    <a
+                                      id="typeDropdown"
+                                      className="dropdown-toggle form-control bg-transparent form-control-lg d-flex bg-input"
+                                      data-toggle="dropdown"
+                                      aria-haspopup="true"
+                                      aria-expanded="false"
                                     >
-                                      Weekly
-                                    </button>
-                                  </h5>
+                                      <span className="selectable-text d-inline-block mr-auto text-truncate">
+                                        None
+                                      </span>
+                                      <span>
+                                        <i className="fal fa-angle-down" />
+                                      </span>
+                                    </a>
+                                    <div
+                                      className="dropdown-menu"
+                                      aria-labelledby="typeDropdown"
+                                    >
+                                      <a
+                                        className="dropdown-item"
+                                        data-value={10}
+                                        href="javascript:void(0);"
+                                      >
+                                        Deducted
+                                      </a>
+                                      <a
+                                        className="dropdown-item"
+                                        data-value={5}
+                                        href="javascript:void(0);"
+                                      >
+                                        Per Item
+                                      </a>
+                                      <a
+                                        className="dropdown-item"
+                                        data-value={25}
+                                        href="javascript:void(0);"
+                                      >
+                                        On Total
+                                      </a>
+                                      <a
+                                        className="dropdown-item"
+                                        data-value={0}
+                                        href="javascript:void(0);"
+                                      >
+                                        None
+                                      </a>
+                                    </div>
+                                  </div>
                                 </div>
                                 <div
-                                  id="weekly-collapse"
-                                  className="collapse collapsible"
-                                  aria-labelledby="headingWeekly"
-                                  data-parent="#collapse-tabs-accordion"
+                                  className="form-group mb-0 mt-3 tax-rate"
+                                  style={{ display: 'none' }}
                                 >
-                                  <div className="card-body p-0 py-4">
-                                    <canvas
-                                      className="chartjs"
-                                      data-chart-options="[]"
-                                      data-chart-labels='["Mar 12","Mar 13","Mar 14","Mar 15","Mar 16","Mar 17","Mar 18","Mar 19"]'
-                                      data-chart-datasets='[{"label":"Clicked","data":[0,13,9,3,15,15,10,0],"backgroundColor":"rgba(105, 105, 235, 0.1)","borderColor":"#6969eb","borderWidth":3,"fill":true},{"label":"View","data":[10,20,18,15,28,33,27,10],"backgroundColor":"rgba(254, 91, 52, 0.1)","borderColor":"#ff6935","borderWidth":3,"fill":true}]'
-                                    ></canvas>
-                                  </div>
+                                  <label htmlFor="rate1">Rate (%)</label>
+                                  <input
+                                    type="number"
+                                    className="form-control border-0 shadow-none form-control-lg input-rate"
+                                    name="tax-rate"
+                                    id="rate1"
+                                    placeholder="Rate"
+                                    defaultValue={0}
+                                  />
                                 </div>
                               </div>
                             </div>
-                            <div
-                              className="tab-pane tab-pane-parent fade px-0"
-                              id="monthly"
-                              role="tabpanel"
-                              aria-labelledby="monthly-tab"
-                            >
-                              <div className="card bg-transparent mb-sm-0 border-0">
-                                <div
-                                  className="card-header d-block d-sm-none bg-transparent px-0 py-1 border-bottom-0"
-                                  id="headingMonthly"
-                                >
-                                  <h5 className="mb-0">
-                                    <button
-                                      className="btn btn-block collapse-parent collapsed border shadow-none"
-                                      data-toggle="collapse"
-                                      data-target="#monthly-collapse"
-                                      aria-expanded="true"
-                                      aria-controls="monthly-collapse"
+                            <div className="invoice-action-discount mb-5">
+                              <h5 className="card-title fs-16 lh-2 text-dark mb-3">
+                                Discount
+                              </h5>
+                              <div className="form-group mb-0">
+                                <label>Type</label>
+                                <div className="dropdown selectable-dropdown invoice-discount-select no-caret">
+                                  <a
+                                    id="discountDropdown"
+                                    className="d-flex dropdown-toggle form-control bg-transparent form-control-lg d-block bg-input"
+                                    data-toggle="dropdown"
+                                    aria-haspopup="true"
+                                    aria-expanded="false"
+                                  >
+                                    {' '}
+                                    <span className="selectable-text d-inline-block mr-auto text-truncate">
+                                      None
+                                    </span>
+                                    <span>
+                                      <i className="fal fa-angle-down" />
+                                    </span>
+                                  </a>
+                                  <div
+                                    className="dropdown-menu"
+                                    aria-labelledby="discountDropdown"
+                                  >
+                                    <a
+                                      className="dropdown-item d-flex"
+                                      data-value={10}
+                                      href="javascript:void(0);"
                                     >
-                                      Monthly
-                                    </button>
-                                  </h5>
-                                </div>
-                                <div
-                                  id="monthly-collapse"
-                                  className="collapse collapsible"
-                                  aria-labelledby="headingMonthly"
-                                  data-parent="#collapse-tabs-accordion"
-                                >
-                                  <div className="card-body p-0 py-4">
-                                    <canvas
-                                      className="chartjs"
-                                      data-chart-options="[]"
-                                      data-chart-labels='["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"]'
-                                      data-chart-datasets='[{"label":"Clicked","data":[2,15,20,10,15,20,10,0,20,30,10,0],"backgroundColor":"rgba(105, 105, 235, 0.1)","borderColor":"#6969eb","borderWidth":3,"fill":true},{"label":"View","data":[10,20,18,15,28,33,27,10,20,30,10,0],"backgroundColor":"rgba(254, 91, 52, 0.1)","borderColor":"#ff6935","borderWidth":3,"fill":true}]'
-                                    ></canvas>
+                                      Percent
+                                    </a>
+                                    <a
+                                      className="dropdown-item d-flex"
+                                      data-value={25}
+                                      href="javascript:void(0);"
+                                    >
+                                      Flat Amount
+                                    </a>
+                                    <a
+                                      className="dropdown-item d-flex"
+                                      data-value={0}
+                                      href="javascript:void(0);"
+                                    >
+                                      None
+                                    </a>
                                   </div>
                                 </div>
+                              </div>
+                              <div
+                                className="form-group mb-0 mt-3 discount-amount"
+                                style={{ display: 'none' }}
+                              >
+                                <label htmlFor="amount">Amount</label>
+                                <input
+                                  type="number"
+                                  className="form-control border-0 shadow-none form-control-lg input-rate"
+                                  name="discount-rate"
+                                  id="amount"
+                                  placeholder="Rate"
+                                  defaultValue={25}
+                                />
+                              </div>
+                            </div>
+                          </div>
+                          <div className="invoice-actions-btn card card-body p-6">
+                            <div className="invoice-action-btn">
+                              <div className="mb-3">
+                                <a
+                                  href="javascript:void(0);"
+                                  className="btn btn-primary btn-send btn-block btn-lg"
+                                >
+                                  Send Invoice
+                                </a>
+                              </div>
+                              <div className="mb-3">
+                                <a
+                                  href="dashboard-preview-invoice.html"
+                                  className="btn btn-secondary btn-preview btn-block btn-lg"
+                                >
+                                  Preview
+                                </a>
+                              </div>
+                              <div>
+                                <button className="btn btn-success btn-download btn-block btn-lg">
+                                  Save
+                                </button>
                               </div>
                             </div>
                           </div>
                         </div>
                       </div>
-                    </div>
-                  </div>
-                  <div className="col-xxl-4 mb-6">
-                    <div className="card px-7 py-6 h-100">
-                      <div className="card-body p-0">
-                        <h2 className="mb-2 text-heading fs-22 lh-15">
-                          Recent Activities
-                        </h2>
-                        <ul className="list-group list-group-no-border">
-                          <li className="list-group-item px-0 py-2">
-                            <div className="media align-items-center">
-                              <div className="badge badge-blue w-40px h-40 d-flex align-items-center justify-content-center property fs-18 mr-3">
-                                <svg className="icon icon-1">
-                                  <use xlinkHref="#icon-1" />
-                                </svg>
-                              </div>
-                              <div className="media-body">
-                                Your listing{' '}
-                                <a href="#" className="text-heading">
-                                  {' '}
-                                  Villa Called Archangel
-                                </a>{' '}
-                                has been approved
-                              </div>
-                            </div>
-                          </li>
-                          <li className="list-group-item px-0 py-2">
-                            <div className="media align-items-center">
-                              <div className="badge badge-yellow w-40px h-40 d-flex align-items-center justify-content-center fs-18 mr-3">
-                                <svg className="icon icon-review">
-                                  <use xlinkHref="#icon-review" />
-                                </svg>
-                              </div>
-                              <div className="media-body">
-                                Dollie Horton left a review on
-                                <a href="#" className="text-heading">
-                                  {' '}
-                                  Villa Called Archangel
-                                </a>
-                              </div>
-                            </div>
-                          </li>
-                          <li className="list-group-item px-0 py-2">
-                            <div className="media align-items-center">
-                              <div className="badge badge-pink w-40px h-40 d-flex align-items-center justify-content-center fs-18 mr-3">
-                                <svg className="icon icon-heart">
-                                  <use xlinkHref="#icon-heart" />
-                                </svg>
-                              </div>
-                              <div className="media-body">
-                                Someone favorites your{' '}
-                                <a href="#" className="text-heading">
-                                  {' '}
-                                  Adorable Garden Gingerbread House
-                                </a>
-                                listing
-                              </div>
-                            </div>
-                          </li>
-                          <li className="list-group-item px-0 py-2">
-                            <div className="media align-items-center">
-                              <div className="badge badge-pink w-40px h-40 d-flex align-items-center justify-content-center fs-18 mr-3">
-                                <svg className="icon icon-heart">
-                                  <use xlinkHref="#icon-heart" />
-                                </svg>
-                              </div>
-                              <div className="media-body">
-                                Someone favorites your{' '}
-                                <a href="#" className="text-heading">
-                                  {' '}
-                                  Adorable Garden Gingerbread House
-                                </a>
-                                listing
-                              </div>
-                            </div>
-                          </li>
-                          <li className="list-group-item px-0 py-2">
-                            <div className="media align-items-center">
-                              <div className="badge badge-blue w-40px h-40 d-flex align-items-center justify-content-center fs-18 mr-3">
-                                <svg className="icon icon-1">
-                                  <use xlinkHref="#icon-1" />
-                                </svg>
-                              </div>
-                              <div className="media-body">
-                                Your listing{' '}
-                                <a href="#" className="text-heading">
-                                  {' '}
-                                  Villa Called Archangel
-                                </a>{' '}
-                                has been approved
-                              </div>
-                            </div>
-                          </li>
-                          <li className="list-group-item px-0 py-2">
-                            <div className="media align-items-center">
-                              <div className="badge badge-yellow w-40px h-40 d-flex align-items-center justify-content-center fs-18 mr-3">
-                                <svg className="icon icon-review">
-                                  <use xlinkHref="#icon-review" />
-                                </svg>
-                              </div>
-                              <div className="media-body">
-                                Dollie Horton left a review on
-                                <a href="#" className="text-heading">
-                                  {' '}
-                                  Villa Called Archangel
-                                </a>
-                              </div>
-                            </div>
-                          </li>
-                        </ul>
-                        <a
-                          className="text-heading d-block text-center mt-4"
-                          role="button"
-                        >
-                          View more
-                          <span className="text-primary d-inline-block ml-2">
-                            <i className="fal fa-angle-down" />
-                          </span>
-                        </a>
-                      </div>
-                    </div>
+                    </form>
                   </div>
                 </div>
               </div>
@@ -990,7 +1302,7 @@ const Dashboard = () => {
                         </label>
                       </div>
                       <a href="#" className="d-inline-block ml-auto">
-                        <img src="images/re-captcha.png" alt="Re-capcha" />
+                        <img src="/images/re-captcha.png" alt="Re-capcha" />
                       </a>
                     </div>
                     <button
@@ -1016,7 +1328,7 @@ const Dashboard = () => {
                     </div>
                     <div className="col-4 px-2 mb-4">
                       <a href="#" className="btn btn-lg btn-block google px-0">
-                        <img src="images/google.png" alt="Google" />
+                        <img src="/images/google.png" alt="Google" />
                       </a>
                     </div>
                     <div className="col-4 px-2 mb-4">
@@ -1127,7 +1439,7 @@ const Dashboard = () => {
                     </div>
                     <div className="col-4 px-2 mb-4">
                       <a href="#" className="btn btn-lg btn-block google px-0">
-                        <img src="images/google.png" alt="Google" />
+                        <img src="/images/google.png" alt="Google" />
                       </a>
                     </div>
                     <div className="col-4 px-2 mb-4">
@@ -1390,4 +1702,4 @@ const Dashboard = () => {
   )
 }
 
-export default Dashboard
+export default AddNewInvoice
