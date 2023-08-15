@@ -1,19 +1,27 @@
 
 import { Outlet, Link } from 'react-router-dom'
 import {BiBuildingHouse} from 'react-icons/bi'
+import {RiPagesLine} from 'react-icons/ri'
+import {ImPageBreak} from 'react-icons/im'
+import {BsFillSuitHeartFill} from 'react-icons/bs'
+import {FiShoppingBag} from 'react-icons/fi'
+import {CgProfile} from 'react-icons/cg'
+import {MdHolidayVillage} from 'react-icons/md'
+import {VscOpenPreview} from 'react-icons/vsc'
+
 
 const ItemLink = ({icon,title,href}) => {
   return (
     <li className="list-group-item px-3 px-xl-4 py-2 sidebar-item">
-      <Link
-        to={href}
+      <a
+        href={href}
         className="text-heading lh-1 sidebar-link"
       >
         <span className="sidebar-item-icon d-inline-block mr-3 text-muted fs-20 fs-20">
           {icon}
         </span>
         <span className="sidebar-item-text">{title}</span>
-      </Link>
+      </a>
     </li>
   )
 }
@@ -39,6 +47,7 @@ const Layout = () => {
                           data-toggle="dropdown"
                         >
                           <div className="w-48px">
+                            
                             <img
                               src="/images/testimonial-5.jpg"
                               alt="Ronald Hunter"
@@ -144,7 +153,14 @@ const Layout = () => {
                         Manage Listings
                       </h5>
                       <ul className="list-group list-group-no-border rounded-lg">
-                        <ItemLink href="/dashboard/addpropaty" title="Add new propath" icon={<BiBuildingHouse/>} />
+                        <ItemLink href="/dashboard/addpropaty" title="Add new propaty" icon={<BiBuildingHouse/>} />
+                        <ItemLink href="/dashboard/addinvoice" title="Add new Invoice" icon={<RiPagesLine/>} />
+                        <ItemLink href="/dashboard/invoices" title="All Invoice" icon={<ImPageBreak/>} />
+                        <ItemLink href="/dashboard/myfevorites" title="My favourite list" icon={<BsFillSuitHeartFill/>} />
+                        <ItemLink href="/dashboard/mypackages" title="My packages" icon={<FiShoppingBag/>} />
+                        <ItemLink href="/dashboard/myprofile" title="My profile" icon={<CgProfile/>} />
+                        <ItemLink href="/dashboard/mypropaty" title="My proparty" icon={<MdHolidayVillage/>} />
+                        <ItemLink href="/dashboard/reviwes" title="reviews" icon={<VscOpenPreview/>} />
                        
                       </ul>
                       <div className="collapse" id="invoice_collapse">
@@ -241,7 +257,8 @@ const Layout = () => {
                     </form>
                   </div>
                   <div className="col-md-6 d-flex flex-wrap justify-content-md-end order-0 order-md-1">
-                    <div className="dropdown border-md-right border-0 py-3 text-right">
+                    <div className="dropdown  border-0 py-3 text-right">
+                    {/* border-md-right */}
                       <a
                         href="#"
                         className="dropdown-toggle text-heading pr-3 pr-sm-6 d-flex align-items-center justify-content-end"
@@ -259,18 +276,18 @@ const Layout = () => {
                         </div>
                       </a>
                       <div className="dropdown-menu dropdown-menu-right w-100">
-                        <Link
+                        <a
                           className="dropdown-item"
-                          to="/dashboard-my-profiles.html"
+                          href="/dashboard/myprofile"
                         >
                           My Profile
-                        </Link>
+                        </a>
                         <a className="dropdown-item" href="#">
                           Logout
                         </a>
                       </div>
                     </div>
-                    <div className="dropdown no-caret py-3 px-3 px-sm-6 d-flex align-items-center justify-content-end notice">
+                    {/* <div className="dropdown no-caret py-3 px-3 px-sm-6 d-flex align-items-center justify-content-end notice">
                       <a
                         href="#"
                         className="dropdown-toggle text-heading fs-20 font-weight-500 lh-1"
@@ -292,7 +309,7 @@ const Layout = () => {
                           Something else here
                         </a>
                       </div>
-                    </div>
+                    </div> */}
                   </div>
                 </nav>
               </div>

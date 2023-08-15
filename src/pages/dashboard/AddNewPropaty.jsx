@@ -1,9 +1,6 @@
 /* eslint-disable react/no-unescaped-entities */
 
-import { useState } from "react";
-
 const AddNewPropaty = () => {
-  const [activeTab, setActiveTab] = useState('description');
   return (
     <>
       <main id="content" className="bg-gray-01">
@@ -30,7 +27,6 @@ const AddNewPropaty = () => {
                   role="tab"
                   aria-controls="description"
                   aria-selected="true"
-
                 >
                   <span className="number">1.</span> Description
                 </a>
@@ -72,7 +68,7 @@ const AddNewPropaty = () => {
                   href="#detail"
                   role="tab"
                   aria-controls="detail"
-                  aria-selected="true"
+                  aria-selected="false"
                 >
                   <span className="number">4.</span> Detail
                 </a>
@@ -95,7 +91,6 @@ const AddNewPropaty = () => {
             <div className="tab-content shadow-none p-0">
               <form>
                 <div id="collapse-tabs-accordion">
-                
                   <div
                     className="tab-pane tab-pane-parent fade show active px-0"
                     id="description"
@@ -1854,7 +1849,319 @@ const AddNewPropaty = () => {
         </div>
       </main>
 
-     
+      <div
+        className="modal fade login-register login-register-modal"
+        id="login-register-modal"
+        tabIndex={-1}
+        role="dialog"
+        aria-labelledby="login-register-modal"
+        aria-hidden="true"
+      >
+        <div
+          className="modal-dialog modal-dialog-centered mxw-571"
+          role="document"
+        >
+          <div className="modal-content">
+            <div className="modal-header border-0 p-0">
+              <div
+                className="nav nav-tabs row w-100 no-gutters"
+                id="myTab"
+                role="tablist"
+              >
+                <a
+                  className="nav-item col-sm-3 ml-0 nav-link pr-6 py-4 pl-9 active fs-18"
+                  id="login-tab"
+                  data-toggle="tab"
+                  href="#login"
+                  role="tab"
+                  aria-controls="login"
+                  aria-selected="true"
+                >
+                  Login
+                </a>
+                <a
+                  className="nav-item col-sm-3 ml-0 nav-link py-4 px-6 fs-18"
+                  id="register-tab"
+                  data-toggle="tab"
+                  href="#register"
+                  role="tab"
+                  aria-controls="register"
+                  aria-selected="false"
+                >
+                  Register
+                </a>
+                <div className="nav-item col-sm-6 ml-0 d-flex align-items-center justify-content-end">
+                  <button
+                    type="button"
+                    className="close m-0 fs-23"
+                    data-dismiss="modal"
+                    aria-label="Close"
+                  >
+                    <span aria-hidden="true">×</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div className="modal-body p-4 py-sm-7 px-sm-8">
+              <div className="tab-content shadow-none p-0" id="myTabContent">
+                <div
+                  className="tab-pane fade show active"
+                  id="login"
+                  role="tabpanel"
+                  aria-labelledby="login-tab"
+                >
+                  <form className="form">
+                    <div className="form-group mb-4">
+                      <label htmlFor="username" className="sr-only">
+                        Username
+                      </label>
+                      <div className="input-group input-group-lg">
+                        <div className="input-group-prepend ">
+                          <span
+                            className="input-group-text bg-gray-01 border-0 text-muted fs-18"
+                            id="inputGroup-sizing-lg"
+                          >
+                            <i className="far fa-user" />
+                          </span>
+                        </div>
+                        <input
+                          type="text"
+                          className="form-control border-0 shadow-none fs-13"
+                          id="username"
+                          name="username"
+                          required=""
+                          placeholder="Username / Your email"
+                        />
+                      </div>
+                    </div>
+                    <div className="form-group mb-4">
+                      <label htmlFor="password" className="sr-only">
+                        Password
+                      </label>
+                      <div className="input-group input-group-lg">
+                        <div className="input-group-prepend ">
+                          <span className="input-group-text bg-gray-01 border-0 text-muted fs-18">
+                            <i className="far fa-lock" />
+                          </span>
+                        </div>
+                        <input
+                          type="text"
+                          className="form-control border-0 shadow-none fs-13"
+                          id="password"
+                          name="password"
+                          required=""
+                          placeholder="Password"
+                        />
+                        <div className="input-group-append">
+                          <span className="input-group-text bg-gray-01 border-0 text-body fs-18">
+                            <i className="far fa-eye-slash" />
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="d-flex mb-4">
+                      <div className="form-check">
+                        <input
+                          className="form-check-input"
+                          type="checkbox"
+                          defaultValue=""
+                          id="remember-me"
+                          name="remember-me"
+                        />
+                        <label
+                          className="form-check-label"
+                          htmlFor="remember-me"
+                        >
+                          Remember me
+                        </label>
+                      </div>
+                      <a
+                        href="password-recovery.html"
+                        className="d-inline-block ml-auto text-orange fs-15"
+                      >
+                        Lost password?
+                      </a>
+                    </div>
+                    <div className="d-flex p-2 border re-capchar align-items-center mb-4">
+                      <div className="form-check">
+                        <input
+                          className="form-check-input"
+                          type="checkbox"
+                          defaultValue=""
+                          id="verify"
+                          name="verify"
+                        />
+                        <label className="form-check-label" htmlFor="verify">
+                          I'm not a robot
+                        </label>
+                      </div>
+                      <a href="#" className="d-inline-block ml-auto">
+                        <img src="/images/re-captcha.png" alt="Re-capcha" />
+                      </a>
+                    </div>
+                    <button
+                      type="submit"
+                      className="btn btn-primary btn-lg btn-block"
+                    >
+                      Log in
+                    </button>
+                  </form>
+                  <div className="divider text-center my-2">
+                    <span className="px-4 bg-white lh-17 text">
+                      or continue with
+                    </span>
+                  </div>
+                  <div className="row no-gutters mx-n2">
+                    <div className="col-4 px-2 mb-4">
+                      <a
+                        href="#"
+                        className="btn btn-lg btn-block facebook text-white px-0"
+                      >
+                        <i className="fab fa-facebook-f" />
+                      </a>
+                    </div>
+                    <div className="col-4 px-2 mb-4">
+                      <a href="#" className="btn btn-lg btn-block google px-0">
+                        <img src="/images/google.png" alt="Google" />
+                      </a>
+                    </div>
+                    <div className="col-4 px-2 mb-4">
+                      <a
+                        href="#"
+                        className="btn btn-lg btn-block twitter text-white px-0"
+                      >
+                        <i className="fab fa-twitter" />
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  className="tab-pane fade"
+                  id="register"
+                  role="tabpanel"
+                  aria-labelledby="register-tab"
+                >
+                  <form className="form">
+                    <div className="form-group mb-4">
+                      <label htmlFor="full-name" className="sr-only">
+                        Full name
+                      </label>
+                      <div className="input-group input-group-lg">
+                        <div className="input-group-prepend ">
+                          <span className="input-group-text bg-gray-01 border-0 text-muted fs-18">
+                            <i className="far fa-address-card" />
+                          </span>
+                        </div>
+                        <input
+                          type="text"
+                          className="form-control border-0 shadow-none fs-13"
+                          id="full-name"
+                          name="full-name"
+                          required=""
+                          placeholder="Full name"
+                        />
+                      </div>
+                    </div>
+                    <div className="form-group mb-4">
+                      <label htmlFor="username01" className="sr-only">
+                        Username
+                      </label>
+                      <div className="input-group input-group-lg">
+                        <div className="input-group-prepend ">
+                          <span className="input-group-text bg-gray-01 border-0 text-muted fs-18">
+                            <i className="far fa-user" />
+                          </span>
+                        </div>
+                        <input
+                          type="text"
+                          className="form-control border-0 shadow-none fs-13"
+                          id="username01"
+                          name="username01"
+                          required=""
+                          placeholder="Username / Your email"
+                        />
+                      </div>
+                    </div>
+                    <div className="form-group mb-4">
+                      <label htmlFor="password01" className="sr-only">
+                        Password
+                      </label>
+                      <div className="input-group input-group-lg">
+                        <div className="input-group-prepend ">
+                          <span className="input-group-text bg-gray-01 border-0 text-muted fs-18">
+                            <i className="far fa-lock" />
+                          </span>
+                        </div>
+                        <input
+                          type="text"
+                          className="form-control border-0 shadow-none fs-13"
+                          id="password01"
+                          name="password01"
+                          required=""
+                          placeholder="Password"
+                        />
+                        <div className="input-group-append">
+                          <span className="input-group-text bg-gray-01 border-0 text-body fs-18">
+                            <i className="far fa-eye-slash" />
+                          </span>
+                        </div>
+                      </div>
+                      <p className="form-text">
+                        Minimum 8 characters with 1 number and 1 letter
+                      </p>
+                    </div>
+                    <button
+                      type="submit"
+                      className="btn btn-primary btn-lg btn-block"
+                    >
+                      Sign up
+                    </button>
+                  </form>
+                  <div className="divider text-center my-2">
+                    <span className="px-4 bg-white lh-17 text">
+                      or continue with
+                    </span>
+                  </div>
+                  <div className="row no-gutters mx-n2">
+                    <div className="col-4 px-2 mb-4">
+                      <a
+                        href="#"
+                        className="btn btn-lg btn-block facebook text-white px-0"
+                      >
+                        <i className="fab fa-facebook-f" />
+                      </a>
+                    </div>
+                    <div className="col-4 px-2 mb-4">
+                      <a href="#" className="btn btn-lg btn-block google px-0">
+                        <img src="/images/google.png" alt="Google" />
+                      </a>
+                    </div>
+                    <div className="col-4 px-2 mb-4">
+                      <a
+                        href="#"
+                        className="btn btn-lg btn-block twitter text-white px-0"
+                      >
+                        <i className="fab fa-twitter" />
+                      </a>
+                    </div>
+                  </div>
+                  <div className="mt-2">
+                    By creating an account, you agree to HomeID
+                    <a className="text-heading" href="#">
+                      <u>Terms of Use</u>{' '}
+                    </a>{' '}
+                    and
+                    <a className="text-heading" href="#">
+                      <u>Privacy Policy</u>
+                    </a>
+                    .
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
 
     </>
   )

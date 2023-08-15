@@ -15,6 +15,16 @@ import Reviews from './pages/dashboard/Reviews'
 import NotFound from './pages/NotFound'
 import Layout from './components/dashboard/Layout'
 import Test from './pages/Test'
+import AboutUs from './pages/AboutUs'
+import AgencyDetails from './pages/AgencyDetails'
+import AgencyList from './pages/AgencyList'
+import AgentDetails from './pages/AgentDetails'
+import AgentsList from './pages/AgentsList'
+import BlogClassic from './pages/BlogClassic'
+import BlogDetails from './pages/BlogDetails'
+import BlogListWidthSidebar from './pages/BlogListWidthSidebar'
+import CheckoutComplete from './pages/CheckoutComplete'
+import CompareDetails from './pages/CompareDetails'
 
 function App() {
   return (
@@ -23,6 +33,21 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/faqs" element={<Faq />} />
 
+        
+
+        <Route path="/aboutus" element={<AboutUs />} />
+        <Route path="/agencydetails" element={<AgencyDetails />} />
+        <Route path="/agencylist" element={<AgencyList />} />
+        <Route path="/agentdetails" element={<AgentDetails />} />
+        <Route path="/agentslist" element={<AgentsList />} />
+        <Route path="/blog" element={<BlogClassic />} />
+        <Route path="/blog/details" element={<BlogDetails />} />
+        <Route path="/bloglistwidthsidebar" element={<BlogListWidthSidebar />} />
+        <Route path="/checkoutcomplete" element={<CheckoutComplete />} />
+        <Route path="/comparedetails" element={<CompareDetails />} />
+
+
+        {/* dashboard */}
         <Route path="/" element={<Layout />}>
           <Route path="/dashboard" element={<Dashboard />} />
           <Route path="/dashboard/addinvoice" element={<AddNewInvoice />} />
