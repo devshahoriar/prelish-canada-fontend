@@ -1,4 +1,22 @@
+
 import { Outlet, Link } from 'react-router-dom'
+import {BiBuildingHouse} from 'react-icons/bi'
+
+const ItemLink = ({icon,title,href}) => {
+  return (
+    <li className="list-group-item px-3 px-xl-4 py-2 sidebar-item">
+      <Link
+        to={href}
+        className="text-heading lh-1 sidebar-link"
+      >
+        <span className="sidebar-item-icon d-inline-block mr-3 text-muted fs-20 fs-20">
+          {icon}
+        </span>
+        <span className="sidebar-item-text">{title}</span>
+      </Link>
+    </li>
+  )
+}
 
 const Layout = () => {
   return (
@@ -126,21 +144,8 @@ const Layout = () => {
                         Manage Listings
                       </h5>
                       <ul className="list-group list-group-no-border rounded-lg">
-                        <li className="list-group-item px-3 px-xl-4 py-2 sidebar-item">
-                          <Link
-                            to="/dashboard/addpropaty"
-                            className="text-heading lh-1 sidebar-link"
-                          >
-                            <span className="sidebar-item-icon d-inline-block mr-3 text-muted fs-20 fs-20">
-                              <svg className="icon icon-add-new">
-                                <use xlinkHref="#icon-add-new" />
-                              </svg>
-                            </span>
-                            <span className="sidebar-item-text">
-                              Add new Propaty
-                            </span>
-                          </Link>
-                        </li>
+                        <ItemLink href="/dashboard/addpropaty" title="Add new propath" icon={<BiBuildingHouse/>} />
+                       
                       </ul>
                       <div className="collapse" id="invoice_collapse">
                         <div className="card card-body border-0 bg-transparent py-0 pl-6">
