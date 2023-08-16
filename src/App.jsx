@@ -25,6 +25,16 @@ import BlogDetails from './pages/BlogDetails'
 import BlogListWidthSidebar from './pages/BlogListWidthSidebar'
 import CheckoutComplete from './pages/CheckoutComplete'
 import CompareDetails from './pages/CompareDetails'
+import ContactUs from './pages/ContactUs'
+import DashboardSaveSearch from './pages/DashboardSaveSearch'
+import ListingHalfMapListLayout from './pages/ListingHalfMapListLayout'
+import ListingWithLeftFilter from './pages/ListingWithLeftFilter'
+import Packages from './pages/Packages'
+import PasswordRecovery from './pages/PasswordRecovery'
+import Services from './pages/Services'
+import ServicesWithSidebar from './pages/ServicesWithSidebar'
+import SignUpAndLogin from './pages/SignUpAndLogin'
+import SingleProperty from './pages/SingleProperty'
 
 function App() {
   return (
@@ -45,6 +55,15 @@ function App() {
         <Route path="/bloglistwidthsidebar" element={<BlogListWidthSidebar />} />
         <Route path="/checkoutcomplete" element={<CheckoutComplete />} />
         <Route path="/comparedetails" element={<CompareDetails />} />
+        <Route path="/contactus" element={<ContactUs />} />
+        <Route path="/dashboardsavesearch" element={<DashboardSaveSearch />} />
+        <Route path="/listinghalfmaplistLayout" element={<ListingHalfMapListLayout />} />
+        <Route path="/listingwithLeftfilter" element={<ListingWithLeftFilter />} />
+        <Route path="/packages" element={<Packages />} />
+        <Route path="/passwordrecovery" element={<PasswordRecovery />} />
+        <Route path="/services" element={<ServicesWithSidebar />} />
+        <Route path="/signupandlogin" element={<SignUpAndLogin />} />
+        <Route path="/singleproperty" element={<SingleProperty />} />
 
 
         {/* dashboard */}
@@ -62,10 +81,11 @@ function App() {
           <Route path="/dashboard/reviwes" element={<Reviews />} />
         </Route>
 
-        <Route path="/test" element={<Test />} />
         
-
+        <Route path="/test" element={<Test />} />
         <Route path="*" element={<NotFound />} />
+
+        {/* <Route path="/services" element={<Services />} /> */}
       </Routes>
     </BrowserRouter>
   )
